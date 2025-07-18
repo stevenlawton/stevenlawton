@@ -2,21 +2,29 @@
 
 ## Summary
 
-I’m a seasoned Software Developer with a strong technical background across backend systems, infrastructure, and 
-full-stack product delivery. I’ve worked in domains including fintech, retail, Web3, and publishing — building 
-everything from real-time payment systems and internal developer platforms to API onboarding workflows and machine 
-learning pipelines for historical manuscript classification.
+I’m a seasoned Software Developer with a strong technical background across backend systems, infrastructure, and full-stack product delivery.
 
-Recently, I’ve focused on GoLang microservices, Kubernetes-based deployments, and improving developer experience through 
-tooling and automation. I regularly contribute to open-source projects and maintain a suite of personal systems that I 
-evolve as my tech stack grows, often rewriting and optimising them to meet new performance or infrastructure goals.
+- Built real-time payment systems, developer platforms, API onboarding workflows, and ML pipelines for medieval manuscripts
+- Delivered systems across fintech, retail, Web3, and publishing – with highly transferable experience
+- Recent focus: GoLang microservices, Kubernetes, internal tooling, CI/CD, and platform automation
+- Regular contributor to open-source projects and long-term maintainer of personal backend tools and services
+- Equally comfortable pair programming, working solo, or leading delivery in high-autonomy teams
+- Strong communicator, hands-on builder, and pragmatic problem-solver
 
-Comfortable pair programming, working independently, or leading delivery, I adapt quickly to new contexts and 
-requirements. I bring technical depth, strong execution, and a pragmatic mindset to any team. Outside of work, I 
-volunteer as a Beaver Scout Leader, helping young people build confidence, life skills, and a sense of adventure.
+## Personal Statement
+I’m an experienced Software Developer with a strong background in both hardware and software, combined with 
+well-developed communication and organisational skills. I enjoy solving real-world problems through clean, scalable 
+engineering and thrive in environments that value autonomy, delivery, and technical curiosity.
+
+In recent projects, I’ve worked extensively with Cryptocurrency systems (including Web3 and smart contracts) and Machine 
+Learning for image recognition and classification — specifically on a digital library of medieval manuscripts. I also 
+maintain several long-running personal tools and backend systems, many of which I’ve recently rebuilt in GoLang to 
+modernise their architecture, improve performance, and sharpen my backend infrastructure skills.
+
+I’m looking for a role where I can apply this broad experience to build robust systems, contribute meaningfully to a 
+team, and continue learning in a high-impact environment.
 
 ## Skills
-
 ### Cloud-Native Backend Engineering
 - **GoLang**, Java (Spring Boot), Node.js (TypeScript), Scala – used to build scalable microservices and API platforms in domains such as fintech, retail, and e-commerce.
 - Deployed services to **AWS** (ECS, Lambda, S3, RDS, IAM) and **Kubernetes** (EKS), managed via **Terraform** and **Helm**.
