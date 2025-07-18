@@ -113,6 +113,48 @@ Readers often conclude I’m a strong fit for platform-oriented, backend-heavy r
 
 *Technologies:* GoLang, Android (Kotlin), iOS, Docker, AWS (ECS), TDD, Pair Programming
 
+### Ace Web Services Ltd – Development Lead (for Barbourne Brook)
+*Dec 2023 – Mar 2024 · Remote · Fixed Price Project*
+
+- Replaced a fragile, underperforming **PHP application** with a scalable, event-driven data pipeline built in **GoLang**
+- Conducted full system/code review, defined modern architecture, and led delivery of microservices deployed to **Kubernetes (EKS)** via **Terraform**
+- Dramatically improved data throughput, enabling the client to target larger customers previously blocked by performance limitations
+- Designed for scalability, observability, and future extensibility using cloud-native best practices
+
+*Technologies:* GoLang, Docker, AWS, Kubernetes (EKS), Terraform, RabbitMQ, PHP, PaaS, DevOps
+
+### Sainsbury’s Groceries Online – Senior Full Stack Developer
+*Nov 2022 – Nov 2023 · Remote · Contract (3 + 3 + 3 + 3 months)*
+
+- Delivered **Server-Side Rendering (SSR)** features across core grocery applications to boost performance and user experience
+- Built and maintained **GoLang microservices** for backend features and API integration
+- Streamlined DevOps workflows, integrating **Node.js** into the backend pipeline and improving delivery across environments
+- Led migration to a new internal **Platform-as-a-Service (PaaS)**, leveraging **Kubernetes (EKS)**, **Istio**, **Helm**, and supporting observability tools to modernise infrastructure and enhance scalability
+
+*Technologies:* GoLang, Node.js, React, Docker, AWS, Kubernetes (EKS), Terraform, DevOps, Istio, Helm, Kibana
+
+### Ace Web Services Ltd – Development Lead
+*Oct 2022 – Dec 2022 · Remote · Fixed Price Project for whartonbc.co.uk*
+
+- Designed and delivered a bespoke self-assessment tool for Wharton Business Consultancy
+- Built a workflow where users enter job role details and answer dynamically generated questions
+- Implemented a scoring system that compares user responses to expected role competencies and suggests relevant training pathways
+- Delivered a full-stack solution using **GoLang**, **React**, and **PostgreSQL**, deployed on **AWS** with containerisation via **Docker**
+
+*Technologies:* GoLang, Docker, AWS, Postgres, React
+
+### Baanx Group – Development Lead
+*Apr 2022 – Aug 2022 · Remote · Fintech*
+
+- Led the redesign of Baanx’s core platform to meet scalability and regulatory demands (PCI DSS, PSD2, GDPR)
+- Rewrote key product components from **Node.js/React** into **GoLang** to improve performance and modularity
+- Introduced containerisation with **Docker** and deployed a new scalable environment using **Terraform** and **AWS ECS**
+- Migrated existing B2B and B2C customers to the new infrastructure, enabling onboarding of high-profile clients
+- Architected phase two: multi-tenant support, security improvements, and deep integration of **Keycloak** for identity management
+- Supported infrastructure modernisation, regulatory alignment, and internal team enablement
+
+*Technologies:* GoLang, Node.js, React, Docker, AWS, Terraform, RDS, Keycloak
+
 
 ## Open Source & Volunteering
 ...
