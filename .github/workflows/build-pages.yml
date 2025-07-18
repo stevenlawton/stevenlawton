@@ -8,7 +8,7 @@ on:
       - main
     paths:
       - CV.md
-      - .github/workflows/cv.yml
+      - .github/workflows/build-pages.yml
       - templates/template.html
 
 permissions:
@@ -32,7 +32,7 @@ jobs:
       - name: Convert Markdown to HTML
         run: |
           pandoc CV.md \
-            --template=template.html \
+            --template=templates/template.html \
             --metadata title="Steven Lawton – CV" \
             -f markdown -t html -s -o output/index.html
 
