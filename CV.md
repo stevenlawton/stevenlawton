@@ -24,6 +24,26 @@ modernise their architecture, improve performance, and sharpen my backend infras
 I’m looking for a role where I can apply this broad experience to build robust systems, contribute meaningfully to a 
 team, and continue learning in a high-impact environment.
 
+## Experience Overview
+
+Over 20 years of professional software development, across roles ranging from hands-on contributor to team lead, and 
+industries including fintech, retail, Web3, and publishing. I’ve delivered backend systems, cloud-native infrastructure,
+and cross-platform tools in both startup and enterprise environments.
+
+- **Communication & Collaboration**  
+  Skilled at working with engineers, product teams, business stakeholders, and leadership. Equally comfortable pair programming, mentoring junior developers, or leading cross-functional delivery efforts. Proven in fully remote, hybrid, and co-located teams.
+
+- **Problem-Solving & Adaptability**  
+  Experienced in debugging legacy systems, designing clean architectures, and migrating codebases under time or regulatory pressure. Able to operate under uncertainty, pick up unfamiliar tech quickly, and make pragmatic trade-offs to get things delivered.
+
+- **Delivery & Technical Ownership**  
+  Regularly lead the technical side of migrations, refactors, and infrastructure overhauls. Known for delivering maintainable, observable systems with clear boundaries and reusable patterns.
+
+- **Volunteering & Community**  
+  Longstanding **Beaver Scout Leader**, helping young people build resilience, teamwork, and life skills. This work reflects my broader strengths in leadership, empathy, and building environments where others can thrive.
+
+
+
 ## Skills
 ### Cloud-Native Backend Engineering
 - **GoLang**, Java (Spring Boot), Node.js (TypeScript), Scala – used to build scalable microservices and API platforms in domains such as fintech, retail, and e-commerce.
