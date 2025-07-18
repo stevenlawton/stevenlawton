@@ -18,42 +18,46 @@ young people build life skills through adventure and teamwork.
 ## Skills
 
 ### Cloud-Native Backend Engineering
-- **GoLang**, Java (Spring Boot), Node.js (TypeScript), Scala – used to build scalable microservices and API platforms across fintech, retail, and e-commerce.
-- Built and deployed services via **AWS (ECS, Lambda, S3, RDS, IAM)** and **Kubernetes (EKS)**, with infrastructure managed through **Terraform** and **Helm**.
-- Integrated secure identity flows using **OAuth2**, **OIDC**, and platforms like **Auth0** and **Keycloak**.
+- **GoLang**, Java (Spring Boot), Node.js (TypeScript), Scala – used to build scalable microservices and API platforms in domains such as fintech, retail, and e-commerce.
+- Deployed services to **AWS** (ECS, Lambda, S3, RDS, IAM) and **Kubernetes** (EKS), managed via **Terraform** and **Helm**.
+- Designed and implemented secure identity flows using **OAuth2**, **OIDC**, and tools like **Auth0** and **Keycloak**.
 
 ### DevOps, CI/CD & Platform Tooling
-- Built CI/CD pipelines using **GitHub Actions** and **GitLab CI**, with deployment automation and environment promotion logic.
-- Containerisation and orchestration with **Docker**, **Nomad**, and **Helm**, including internal PaaS deployments and service mesh integrations (**Istio**, **Kong**).
-- Secrets management with **Vault** and environment configuration best practices across dev, staging, and prod.
+- Built and maintained CI/CD pipelines with **GitHub Actions**, **GitLab CI**, and internal PaaS systems.
+- Containerised and orchestrated workloads using **Docker**, **Nomad**, and **Helm**, including service mesh integration (**Istio**) and API gateways (**Kong**).
+- Applied secrets management, environment segregation, and delivery automation across dev, staging, and production environments.
 
-### API Design, Eventing & Messaging
-- Designed REST and gRPC APIs, governed via **OpenAPI** and **AsyncAPI**, with test-first approaches and backward compatibility strategies.
-- Built event-driven architectures with **RabbitMQ**, **Kafka**, and cloud-native event ingestion pipelines.
-- Experience in performance tuning, structured logging, and distributed tracing.
+### API Design, Messaging & Eventing
+- Designed and governed APIs using **OpenAPI**, **AsyncAPI**, and best practices for versioning, compatibility, and mocking.
+- Built event-driven architectures with **RabbitMQ**, **Kafka**, and cloud-native ingestion pipelines.
+- Focused on resilience, structured logging, distributed tracing, and performance tuning in production systems.
 
 ### Databases & Observability
-- Used **PostgreSQL**, **MongoDB**, **MySQL**, **DynamoDB**, **Redis** across transactional and caching use cases.
-- Time-series data with **InfluxDB** and **TimescaleDB**; analytics and dashboards with **Prometheus**, **Grafana**, **Datadog**, and **Kibana**.
+- Worked with **PostgreSQL**, **MySQL**, **MongoDB**, **DynamoDB**, **Redis**, **InfluxDB**, and **TimescaleDB** across various use cases.
+- Set up observability stacks using **Prometheus**, **Grafana**, **Datadog**, and **Kibana**, with custom metrics and alerting.
 
 ### Web3 & Cryptographic Systems
-- Developed Ethereum-based smart contracts using **Solidity**, integrated **Lightning Network** payment channels, and contributed to open-source decentralised platforms.
-- Familiar with ISO 20022 flows, decentralised identity, and crypto wallet infrastructure.
+- Developed and audited smart contracts in **Solidity** (Ethereum), implemented **Lightning Network** integrations, and contributed to open-source decentralised platforms.
+- Familiar with crypto wallet infrastructure, decentralised identity flows, and ISO 20022-style messaging for regulated systems.
 
 ### Testing, Quality & Reliability
-- Practised **TDD** and **Pair Programming** in production teams; created unit and integration tests using **JUnit**, **TestNG**, and **Mockito**.
-- Supported CI-integrated quality gates and API test automation with **Postman** and custom validation scripts.
+- Practised **TDD** and **Pair Programming** in production teams, with testing suites built using **JUnit**, **TestNG**, **Mockito**, and API tools like **Postman**.
+- Delivered regression, integration, and performance test coverage within CI/CD pipelines.
 
 ### Developer Experience & Tooling
-- Delivered internal tools and onboarding flows using **GitHub Actions**, **SwaggerHub**, and workflow templating.
-- Comfortable with **IntelliJ**, **VS Code**, **Vim**, **Makefiles**, and Linux-based local environments.
-- Advocated for clean DevEx and developer productivity in distributed teams.
+- Built internal tooling for developer onboarding, spec validation, and workflow automation using **GitHub Actions**, **SwaggerHub**, and platform-native SDKs.
+- Fluent with **IntelliJ**, **VS Code**, **Vim**, **Makefiles**, and Linux-based dev environments.
+- Advocated for clean DevEx and DX automation in high-velocity teams.
 
 ### Communication, Leadership & Delivery
-- Led delivery on high-stakes refactor projects, advised teams through stack transitions, and mentored engineers in GoLang, cloud infra, and Web3 concepts.
-- Long-time contract developer with strong stakeholder engagement, clear communication, and deadline accountability.
-- Volunteer Beaver Scout Leader – skilled in leadership, organisation, and people-first collaboration.
+- Led delivery of critical migrations, refactors, and platform rebuilds, often in lean or embedded teams.
+- Skilled in technical planning, mentoring, and stakeholder communication across engineering, product, and ops.
+- Volunteer **Beaver Scout Leader**, with strong people skills, group leadership experience, and commitment to inclusive teamwork.
 
+---
+
+**Transferability**:  
+Experience gained in fintech, retail, and e-commerce is highly transferable to SaaS, infrastructure, Web3, public sector, and regulated industries. Comfortable working across domains where performance, security, and team agility are key.
 
 ## Experience
 - [2025 – Present] ...
