@@ -1,0 +1,39 @@
+name: Build and Deploy CV to GitHub Pages
+
+on:
+  push:
+    branches: [main]
+    paths: [CV.md, template.html]
+
+permissions:
+  contents: write
+  pages: write
+  id-token: write
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Convert Markdown to HTML
+        run: |
+          sudo apt-get install pandoc -y
+          pandoc CV.md --from markdown --to html --template=templates/template.html -o output/index.html
+
+      - name: Upload artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: output/
+
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
