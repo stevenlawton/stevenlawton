@@ -17,7 +17,7 @@ permissions:
   id-token: write
 
 jobs:
-  build:
+  setup:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout repository
@@ -29,6 +29,10 @@ jobs:
       - name: Create output directory
         run: mkdir -p output
 
+  build-html:
+    needs: setup
+    runs-on: ubuntu-latest
+    steps:
       - name: Convert Markdown to HTML
         run: |
           pandoc CV.md \
@@ -36,6 +40,20 @@ jobs:
             --metadata title="Steven Lawton – CV" \
             -f markdown -t html -s -o output/index.html
 
+  publish-html:
+    needs: [build-html, commit-pdf]
+    runs-on: ubuntu-latest
+    steps:
+    - name: Deploy to GitHub Pages
+      uses: peaceiris/actions-gh-pages@v3
+      with:
+        github_token: ${{ secrets.GITHUB_TOKEN }}
+        publish_dir: ./output
+
+  build-pdf:
+    needs: setup
+    runs-on: ubuntu-latest
+    steps:
       - name: Convert Markdown to PDF
         run: |
           pandoc CV.md \
@@ -44,12 +62,11 @@ jobs:
             -s -o output/Steven-Lawton-CV.pdf \
             --pdf-engine=wkhtmltopdf
 
-      - name: Deploy to GitHub Pages
-        uses: peaceiris/actions-gh-pages@v3
-        with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./output
 
+  commit-pdf:
+    needs: build-pdf
+    runs-on: ubuntu-latest
+    steps:
       - name: Commit PDF to assets/
         run: |
           mkdir -p assets
