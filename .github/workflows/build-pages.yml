@@ -90,18 +90,27 @@ jobs:
     needs: [build, commit-pdf]
     runs-on: ubuntu-latest
     steps:
+      - name: Checkout repository (for context)
+        uses: actions/checkout@v4
+
       - name: Download built site
         uses: actions/download-artifact@v4
         with:
           name: site
           path: output
 
-      - name: Debug output contents
-        run: ls -l output/
+      - name: List contents of output directory
+        run: |
+          echo "=== Listing output directory ==="
+          ls -la output
+          echo "=== Listing output/pdf ==="
+          ls -la output/*.pdf || true
+          echo "=== Listing output/html ==="
+          cat output/index.html || echo "No HTML found"
 
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_branch: gh-pages
           publish_dir: ./output
+          publish_branch: gh-pages
