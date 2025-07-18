@@ -20,6 +20,7 @@ jobs:
       - name: Convert Markdown to HTML
         run: |
           sudo apt-get install pandoc -y
+          mkdir -p output
           pandoc CV.md --from markdown --to html --template=templates/template.html -o output/index.html
 
       - name: Upload artifact
