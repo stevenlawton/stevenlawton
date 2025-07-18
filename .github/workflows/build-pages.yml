@@ -1,5 +1,9 @@
 name: Build and Deploy CV
 
+concurrency:
+  group: cv-build-and-deploy
+  cancel-in-progress: true
+
 on:
   workflow_dispatch:
   push:
@@ -16,23 +20,18 @@ permissions:
   id-token: write
 
 jobs:
-  setup:
+  build-html:
+
     runs-on: ubuntu-latest
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
 
       - name: Set up Pandoc
-        run: sudo apt-get update && sudo apt-get install -y pandoc wkhtmltopdf
+        run: sudo apt-get update && sudo apt-get install -y pandoc
 
       - name: Create output directory
         run: mkdir -p output
-
-  build-html:
-    needs: setup
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v4
 
       - name: Convert Markdown to HTML
         run: |
@@ -41,18 +40,21 @@ jobs:
             --metadata title="Steven Lawton – CV" \
             -f markdown -t html -s -o output/index.html
 
-  build-and-commit-pdf:
-    needs: setup
+
+  build-pdf:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
+      - name: Checkout repository
+        uses: actions/checkout@v4
 
-      - name: Set up Pandoc
+      - name: Set up Pandoc and wkhtmltopdf
         run: sudo apt-get update && sudo apt-get install -y pandoc wkhtmltopdf
 
-      - name: Generate PDF
+      - name: Create output directory
+        run: mkdir -p output
+
+      - name: Convert Markdown to PDF
         run: |
-          mkdir -p output
           pandoc CV.md \
             --metadata title="Steven Lawton – CV" \
             -t html5 \
@@ -72,7 +74,7 @@ jobs:
           git push
 
   publish-html:
-    needs: [build-html, build-and-commit-pdf]
+    needs: [build-html, build-pdf]
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
