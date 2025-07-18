@@ -2,7 +2,6 @@ name: Build and Deploy CV
 
 on:
   workflow_dispatch:
-
   push:
     branches:
       - main
@@ -33,6 +32,8 @@ jobs:
     needs: setup
     runs-on: ubuntu-latest
     steps:
+      - uses: actions/checkout@v4
+
       - name: Convert Markdown to HTML
         run: |
           pandoc CV.md \
@@ -40,41 +41,44 @@ jobs:
             --metadata title="Steven Lawton – CV" \
             -f markdown -t html -s -o output/index.html
 
-  publish-html:
-    needs: [build-html, commit-pdf]
-    runs-on: ubuntu-latest
-    steps:
-    - name: Deploy to GitHub Pages
-      uses: peaceiris/actions-gh-pages@v3
-      with:
-        github_token: ${{ secrets.GITHUB_TOKEN }}
-        publish_dir: ./output
-
-  build-pdf:
+  build-and-commit-pdf:
     needs: setup
     runs-on: ubuntu-latest
     steps:
-      - name: Convert Markdown to PDF
+      - uses: actions/checkout@v4
+
+      - name: Set up Pandoc
+        run: sudo apt-get update && sudo apt-get install -y pandoc wkhtmltopdf
+
+      - name: Generate PDF
         run: |
+          mkdir -p output
           pandoc CV.md \
             --metadata title="Steven Lawton – CV" \
             -t html5 \
             -s -o output/Steven-Lawton-CV.pdf \
             --pdf-engine=wkhtmltopdf
 
-
-  commit-pdf:
-    needs: build-pdf
-    runs-on: ubuntu-latest
-    steps:
       - name: Commit PDF to assets/
         run: |
           mkdir -p assets
-          mv output/Steven-Lawton-CV.pdf assets/Steven-Lawton-CV.pdf
-          
+          cp output/Steven-Lawton-CV.pdf assets/Steven-Lawton-CV.pdf
+
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          
+
           git add assets/Steven-Lawton-CV.pdf
           git diff --quiet || git commit -m "Update PDF version of CV"
           git push
+
+  publish-html:
+    needs: [build-html, build-and-commit-pdf]
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Deploy to GitHub Pages
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./output
