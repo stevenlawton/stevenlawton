@@ -2,18 +2,18 @@
 
 ## Summary
 
-I’m a seasoned Software Developer with a broad technical background spanning backend systems, infrastructure, and 
-full-stack development. With experience across sectors including retail, fintech, Web3, and publishing, I’ve built 
-everything from real-time payment systems and API onboarding platforms to machine learning pipelines for image 
-recognition on medieval manuscripts.
+I’m a seasoned Software Developer with a strong technical background across backend systems, infrastructure, and 
+full-stack product delivery. I’ve worked in domains including fintech, retail, Web3, and publishing — building 
+everything from real-time payment systems and internal developer platforms to API onboarding workflows and machine 
+learning pipelines for historical manuscript classification.
 
-My recent focus has been on GoLang microservices, Kubernetes deployments, and developer experience tooling — often 
-working in high-autonomy roles where delivery and pragmatic problem-solving are key. I’ve contributed to open-source 
-projects and frequently refactor or rebuild my own long-running personal tools as my skillset evolves.
+Recently, I’ve focused on GoLang microservices, Kubernetes-based deployments, and improving developer experience through 
+tooling and automation. I regularly contribute to open-source projects and maintain a suite of personal systems that I 
+evolve as my tech stack grows — often rewriting and optimising them to meet new performance or infrastructure goals.
 
-Equally comfortable pair programming or leading delivery, I bring a mix of technical depth, delivery focus, and a long 
-history of adapting to whatever a team or system needs. Outside of work, I volunteer as a Beaver Scout Leader, helping 
-young people build life skills through adventure and teamwork.
+Comfortable pair programming, working independently, or leading delivery, I adapt quickly to new contexts and 
+requirements. I bring technical depth, strong execution, and a pragmatic mindset to any team. Outside of work, I 
+volunteer as a Beaver Scout Leader, helping young people build confidence, life skills, and a sense of adventure.
 
 ## Skills
 
