@@ -15,31 +15,45 @@ Equally comfortable pair programming or leading delivery, I bring a mix of techn
 history of adapting to whatever a team or system needs. Outside of work, I volunteer as a Beaver Scout Leader, helping 
 young people build life skills through adventure and teamwork.
 
-
 ## Skills
 
-### Languages & Frameworks
-- **GoLang**, Java (8–17), TypeScript/JavaScript, Node.js, Python, PHP, Scala, Solidity
-- Spring Boot, React, Angular, Android (Kotlin/Java), iOS (basic)
+### Core Languages & Frameworks
+- **GoLang**, Java (8–17), TypeScript, JavaScript, Node.js, Python, PHP, Scala, Solidity
+- React, Angular, Spring Boot, Android (Kotlin/Java), iOS (basic), Akka, Scalatra
 
-### Cloud & Infrastructure
-- **AWS** (ECS, Lambda, RDS, S3, CloudWatch, IAM), Terraform, Kubernetes (EKS)
-- Docker, Helm, GitHub Actions, GitLab CI/CD, Linux, Nomad, Vault, Keycloak
+### Cloud & DevOps
+- **AWS** (ECS, Lambda, RDS, S3, CloudWatch, IAM), Kubernetes (EKS), Terraform, Helm
+- Docker, GitHub Actions, GitLab CI/CD, Nomad, Packer, internal PaaS systems
+- Cloud architecture, cost-aware resource design, CI/CD strategy, multi-env delivery
 
-### Architecture & Dev Practices
-- Microservices, Event-Driven Systems, REST APIs, gRPC, Serverless
-- TDD, BDD, Pair Programming, CI/CD pipelines, Observability (Datadog, Grafana, Kibana)
+### Architecture & Engineering Practices
+- REST APIs, gRPC, WebSockets, Serverless, Event-Driven Systems, Microservices
+- OAuth2, OIDC, SSO (Auth0, Keycloak, TokenX), API Gateways (Kong), Service Mesh (Istio)
+- TDD, BDD, Pair Programming, Domain Modelling, Refactoring Legacy Systems
+- API lifecycle & governance (OpenAPI, AsyncAPI, versioning, backwards compatibility)
 
-### Data & Messaging
-- PostgreSQL, MySQL, MongoDB, DynamoDB, RabbitMQ, Kafka, Redis
-- Elasticsearch, InfluxDB, TimescaleDB
+### Data, Messaging & Observability
+- PostgreSQL, MySQL, MongoDB, DynamoDB, Redis, Elasticsearch, InfluxDB, TimescaleDB
+- RabbitMQ, Kafka, S3-based ingestion pipelines
+- Prometheus, Grafana, Kibana, Datadog, structured logging, tracing
 
-### Web3 & Crypto
-- Solidity, Ethereum, Lightning Network, ISO 20022, Smart Contracts
+### Security & Compliance
+- PCI DSS, PSD2, GDPR, ISO 20022, secure credential flows, encrypted messaging
+- Secrets management (Vault, KMS), IAM policies, RBAC, audit logging
 
-### Tooling & Misc
-- Swagger/OpenAPI, AsyncAPI, JIRA, Confluence, Gerrit, Jekyll, Markdown
-- Git, VS Code, IntelliJ, Vim, Bash scripting
+### Web3 & Cryptocurrency
+- Ethereum, Solidity, Lightning Network, crypto wallet systems, decentralised auth
+- Blockchain integration, contract lifecycle, bounty-based OSS delivery
+
+### Tooling & Developer Experience
+- Git, Vim, IntelliJ, VS Code, Bash, Jira, Confluence, Gerrit, SharePoint
+- Makefiles, Nginx/Apache, shell scripting, API mocking/testing (Postman, SwaggerHub)
+- Local stack provisioning, internal developer tooling, onboarding automation
+
+### Soft Skills & Delivery
+- Technical leadership, sprint planning, mentoring, stakeholder collaboration
+- Story breakdown, estimation, pragmatic communication across teams
+- Volunteer team leadership (Beaver Scouts), training delivery, community involvement
 
 
 ## Experience
