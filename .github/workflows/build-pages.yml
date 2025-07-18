@@ -59,6 +59,8 @@ jobs:
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
+        with:
+          fetch-depth: 0  # Required to make commits
 
       - name: Download built site
         uses: actions/download-artifact@v4
@@ -66,29 +68,27 @@ jobs:
           name: site
           path: output
 
-      - name: Copy PDF to assets/ and output/
+      - name: Copy PDF to assets/
         run: |
           mkdir -p assets
           cp output/Steven-Lawton-CV.pdf assets/Steven-Lawton-CV.pdf          
 
-      - name: Commit PDF to assets/
+      - name: Commit PDF
         run: |
-          mkdir -p assets
-          cp output/Steven-Lawton-CV.pdf assets/Steven-Lawton-CV.pdf
-
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-
-          git add assets/Steven-Lawton-CV.pdf
-          git diff --quiet || git commit -m "Update PDF version of CV"
-          git push
+          
+          git add -f assets/Steven-Lawton-CV.pdf
+          if ! git diff --cached --quiet; then
+            git commit -m "Update PDF version of CV"
+            git push
+          else
+            echo "No changes to commit."
+          fi
 
   publish:
     needs: [build, commit-pdf]
     runs-on: ubuntu-latest
-    environment:
-      name: github-pages
-      url: ${{ steps.deployment.outputs.page_url }}
     steps:
       - name: Download built site
         uses: actions/download-artifact@v4
@@ -96,8 +96,12 @@ jobs:
           name: site
           path: output
 
+      - name: Debug output contents
+        run: ls -l output/
+
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_branch: gh-pages
           publish_dir: ./output
