@@ -9,7 +9,7 @@ learning pipelines for historical manuscript classification.
 
 Recently, I’ve focused on GoLang microservices, Kubernetes-based deployments, and improving developer experience through 
 tooling and automation. I regularly contribute to open-source projects and maintain a suite of personal systems that I 
-evolve as my tech stack grows — often rewriting and optimising them to meet new performance or infrastructure goals.
+evolve as my tech stack grows, often rewriting and optimising them to meet new performance or infrastructure goals.
 
 Comfortable pair programming, working independently, or leading delivery, I adapt quickly to new contexts and 
 requirements. I bring technical depth, strong execution, and a pragmatic mindset to any team. Outside of work, I 
