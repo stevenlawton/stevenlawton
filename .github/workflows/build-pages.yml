@@ -66,6 +66,11 @@ jobs:
           name: site
           path: output
 
+      - name: Copy PDF to assets/ and output/
+        run: |
+          mkdir -p assets
+          cp output/Steven-Lawton-CV.pdf assets/Steven-Lawton-CV.pdf          
+
       - name: Commit PDF to assets/
         run: |
           mkdir -p assets
