@@ -1,6 +1,8 @@
 name: Build and Deploy CV to GitHub Pages
 
 on:
+  workflow_dispatch:
+
   push:
     branches: [main]
     paths: [CV.md, template.html]
