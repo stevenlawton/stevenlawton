@@ -110,20 +110,6 @@ and cross-platform tools in both startup and enterprise environments.
 
 ---
 
-**Transferability**:  
-Experience gained in fintech, retail, and e-commerce is highly transferable to SaaS, infrastructure, Web3, public
-sector, and regulated industries. Comfortable working across domains where performance, security, and team agility are
-key.
-
-## Why Me?
-
-I’m the person teams turn to when something’s complex, messy, or stuck. Whether refactoring a legacy system, standing up
-a new platform, or building internal tooling, I focus on leaving systems clearer, teams faster, and outcomes stronger.
-Trusted to work independently or lead delivery when it matters, I’ve built a career on pragmatism, depth, and getting
-things shipped.
-Readers often conclude I’m a strong fit for platform-oriented, backend-heavy roles where autonomy, clarity, and
-consistent delivery matter.
-
 ## Experience
 
 ### Sainsbury's – Senior Full Stack Developer
@@ -434,6 +420,21 @@ tools, internal DevOps workflows
 
 > Additional private projects span domains including DevOps, eCommerce, API design, and developer tooling – frequently
 > built using Go, Docker, Kubernetes, and JavaScript/TypeScript.
+
+
+**Transferability**:  
+Experience gained in fintech, retail, and e-commerce is highly transferable to SaaS, infrastructure, Web3, public
+sector, and regulated industries. Comfortable working across domains where performance, security, and team agility are
+key.
+
+## Why Me?
+
+I’m the person teams turn to when something’s complex, messy, or stuck. Whether refactoring a legacy system, standing up
+a new platform, or building internal tooling, I focus on leaving systems clearer, teams faster, and outcomes stronger.
+Trusted to work independently or lead delivery when it matters, I’ve built a career on pragmatism, depth, and getting
+things shipped.
+Readers often conclude I’m a strong fit for platform-oriented, backend-heavy roles where autonomy, clarity, and
+consistent delivery matter.
 
 ## Contact
 
