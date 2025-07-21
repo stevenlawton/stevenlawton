@@ -46,21 +46,17 @@ jobs:
             --metadata title="Steven Lawton – Profile" \
             -f markdown -t html -s -o output/profile.html
 
-      - name: Convert Markdown to PDF - CV
+      - name: Convert HTML to PDF - CV
         run: |
-          pandoc CV.md \
-            --metadata title="Steven Lawton – CV" \
-            -t html5 \
-            -s -o output/Steven-Lawton-CV.pdf \
-            --pdf-engine=wkhtmltopdf
+          wkhtmltopdf output/index.html output/Steven-Lawton-CV.pdf
 
-      - name: Convert Markdown to PDF - Profile
+      - name: Insert download link at marker
         run: |
-          pandoc profile.md \
-            --metadata title="Steven Lawton – profile" \
-            -t html5 \
-            -s -o output/Steven-Lawton-Profile.pdf \
-            --pdf-engine=wkhtmltopdf
+          sed -i 's|<!-- PDF-LINK-HERE -->|<p><a href="/stevenlawton/Steven-Lawton-CV.pdf" download>📄 Download PDF version</a></p>|' output/index.html
+
+      - name: Convert HTML to PDF - Profile
+        run: |
+          wkhtmltopdf output/profile.html output/Steven-Lawton-Profile.pdf
 
       - name: Upload output files for deployment
         uses: actions/upload-artifact@v4
