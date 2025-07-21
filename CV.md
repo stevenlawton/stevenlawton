@@ -4,14 +4,14 @@
 I'm a senior software engineer with over 20 years' experience building reliable, scalable systems across fintech, retail, publishing, and Web3. I specialise in backend and platform work, GoLang microservices, modernising legacy systems, and delivering cloud-native infrastructure that works in production.
 
 I've worked across regulated environments. I've delivered in high-trust teams and contributed open-source and internal tooling. My technical background spans hardware and software, and my project work includes:
-- **Developer experience** - CI/CD automation, platform migration, and observability-first design.
-- **Infrastructure** - migrating legacy systems to scalable, containerised microservices.
-- **Cloud-native engineering** – developing microservices deployed to AWS/GCP, Kubernetes, and PaaS platforms.
-- **Regulatory and compliance** – systems aligned with PCII DSS, GDPR, PSD2, and internal audit frameworks.
-- **Event-driven** – RabbitMQ, Kafka, and event-driven systems built for scale and resilience.
-- **Payments** – internal and customer-facing flows across fintech, retail, and embedded environments.
-- **API design** – OpenAPI/AsyncAPI publishing pipelines, mocking, validation, and spec-first development.
-- **Internal tools and automation** – building tools that unblock teams and reduce manual effort.
+ - **Developer experience** - CI/CD automation, platform migration, and observability-first design.
+ - **Infrastructure** - migrating legacy systems to scalable, containerised microservices.
+ - **Cloud-native engineering** – developing microservices deployed to AWS/GCP, Kubernetes, and PaaS platforms.
+ - **Regulatory and compliance** – systems aligned with PCII DSS, GDPR, PSD2, and internal audit frameworks.
+ - **Event-driven** – RabbitMQ, Kafka, and event-driven systems built for scale and resilience.
+ - **Payments** – internal and customer-facing flows across fintech, retail, and embedded environments.
+ - **API design** – OpenAPI/AsyncAPI publishing pipelines, mocking, validation, and spec-first development.
+ - **Internal tools and automation** – building tools that unblock teams and reduce manual effort.
 
 I enjoy solving problems. I've learned to balance speed with rigour and pragmatism with long-term thinking. I write code that works, is easy to maintain, and self-documents. Sound engineering is as much about people as it is about the code.
 
