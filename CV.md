@@ -141,8 +141,7 @@ consistent delivery matter.
 
 *Technologies:* TypeScript, GitHub Actions, Docker, Kubernetes, Helm, SwaggerHub, OpenAPI, AsyncAPI
 
-### Sainsbury's Smart Shop – Senior Full Stack Developer
-
+### Sainsbury’s Smart Shop – Senior Full Stack Developer  
 *Nov 2023 – Mar 2025 · Remote*
 
 - Migrated legacy PHP services to **GoLang microservices**, significantly improving app scalability and maintainability
@@ -150,14 +149,14 @@ consistent delivery matter.
   programming** practices
 - Reduced memory allocation by **40%** on a key endpoint through profiling and optimisation, cutting cloud operational
   costs
-- Strengthened performance, reliability, and **resilience** across the **Smart Shop** ecosystem through hands-on backend
-  and mobile development
-- Designed backend services and mobile endpoints to resist probing, spoofing, and abuse — operating under constant
-  exposure to production load testing, **malicious actors**, and synthetic traffic
+- Strengthened performance, reliability, and resilience across the **Smart Shop** ecosystem through hands-on backend and mobile development  
+- Designed backend services and mobile endpoints to resist probing, spoofing, and abuse — operating under constant exposure to production load testing, malicious actors, and synthetic traffic  
 - Implemented defensive coding practices, observability hooks, and secure client/server flows within a heavily
   scrutinised consumer-facing environment
+- Integrated with **GraphQL** and **gRPC** services from other teams, ensuring compatibility and robustness across multiple protocols, while maintaining REST as the primary interface for Smart Shop  
 
-*Technologies:* GoLang, Android (Kotlin), iOS, Docker, AWS (ECS), TDD, Pair Programming
+**Technologies:** GoLang, Android (Kotlin), iOS, Docker, AWS (ECS), TDD, Pair Programming, REST, gRPC, GraphQL
+
 
 ### Ace Web Services Ltd – Development Lead (for Barbourne Brook)
 
