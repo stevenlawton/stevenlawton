@@ -79,7 +79,7 @@ I'm a developer, happiest when solving real problems for real users. I've learne
 
 *Technologies:* TypeScript, GitHub Actions, Docker, Kubernetes, Helm, SwaggerHub, OpenAPI, AsyncAPI
 
-### Sainsbury's Smart Shop – Senior Full Stack Developer
+### Sainsbury's SmartShop – Senior Full Stack Developer
 *Nov 2023 – Mar 2025 · Remote*
 
 - Migrated legacy PHP services to **GoLang microservices**, significantly improving app scalability and maintainability
