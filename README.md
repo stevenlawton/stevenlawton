@@ -1,89 +1,74 @@
 # 👋 Hey, I'm Steve
 
-**Full-stack dev. Horse rider. Scout leader. Maker of things that beep, click, and occasionally catch fire (on purpose).**  
-20+ years of building real-time payment systems, Minecraft dashboards, and weird solo tools that maybe only I use.
+Full-stack dev. Horse rider. Scout leader. Maker of things that beep, click, and occasionally catch fire (on purpose). I’ve been writing code for 20+ years – building everything from real-time payment systems to Minecraft dashboards and weird little tools that only I will ever use.
 
-By day: wrangling Go microservices, Kubernetes, API pipelines, and CI/CD.  
-By night: soldering ESP32s, dodging Nerf darts, or debugging a heater relay while tweaking a Minecraft plugin.
+By day I’m in the guts of Go microservices, Kubernetes clusters, API automation, and whatever CI/CD system I’m currently arguing with. By night I’m soldering ESP32s, dodging Nerf darts from my kids, or trying to fix a heater relay while debugging a Minecraft plugin.
 
 ---
 
-## 🧰 Tech Stack
+## 📄 Docs & Extras
 
-### 🖥 DevOps & Infrastructure
-![Docker](https://skillicons.dev/icons?i=docker "Docker")  
-![Kubernetes](https://skillicons.dev/icons?i=kubernetes "Kubernetes")  
-![Terraform](https://skillicons.dev/icons?i=terraform "Terraform")  
-![Helm](https://skillicons.dev/icons?i=helm "Helm")  
-![GitHub Actions](https://skillicons.dev/icons?i=githubactions "GitHub Actions")  
-![Linux](https://skillicons.dev/icons?i=linux "Linux")  
-![Git](https://skillicons.dev/icons?i=git "Git")  
-![GitHub](https://skillicons.dev/icons?i=github "GitHub")
-
-### ☁️ Cloud Platforms
-![AWS](https://skillicons.dev/icons?i=aws "AWS")  
-![GCP](https://skillicons.dev/icons?i=gcp "Google Cloud Platform")
-
-### 🧠 Backend Languages
-![Go](https://skillicons.dev/icons?i=go "Go")  
-![TypeScript](https://skillicons.dev/icons?i=ts "TypeScript")  
-![Node.js](https://skillicons.dev/icons?i=nodejs "Node.js")  
-![Java](https://skillicons.dev/icons?i=java "Java")  
-![Python](https://skillicons.dev/icons?i=python "Python")  
-![Solidity](https://skillicons.dev/icons?i=solidity "Solidity")
-
-### 🔌 APIs & Protocols
-![GraphQL](https://skillicons.dev/icons?i=graphql "GraphQL")  
-REST · gRPC · MQTT · Modbus · BLE
-
-### 🛢 Databases & Storage
-![PostgreSQL](https://skillicons.dev/icons?i=postgres "PostgreSQL")  
-![MongoDB](https://skillicons.dev/icons?i=mongodb "MongoDB")  
-![Redis](https://skillicons.dev/icons?i=redis "Redis")  
-DynamoDB · InfluxDB · TimescaleDB
-
-### 🧪 Testing & Quality
-JUnit · TestNG · Mockito · Postman · TDD · Pair Programming
-
-### 🧑‍💻 Developer Experience & Tooling
-VS Code · IntelliJ · Vim · Make · SwaggerHub · CLI Tools · DX Automation
+- [CV (Markdown)](./CV.md)
+- [Profile Summary (Markdown)](./profile.md)
 
 ---
 
-## ⚡ Right Now
+## ⚙️ What I'm into
 
-- Shipping **Go microservices** into production
-- Automating API onboarding with **GitHub Actions** & SwaggerHub
-- Wrangling OpenAPI/AsyncAPI into developer portals
-- Playing with **MQTT**, **Modbus**, and real-world hardware
-- Building event-driven tools with TypeScript, React & a soldering iron
+- Backend systems that scale without drama
+- APIs that don’t suck
+- Dev environments that Just Work™
+- Hardware that lives on DIN rails or saddle bags
+- Building stuff people actually use
 
 ---
 
-## 👨‍👧‍👦 Me, Outside the IDE
+## 🧪 Currently
+
+- Shipping GoLang microservices into production
+- Automating API onboarding and governance with GitHub Actions
+- Integrating OpenAPI/AsyncAPI into SwaggerHub with some ✨
+- Playing with MQTT, Modbus, and real-world I/O
+- Building event-driven tooling with TypeScript, React, and a soldering iron
+
+---
+
+## 🛠 Tools & Toys
+
+- **Languages**: Go, TypeScript, Java, Python, Solidity (when unavoidable)
+- **Infra**: AWS (ECS, Lambda), Kubernetes (EKS), Docker, Terraform, Helm
+- **Protocols**: REST, gRPC, GraphQL, MQTT, Modbus, BLE
+- **Storage**: Postgres, DynamoDB, Redis, InfluxDB
+- **Obs/DevOps**: GitHub Actions, Prometheus, Grafana, Datadog, Kong
+
+---
+
+## 🧍‍♂️ Me, Uncompiled
 
 - 🐎 Horse rider – Western tack, long rides, muddy boots
 - 🔦 Scout Leader – Building resilience (and bivvies) since forever
-- 🧠 Hacker – I poke things until they behave
+- 🧠 Hacker – I like poking things until they do what I want
 - 🧰 Tinkerer – Leatherwork, electronics, firmware, field repairs
-- 👨‍👧‍👦 Dad – Full-stack parenting: emotional patching & CSS fixes
+- 👨‍👧‍👦 Dad – Full-stack parenting, includes emotional patching and CSS fixes
 
 ---
 
-## 💼 Other Repos
+## 🧾 Other GitHub Work
+
+Some of my professional work lives on alternate accounts for client or contract reasons:
 
 - [steven-lawton1-sainsburys](https://github.com/steven-lawton1-sainsburys)
 - [steven-lawton-sainsburys](https://github.com/steven-lawton-sainsburys)
 
 ---
 
-## 📫 Get in Touch
+## 📫 Ping Me
 
-- **Email**: stevenlawton@gmail.com
-- **Website**: [stevenlawton.com](https://stevenlawton.com)
-- **LinkedIn**: [linkedin.com/in/steven-lawton](https://linkedin.com/in/steven-lawton)
-- **CV (PDF)**: [Download](https://stevenlawton.github.io/Steven-Lawton-CV.pdf)
+- 📧 **Email**: stevenlawton@gmail.com
+- 🌍 **Website**: [stevenlawton.com](https://stevenlawton.com)
+- 💼 **LinkedIn**: [linkedin.com/in/steven-lawton](https://linkedin.com/in/steven-lawton)
+- 📄 **CV**: [Download PDF](https://stevenlawton.github.io/Steven-Lawton-CV.pdf)
 
 ---
 
-> Prefer logs over dashboards. Prefer doing over meeting. Prefer fixing it now over scheduling a stand-up.
+> Prefer logs over dashboards. Prefer doing over talking. Prefer fixing it now over scheduling a meeting.
