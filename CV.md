@@ -1,66 +1,35 @@
-# Steven Lawton – CV / Resume
+# Steven Lawton - CV / Resume
 
 ## Summary
+I'm a senior software engineer with over 20 years' experience building reliable, scalable systems across fintech, retail, publishing, and Web3. I specialise in backend and platform work with GoLang microservices,  cloud-native infrastructure, and developer tooling that makes life easier.
 
-I’m a senior software engineer with over 20 years’ experience building reliable, scalable systems across fintech, retail,
-publishing, and Web3. I specialise in backend and platform work — GoLang microservices, cloud-native infrastructure, and 
-developer tooling that makes life easier.
+I have migrated legacy platforms, delivered production-grade services under pressure, and led delivery in high-trust teams. I work efficiently, debug complex problems, and maintain a clean, observable, and maintainable codebase.
 
-I’ve migrated legacy platforms, delivered production-grade services under pressure, and led delivery in high-trust teams.
-I work fast, debug hard problems, and keep things clean, observable, and maintainable.
+Equally happy writing code, shaping architecture, or mentoring devs, and I've got a solid track record of shipping the right thing without fuss.
 
-Equally happy writing code, shaping architecture, or mentoring devs — and I’ve got a solid track record of shipping the 
-right thing without fuss.
+I'm a hands-on Software Engineer with a track record of simplifying and improving the maintainability of complex systems. I thrive in roles that blend technical depth with autonomy, whether scaling backend infrastructure, improving developer experience, or developing internal tools that quietly save teams hours each week.
 
-
-
-## Personal Statement
-
-I’m a hands-on builder with a track record of making complex systems simpler, faster, and easier to maintain. I thrive 
-in roles that blend technical depth with autonomy — whether scaling backend infrastructure, improving developer 
-experience, or shipping internal tools that quietly save teams hours a week.
-
-I'm curious by nature and happiest when solving real problems for real users. Over the years, I've learned to balance 
-speed with rigour, and pragmatism with long-term thinking. I write code that works, explains itself, and plays well with 
-others — because good engineering is as much about people as it is about machines.
-
+I'm a developer, happiest when solving real problems for real users. I've learned to balance speed with rigour, and pragmatism with long-term thinking. I write code that works and self-documents. Sound engineering is as much about people as it is about the code.
 
 ## Experience Overview
+Over 20 years of professional software development, across roles ranging from hands-on contributor to team lead, and industries including fintech, retail, Web3, and publishing. I've worked on backend systems, cloud-native infrastructure, and cross-platform tools in both startup and global companies.
 
-Over 20 years of professional software development, across roles ranging from hands-on contributor to team lead, and
-industries including fintech, retail, Web3, and publishing. I’ve delivered backend systems, cloud-native infrastructure,
-and cross-platform tools in both startup and enterprise environments.
+- **Communication & Collaboration** I have worked with engineers, product teams, business stakeholders, and leadership. I'm equally comfortable pair programming, mentoring junior developers, or leading cross-functional delivery efforts. I have worked in fully remote, hybrid, and co-located teams.
 
-- **Communication & Collaboration**  
-  Skilled at working with engineers, product teams, business stakeholders, and leadership. Equally comfortable pair
-  programming, mentoring junior developers, or leading cross-functional delivery efforts. Proven in fully remote,
-  hybrid, and co-located teams.
+- **Problem-Solving & Adaptability** I'm experienced in debugging legacy systems, designing clean architectures, and migrating codebases under time or regulatory pressure. Able to operate under uncertainty, pick up unfamiliar tech quickly, and make pragmatic trade-offs to get things delivered.
 
-- **Problem-Solving & Adaptability**  
-  Experienced in debugging legacy systems, designing clean architectures, and migrating codebases under time or
-  regulatory pressure. Able to operate under uncertainty, pick up unfamiliar tech quickly, and make pragmatic trade-offs
-  to get things delivered.
+- **Delivery & Technical Ownership** I have regularly led the technical side of migrations, refactors, and infrastructure overhauls. I'm known for delivering maintainable, observable systems with clear boundaries and reusable patterns.
 
-- **Delivery & Technical Ownership**  
-  Regularly lead the technical side of migrations, refactors, and infrastructure overhauls. Known for delivering
-  maintainable, observable systems with clear boundaries and reusable patterns.
+- **Volunteering & Community** Longstanding **Beaver Scout Leader**, helping young people build resilience, teamwork, and skills for life. Reflecting my broader strengths in leadership, empathy, and building environments where others can thrive.
 
-- **Volunteering & Community**  
-  Longstanding **Beaver Scout Leader**, helping young people build resilience, teamwork, and life skills. This work
-  reflects my broader strengths in leadership, empathy, and building environments where others can thrive.
-
+---
 ## Skills
-
 ### Cloud-Native Backend Engineering
-
-- **GoLang**, Java (Spring Boot), Node.js (TypeScript), Scala – used to build scalable microservices and API platforms
-  in domains such as fintech, retail, and e-commerce.
-- Deployed services to **AWS** (ECS, Lambda, S3, RDS, IAM) and **Kubernetes** (EKS), managed via **Terraform** and *
-  *Helm**.
+- **GoLang**, Java (Spring Boot), Node.js (TypeScript), Scala: building scalable microservices and API platforms in several industries, fintech, retail, and e-commerce.
+- Deployed services to **AWS** (ECS, Lambda, S3, RDS, IAM) and **Kubernetes** (EKS), managed via **Terraform** and **Helm**.
 - Designed and implemented secure identity flows using **OAuth2**, **OIDC**, and tools like **Auth0** and **Keycloak**.
 
 ### DevOps, CI/CD & Platform Tooling
-
 - Built and maintained CI/CD pipelines with **GitHub Actions**, **GitLab CI**, and internal PaaS systems.
 - Containerised and orchestrated workloads using **Docker**, **Nomad**, and **Helm**, including service mesh
   integration (**Istio**) and API gateways (**Kong**).
@@ -68,41 +37,34 @@ and cross-platform tools in both startup and enterprise environments.
   environments.
 
 ### API Design, Messaging & Eventing
-
 - Designed and governed APIs using **OpenAPI**, **AsyncAPI**, and best practices for versioning, compatibility, and
   mocking.
 - Built event-driven architectures with **RabbitMQ**, **Kafka**, and cloud-native ingestion pipelines.
 - Focused on resilience, structured logging, distributed tracing, and performance tuning in production systems.
 
 ### Databases & Observability
-
 - Worked with **PostgreSQL**, **MySQL**, **MongoDB**, **DynamoDB**, **Redis**, **InfluxDB**, and **TimescaleDB** across
   various use cases.
 - Set up observability stacks using **Prometheus**, **Grafana**, **Datadog**, and **Kibana**, with custom metrics and
   alerting.
 
 ### Web3 & Cryptographic Systems
-
 - Developed and audited smart contracts in **Solidity** (Ethereum), implemented **Lightning Network** integrations, and
   contributed to open-source decentralised platforms.
 - Familiar with crypto wallet infrastructure, decentralised identity flows, and ISO 20022-style messaging for regulated
   systems.
 
 ### Testing, Quality & Reliability
-
 - Practised **TDD** and **Pair Programming** in production teams, with testing suites built using **JUnit**, **TestNG**,
   **Mockito**, and API tools like **Postman**.
 - Delivered regression, integration, and performance test coverage within CI/CD pipelines.
 
 ### Developer Experience & Tooling
-
-- Built internal tooling for developer onboarding, spec validation, and workflow automation using **GitHub Actions**, *
-  *SwaggerHub**, and platform-native SDKs.
+- Built internal tooling for developer onboarding, spec validation, and workflow automation using **GitHub Actions**, * *SwaggerHub**, and platform-native SDKs.
 - Fluent with **IntelliJ**, **VS Code**, **Vim**, **Makefiles**, and Linux-based dev environments.
 - Advocated for clean DevEx and DX automation in high-velocity teams.
 
 ### Communication, Leadership & Delivery
-
 - Led delivery of critical migrations, refactors, and platform rebuilds, often in lean or embedded teams.
 - Skilled in technical planning, mentoring, and stakeholder communication across engineering, product, and ops.
 - Volunteer **Beaver Scout Leader**, with strong people skills, group leadership experience, and commitment to inclusive
@@ -111,21 +73,16 @@ and cross-platform tools in both startup and enterprise environments.
 ---
 
 ## Experience
-
 ### Sainsbury's – Senior Full Stack Developer
-
 *Mar 2025 – Jul 2025 · Remote*
-
-- Improved developer experience by building robust **GitHub Actions** and reusable workflows in **TypeScript** to
-  automate API onboarding across internal teams
+- Improved developer experience by building robust **GitHub Actions** and reusable workflows in **TypeScript** to automate API onboarding across internal teams
 - Integrated **OpenAPI** and **AsyncAPI** specifications into **SwaggerHub Design Hub** and **Portal**, streamlining
   governance and delivery
-- Initiated and led the design of a new service for managing **request state**, **authentication**, and **authorisation
-  ** within Sainsbury’s internal **PaaS** (Kubernetes, Helm, GitHub Actions)
+- Initiated and led the design of a new service for managing **request state**, **authentication**, and **authorisation** within Sainsbury's internal **PaaS** (Kubernetes, Helm, GitHub Actions)
 
 *Technologies:* TypeScript, GitHub Actions, Docker, Kubernetes, Helm, SwaggerHub, OpenAPI, AsyncAPI
 
-### Sainsbury’s Smart Shop – Senior Full Stack Developer  
+### Sainsbury's Smart Shop – Senior Full Stack Developer
 *Nov 2023 – Mar 2025 · Remote*
 
 - Migrated legacy PHP services to **GoLang microservices**, significantly improving app scalability and maintainability
@@ -133,11 +90,11 @@ and cross-platform tools in both startup and enterprise environments.
   programming** practices
 - Reduced memory allocation by **40%** on a key endpoint through profiling and optimisation, cutting cloud operational
   costs
-- Strengthened performance, reliability, and resilience across the **Smart Shop** ecosystem through hands-on backend and mobile development  
-- Designed backend services and mobile endpoints to resist probing, spoofing, and abuse — operating under constant exposure to production load testing, malicious actors, and synthetic traffic  
+- Strengthened performance, reliability, and resilience across the **Smart Shop** ecosystem through hands-on backend and mobile development
+- Designed backend services and mobile endpoints to resist probing, spoofing, and abuse — operating under constant exposure to production load testing, malicious actors, and synthetic traffic
 - Implemented defensive coding practices, observability hooks, and secure client/server flows within a heavily
   scrutinised consumer-facing environment
-- Integrated with **GraphQL** and **gRPC** services from other teams, ensuring compatibility and robustness across multiple protocols, while maintaining REST as the primary interface for Smart Shop  
+- Integrated with **GraphQL** and **gRPC** services from other teams, ensuring compatibility and robustness across multiple protocols, while maintaining REST as the primary interface for Smart Shop
 
 **Technologies:** GoLang, Android (Kotlin), iOS, Docker, AWS (ECS), TDD, Pair Programming, REST, gRPC, GraphQL
 
@@ -156,7 +113,7 @@ and cross-platform tools in both startup and enterprise environments.
 
 *Technologies:* GoLang, Docker, AWS, Kubernetes (EKS), Terraform, RabbitMQ, PHP, PaaS, DevOps
 
-### Sainsbury’s Groceries Online – Senior Full Stack Developer
+### Sainsbury's Groceries Online – Senior Full Stack Developer
 
 *Nov 2022 – Nov 2023 · Remote · Contract (3 + 3 + 3 + 3 months)*
 
@@ -191,7 +148,7 @@ and cross-platform tools in both startup and enterprise environments.
 
 *Apr 2022 – Aug 2022 · Remote · Fintech*
 
-- Led the redesign of Baanx’s core platform to meet **scalability**, **compliance**, and **regulatory** demands (PCI
+- Led the redesign of Baanx's core platform to meet **scalability**, **compliance**, and **regulatory** demands (PCI
   DSS, PSD2, GDPR)
 - Rewrote critical product components from **Node.js/React** into **GoLang**, improving performance, modularity, and
   maintainability
@@ -212,7 +169,7 @@ and cross-platform tools in both startup and enterprise environments.
 
 - Delivered a new **internal payment service** to replace legacy SAP components, ensuring **PCI** and **PSD2**
   compliance
-- Developed and deployed **Java 11 / Spring Boot microservices** within RS’s modern DevOps environment
+- Developed and deployed **Java 11 / Spring Boot microservices** within RS's modern DevOps environment
 - Integrated services with platforms such as **Auth0**, **TokenX**, **CyberSource**, **Adflex**, and **VoxPay**
 - Worked across a high-scale cloud environment using **AWS**, **Kubernetes**, **Nomad**, and **Terraform**
 - Contributed to continuous delivery workflows, leveraging **GitLab CI**, **Datadog** for observability, and **Kong**
@@ -281,9 +238,9 @@ Jira, Linux, Agile/Scrum
 
 - Led upgrade of legacy tech stack to enable a high-pressure **data centre migration**
 - Contributed to multiple follow-on projects including:
-    - Migrating the entire eCommerce site to **HTTPS-only**
-    - Implementing **China-specific regulatory changes** for regional compliance
-    - Rewriting the B2B eCommerce solution using **Spring Boot microservices** in preparation for cloud migration
+  - Migrating the entire eCommerce site to **HTTPS-only**
+  - Implementing **China-specific regulatory changes** for regional compliance
+  - Rewriting the B2B eCommerce solution using **Spring Boot microservices** in preparation for cloud migration
 - Refactored and containerised **legacy servlet-based Java code** into modern **Docker-based microservices**, deployed
   to physical servers with a view to future cloud migration
 
@@ -295,7 +252,7 @@ Agile/Scrum, JUnit, TestNG, Mockito, Eclipse, Git, Jira
 *Nov 2015 – Feb 2016 · Peterborough · Insurance & Telematics Integration*
 
 - Contributed to the **O2 Telematics** project as part of a large Agile team
-- Designed and implemented the integration of **O2’s SSO system** into BGL’s internal services, enabling secure exchange
+- Designed and implemented the integration of **O2's SSO system** into BGL's internal services, enabling secure exchange
   of telematics data with providers and customers
 - Worked across **RESTful APIs (O2)** and **SOAP services (BGL)** to bridge legacy and modern systems
 - Delivered work in a **high-compliance insurance context**, with careful attention to data security and integration
@@ -402,7 +359,7 @@ tools, internal DevOps workflows
   Lightweight **Go** logger extension that forwards logs to **Telegram**, ideal for low-footprint services
 
 - **[GPT-Whisper-captions](https://github.com/stevenlawton/GPT-Whisper-captions)** – Public  
-  Subtitle generator using OpenAI’s Whisper API and **Go**, producing embedded captions from transcribed video audio
+  Subtitle generator using OpenAI's Whisper API and **Go**, producing embedded captions from transcribed video audio
 
 - **[xlsReader](https://github.com/stevenlawton/xlsReader)** – Public  
   **Go** library for reading legacy `.xls` Excel files; maintained fork with improvements and usage documentation
@@ -429,11 +386,11 @@ key.
 
 ## Why Me?
 
-I’m the person teams turn to when something’s complex, messy, or stuck. Whether refactoring a legacy system, standing up
+I'm the person teams turn to when something's complex, messy, or stuck. Whether refactoring a legacy system, standing up
 a new platform, or building internal tooling, I focus on leaving systems clearer, teams faster, and outcomes stronger.
-Trusted to work independently or lead delivery when it matters, I’ve built a career on pragmatism, depth, and getting
+Trusted to work independently or lead delivery when it matters, I've built a career on pragmatism, depth, and getting
 things shipped.
-Readers often conclude I’m a strong fit for platform-oriented, backend-heavy roles where autonomy, clarity, and
+Readers often conclude I'm a strong fit for platform-oriented, backend-heavy roles where autonomy, clarity, and
 consistent delivery matter.
 
 ## Contact
