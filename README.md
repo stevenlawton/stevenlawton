@@ -11,35 +11,35 @@ By night: soldering ESP32s, dodging Nerf darts, or debugging a heater relay whil
 ## 🧰 Tech Stack
 
 ### 🖥 DevOps & Infrastructure
-![Docker](https://skillicons.dev/icons?i=docker)
-![Kubernetes](https://skillicons.dev/icons?i=kubernetes)
-![Terraform](https://skillicons.dev/icons?i=terraform)
-![Helm](https://skillicons.dev/icons?i=helm)
-![GitHub Actions](https://skillicons.dev/icons?i=githubactions)
-![Linux](https://skillicons.dev/icons?i=linux)
-![Git](https://skillicons.dev/icons?i=git)
-![GitHub](https://skillicons.dev/icons?i=github)
+![Docker](https://skillicons.dev/icons?i=docker "Docker")  
+![Kubernetes](https://skillicons.dev/icons?i=kubernetes "Kubernetes")  
+![Terraform](https://skillicons.dev/icons?i=terraform "Terraform")  
+![Helm](https://skillicons.dev/icons?i=helm "Helm")  
+![GitHub Actions](https://skillicons.dev/icons?i=githubactions "GitHub Actions")  
+![Linux](https://skillicons.dev/icons?i=linux "Linux")  
+![Git](https://skillicons.dev/icons?i=git "Git")  
+![GitHub](https://skillicons.dev/icons?i=github "GitHub")
 
 ### ☁️ Cloud Platforms
-![AWS](https://skillicons.dev/icons?i=aws)
-![GCP](https://skillicons.dev/icons?i=gcp)
+![AWS](https://skillicons.dev/icons?i=aws "AWS")  
+![GCP](https://skillicons.dev/icons?i=gcp "Google Cloud Platform")
 
 ### 🧠 Backend Languages
-![Go](https://skillicons.dev/icons?i=go)
-![TypeScript](https://skillicons.dev/icons?i=ts)
-![Node.js](https://skillicons.dev/icons?i=nodejs)
-![Java](https://skillicons.dev/icons?i=java)
-![Python](https://skillicons.dev/icons?i=python)
-![Solidity](https://skillicons.dev/icons?i=solidity)
+![Go](https://skillicons.dev/icons?i=go "Go")  
+![TypeScript](https://skillicons.dev/icons?i=ts "TypeScript")  
+![Node.js](https://skillicons.dev/icons?i=nodejs "Node.js")  
+![Java](https://skillicons.dev/icons?i=java "Java")  
+![Python](https://skillicons.dev/icons?i=python "Python")  
+![Solidity](https://skillicons.dev/icons?i=solidity "Solidity")
 
 ### 🔌 APIs & Protocols
-![GraphQL](https://skillicons.dev/icons?i=graphql)  
+![GraphQL](https://skillicons.dev/icons?i=graphql "GraphQL")  
 REST · gRPC · MQTT · Modbus · BLE
 
 ### 🛢 Databases & Storage
-![PostgreSQL](https://skillicons.dev/icons?i=postgres)
-![MongoDB](https://skillicons.dev/icons?i=mongodb)
-![Redis](https://skillicons.dev/icons?i=redis)  
+![PostgreSQL](https://skillicons.dev/icons?i=postgres "PostgreSQL")  
+![MongoDB](https://skillicons.dev/icons?i=mongodb "MongoDB")  
+![Redis](https://skillicons.dev/icons?i=redis "Redis")  
 DynamoDB · InfluxDB · TimescaleDB
 
 ### 🧪 Testing & Quality
