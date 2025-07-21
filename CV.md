@@ -1,5 +1,4 @@
 # Steven Lawton - CV / Resume
-
 ## Summary
 I'm a senior software engineer with over 20 years' experience building reliable, scalable systems across fintech, retail, publishing, and Web3. I specialise in backend and platform work with GoLang microservices,  cloud-native infrastructure, and developer tooling that makes life easier.
 
@@ -19,7 +18,8 @@ I'm a developer, happiest when solving real problems for real users. I've learne
 
 - **Volunteering & Community** Longstanding **Beaver Scout Leader**, helping young people build resilience, teamwork, and skills for life. Reflecting my broader strengths in leadership, empathy, and building environments where others can thrive.
 
----
+***
+
 ## Skills
 ### Cloud-Native Backend Engineering
 - **GoLang**, Java (Spring Boot), Node.js (TypeScript), Scala: building scalable microservices and API platforms in several industries, fintech, retail, and e-commerce.
@@ -67,7 +67,8 @@ I'm a developer, happiest when solving real problems for real users. I've learne
 - Volunteer **Beaver Scout Leader**, with strong people skills, group leadership experience, and commitment to inclusive
   teamwork.
 
----
+***
+
 ## Experience
 ### Sainsbury's – Senior Full Stack Developer
 *Mar 2025 – Jul 2025 · Remote*
