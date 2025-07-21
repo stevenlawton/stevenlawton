@@ -1,9 +1,9 @@
 # 👋 Hey, I'm Steve
 
 **Full-stack dev. Horse rider. Scout leader. Maker of things that beep, click, and occasionally catch fire (on purpose).**  
-20+ years in code—real-time payments, Minecraft dashboards, weird solo tools.
+20+ years of building real-time payment systems, Minecraft dashboards, and weird solo tools that maybe only I use.
 
-By day: wrangling Go microservices, Kubernetes, API automation, and CI/CD.  
+By day: wrangling Go microservices, Kubernetes, API pipelines, and CI/CD.  
 By night: soldering ESP32s, dodging Nerf darts, or debugging a heater relay while tweaking a Minecraft plugin.
 
 ---
@@ -39,7 +39,7 @@ REST · gRPC · MQTT · Modbus · BLE
 ### 🛢 Databases & Storage
 ![PostgreSQL](https://skillicons.dev/icons?i=postgres)
 ![MongoDB](https://skillicons.dev/icons?i=mongodb)
-![Redis](https://skillicons.dev/icons?i=redis)
+![Redis](https://skillicons.dev/icons?i=redis)  
 DynamoDB · InfluxDB · TimescaleDB
 
 ### 🧪 Testing & Quality
@@ -54,19 +54,19 @@ VS Code · IntelliJ · Vim · Make · SwaggerHub · CLI Tools · DX Automation
 
 - Shipping **Go microservices** into production
 - Automating API onboarding with **GitHub Actions** & SwaggerHub
-- Bridging OpenAPI/AsyncAPI into developer portals
-- Playing with **MQTT**, **Modbus**, I/O, and real-world hardware
-- Building event-driven tools with TS, React & soldering iron
+- Wrangling OpenAPI/AsyncAPI into developer portals
+- Playing with **MQTT**, **Modbus**, and real-world hardware
+- Building event-driven tools with TypeScript, React & a soldering iron
 
 ---
 
-## 👨‍👧‍👦 Who I Am (Beyond Code)
+## 👨‍👧‍👦 Me, Outside the IDE
 
 - 🐎 Horse rider – Western tack, long rides, muddy boots
 - 🔦 Scout Leader – Building resilience (and bivvies) since forever
 - 🧠 Hacker – I poke things until they behave
 - 🧰 Tinkerer – Leatherwork, electronics, firmware, field repairs
-- 👨‍👧‍👦 Dad – Full-stack parenting, emotional patching & CSS fixes
+- 👨‍👧‍👦 Dad – Full-stack parenting: emotional patching & CSS fixes
 
 ---
 
@@ -82,8 +82,8 @@ VS Code · IntelliJ · Vim · Make · SwaggerHub · CLI Tools · DX Automation
 - **Email**: stevenlawton@gmail.com
 - **Website**: [stevenlawton.com](https://stevenlawton.com)
 - **LinkedIn**: [linkedin.com/in/steven-lawton](https://linkedin.com/in/steven-lawton)
-- **CV PDF**: [Download](https://stevenlawton.github.io/Steven-Lawton-CV.pdf)
+- **CV (PDF)**: [Download](https://stevenlawton.github.io/Steven-Lawton-CV.pdf)
 
 ---
 
-> Prefer logs to dashboards. Prefer doing to meeting. Prefer fixing it now over scheduling a meeting.
+> Prefer logs over dashboards. Prefer doing over meeting. Prefer fixing it now over scheduling a stand-up.
