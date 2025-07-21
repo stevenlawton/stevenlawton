@@ -8,36 +8,10 @@ By night: soldering ESP32s, dodging Nerf darts, or debugging a heater relay whil
 
 ---
 
-## 🧩 At a Glance
+## Skills
 
-[![Go](https://img.shields.io/badge/-Go-00ADD8?logo=go)]()
-[![TypeScript](https://img.shields.io/badge/-TypeScript-3178C6?logo=typescript)]()
-[![Java](https://img.shields.io/badge/-Java-007396?logo=java)]()
-[![Python](https://img.shields.io/badge/-Python-3776AB?logo=python)]()
-[![Solidity](https://img.shields.io/badge/-Solidity-363636?logo=solidity)]()
+[![Skills](https://skillicons.dev/icons?i=go,nodejs,ts,react,nextjs,tailwind,docker,kubernetes,aws,gcp,postgres,mysql,redis,githubactions,bash,linux,vim)](https://skillicons.dev)
 
-[![AWS](https://img.shields.io/badge/-AWS-232F3E?logo=amazonaws)]()
-[![Kubernetes](https://img.shields.io/badge/-Kubernetes-326CE5?logo=kubernetes)]()
-[![Docker](https://img.shields.io/badge/-Docker-2496ED?logo=docker)]()
-[![Terraform](https://img.shields.io/badge/-Terraform-623CE4?logo=terraform)]()
-[![Helm](https://img.shields.io/badge/-Helm-0F1C4D?logo=helm)]()
-
-[![REST](https://img.shields.io/badge/-REST-F7761E?logo=rest)]()
-[![gRPC](https://img.shields.io/badge/-gRPC-3C4043?logo=grpc)]()
-[![GraphQL](https://img.shields.io/badge/-GraphQL-E10098?logo=graphql)]()
-[![MQTT](https://img.shields.io/badge/-MQTT-4A9885?logo=mqtt)]()
-[![Modbus](https://img.shields.io/badge/-Modbus-0073A8?logo=modbus)]()
-
-[![Postgres](https://img.shields.io/badge/-Postgres-4169E1?logo=postgresql)]()
-[![DynamoDB](https://img.shields.io/badge/-DynamoDB-4053D6?logo=amazondynamodb)]()
-[![Redis](https://img.shields.io/badge/-Redis-DC382D?logo=redis)]()
-[![InfluxDB](https://img.shields.io/badge/-InfluxDB-22ADF7?logo=influxdb)]()
-
-[![GitHub Actions](https://img.shields.io/badge/-GitHub_Actions-2088FF?logo=githubactions)]()
-[![Prometheus](https://img.shields.io/badge/-Prometheus-E6522C?logo=prometheus)]()
-[![Grafana](https://img.shields.io/badge/-Grafana-F46800?logo=grafana)]()
-[![Datadog](https://img.shields.io/badge/-Datadog-632CA6?logo=datadog)]()
-[![Kong](https://img.shields.io/badge/-Kong-DD342E?logo=kong)]()
 
 ---
 
