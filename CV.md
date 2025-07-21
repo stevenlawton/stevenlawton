@@ -35,10 +35,10 @@ Spring (Boot), Akka, Scalatra, JSF, Thymeleaf, JPA/Hibernate, Keycloak, Auth0, J
 PostgreSQL, MS SQL Server, Aurora, MySQL, Oracle, MongoDB, DynamoDB, Neo4j, Infinispan, H2, SQLite
 
 **Testing & DevOps:**
-- **Go:** testing, testify, httptest, gomock, coverage tools, custom assertions
-- **Node.js:** Jest, ts-node for testing flows
-- **Java:** JUnit, TestNG, Mockito, integration test harnesses
-- **Other:** CI/CD pipelines (GitHub Actions, GitLab CI), containerisation with Docker, observability stacks (Datadog, NewRelic, Prometheus, Grafana, Kibana)
+ - **Go:** testing, testify, httptest, gomock, coverage tools, custom assertions
+ - **Node.js:** Jest, ts-node for testing flows
+ - **Java:** JUnit, TestNG, Mockito, integration test harnesses
+ - **Other:** CI/CD pipelines (GitHub Actions, GitLab CI), containerisation with Docker, observability stacks (Datadog, NewRelic, Prometheus, Grafana, Kibana)
 
 **Other Domains:**  
 Web3, Solidity, Crypto assets, Flutter/Dart, Android, SOA, RESTful/SOAP APIs, ETL, data warehousing, complex SQL, enterprise architecture, legacy modernisation, DevEx tooling
