@@ -2,30 +2,28 @@
 
 ## Summary
 
-I’m a seasoned Software Developer with a strong technical background across backend systems, infrastructure, and
-full-stack product delivery.
+I’m a senior software engineer with over 20 years’ experience building reliable, scalable systems across fintech, retail,
+publishing, and Web3. I specialise in backend and platform work — GoLang microservices, cloud-native infrastructure, and 
+developer tooling that makes life easier.
 
-- Built real-time payment systems, developer platforms, API onboarding workflows, and ML pipelines for medieval
-  manuscripts
-- Delivered systems across fintech, retail, Web3, and publishing – with highly transferable experience
-- Recent focus: GoLang microservices, Kubernetes, internal tooling, CI/CD, and platform automation
-- Regular contributor to open-source projects and long-term maintainer of personal backend tools and services
-- Equally comfortable pair programming, working solo, or leading delivery in high-autonomy teams
-- Strong communicator, hands-on builder, and pragmatic problem-solver
+I’ve migrated legacy platforms, delivered production-grade services under pressure, and led delivery in high-trust teams.
+I work fast, debug hard problems, and keep things clean, observable, and maintainable.
+
+Equally happy writing code, shaping architecture, or mentoring devs — and I’ve got a solid track record of shipping the 
+right thing without fuss.
+
+
 
 ## Personal Statement
 
-I’m an experienced Software Developer with a strong background in both hardware and software, combined with
-well-developed communication and organisational skills. I enjoy solving real-world problems through clean, scalable
-engineering and thrive in environments that value autonomy, delivery, and technical curiosity.
+I’m a hands-on builder with a track record of making complex systems simpler, faster, and easier to maintain. I thrive 
+in roles that blend technical depth with autonomy — whether scaling backend infrastructure, improving developer 
+experience, or shipping internal tools that quietly save teams hours a week.
 
-In recent projects, I’ve worked extensively with Cryptocurrency systems (including Web3 and smart contracts) and Machine
-Learning for image recognition and classification — specifically on a digital library of medieval manuscripts. I also
-maintain several long-running personal tools and backend systems, many of which I’ve recently rebuilt in GoLang to
-modernise their architecture, improve performance, and sharpen my backend infrastructure skills.
+I'm curious by nature and happiest when solving real problems for real users. Over the years, I've learned to balance 
+speed with rigour, and pragmatism with long-term thinking. I write code that works, explains itself, and plays well with 
+others — because good engineering is as much about people as it is about machines.
 
-I’m looking for a role where I can apply this broad experience to build robust systems, contribute meaningfully to a
-team, and continue learning in a high-impact environment.
 
 ## Experience Overview
 
