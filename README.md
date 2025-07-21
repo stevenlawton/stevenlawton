@@ -6,6 +6,13 @@ By day I’m in the guts of Go microservices, Kubernetes clusters, API automatio
 
 ---
 
+## 📄 Docs & Extras
+
+- [CV (Markdown)](./CV.md)
+- [Profile Summary (Markdown)](./profile.md)
+
+---
+
 ## ⚙️ What I'm into
 
 - Backend systems that scale without drama
