@@ -8,10 +8,45 @@ By night: soldering ESP32s, dodging Nerf darts, or debugging a heater relay whil
 
 ---
 
-## Skills
+## 🧰 Tech Stack
 
-[![Skills](https://skillicons.dev/icons?i=go,nodejs,ts,react,nextjs,tailwind,docker,kubernetes,aws,gcp,postgres,mysql,redis,githubactions,bash,linux,vim)](https://skillicons.dev)
+### 🖥 DevOps & Infrastructure
+![Docker](https://skillicons.dev/icons?i=docker)
+![Kubernetes](https://skillicons.dev/icons?i=kubernetes)
+![Terraform](https://skillicons.dev/icons?i=terraform)
+![Helm](https://skillicons.dev/icons?i=helm)
+![GitHub Actions](https://skillicons.dev/icons?i=githubactions)
+![Linux](https://skillicons.dev/icons?i=linux)
+![Git](https://skillicons.dev/icons?i=git)
+![GitHub](https://skillicons.dev/icons?i=github)
 
+### ☁️ Cloud Platforms
+![AWS](https://skillicons.dev/icons?i=aws)
+![GCP](https://skillicons.dev/icons?i=gcp)
+
+### 🧠 Backend Languages
+![Go](https://skillicons.dev/icons?i=go)
+![TypeScript](https://skillicons.dev/icons?i=ts)
+![Node.js](https://skillicons.dev/icons?i=nodejs)
+![Java](https://skillicons.dev/icons?i=java)
+![Python](https://skillicons.dev/icons?i=python)
+![Solidity](https://skillicons.dev/icons?i=solidity)
+
+### 🔌 APIs & Protocols
+![GraphQL](https://skillicons.dev/icons?i=graphql)  
+REST · gRPC · MQTT · Modbus · BLE
+
+### 🛢 Databases & Storage
+![PostgreSQL](https://skillicons.dev/icons?i=postgres)
+![MongoDB](https://skillicons.dev/icons?i=mongodb)
+![Redis](https://skillicons.dev/icons?i=redis)
+DynamoDB · InfluxDB · TimescaleDB
+
+### 🧪 Testing & Quality
+JUnit · TestNG · Mockito · Postman · TDD · Pair Programming
+
+### 🧑‍💻 Developer Experience & Tooling
+VS Code · IntelliJ · Vim · Make · SwaggerHub · CLI Tools · DX Automation
 
 ---
 
