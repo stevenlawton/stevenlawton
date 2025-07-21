@@ -53,8 +53,11 @@ Web3, Solidity, Crypto assets, Flutter/Dart, Android, SOA, RESTful/SOAP APIs, ET
 - Initiated and led the design of a new backend service for managing ** SwaggerHub state**, **authentication**, and **authorisation** within Sainsbury's internal **PaaS** (Kubernetes, Helm, GitHub Actions).
 
 *Technologies:* TypeScript, GitHub Actions, Docker, Kubernetes, Helm, SwaggerHub, OpenAPI, AsyncAPI
+
 ***
+
 ### Sainsbury's SmartShop – Senior Full Stack Developer
+
 *Nov 2023 – Mar 2025 · Remote*
 
 - Migrated legacy PHP services to **GoLang microservices**, significantly improving app scalability and maintainability.
@@ -66,8 +69,11 @@ Web3, Solidity, Crypto assets, Flutter/Dart, Android, SOA, RESTful/SOAP APIs, ET
 - Integrated with **GraphQL**, **REST** and **gRPC** services from other teams, ensuring compatibility and robustness across multiple protocols, while maintaining REST as the primary interface for SmartShop
 
 **Technologies:** GoLang, Android (Kotlin), iOS, Docker, AWS (ECS), TDD, Pair Programming, REST, gRPC, GraphQL
+
 ***
+
 ### Ace Web Services Ltd – Development Lead (for Barbourne Brook)
+
 *Dec 2023 – Mar 2024 · Remote · Fixed Price Project*
 
 - Replaced a fragile, underperforming **PHP application** with a scalable, event-driven data pipeline built in **GoLang**.
@@ -76,8 +82,11 @@ Web3, Solidity, Crypto assets, Flutter/Dart, Android, SOA, RESTful/SOAP APIs, ET
 - Designed for scalability, observability, and future extensibility using cloud-native best practices.
 
 *Technologies:* GoLang, Docker, AWS, Kubernetes (EKS), Terraform, RabbitMQ, PHP, PaaS, DevOps
+
 ***
+
 ### Sainsbury's Groceries Online – Senior Full Stack Developer
+
 *Nov 2022 – Nov 2023 · Remote · Contract (3 + 3 + 3 + 3 months)*
 
 - Delivered **Server-Side Rendering (SSR)** features across core grocery applications to boost performance and user experience.
@@ -88,8 +97,11 @@ Web3, Solidity, Crypto assets, Flutter/Dart, Android, SOA, RESTful/SOAP APIs, ET
 - Hardened microservices and API gateways for multi-team use in a large-scale, multi-tenant environment, with an emphasis on **governance**, **auditability**, and **resilience**.
 
 *Technologies:* GoLang, Node.js, React, Docker, AWS, Kubernetes (EKS), Terraform, DevOps, Istio, Helm, Kibana
+
 ***
+
 ### Ace Web Services Ltd – Development Lead
+
 *Oct 2022 – Dec 2022 · Remote · Fixed Price Project for whartonbc.co.uk*
 
 - Designed and delivered a bespoke self-assessment tool for Wharton Business Consultancy.
@@ -98,8 +110,11 @@ Web3, Solidity, Crypto assets, Flutter/Dart, Android, SOA, RESTful/SOAP APIs, ET
 - Delivered a full-stack solution using **GoLang**, **React**, and **PostgreSQL**, deployed on **AWS** with containerisation via **K8s**
 
 *Technologies:* GoLang, Docker, AWS, Postgres, React
+
 ***
+
 ### Baanx Group – Development Lead
+
 *Apr 2022 – Aug 2022 · Remote · Fintech*
 
 - Led the redesign of Baanx's core platform to meet **scalability**, **compliance**, and **regulatory** demands (PCI DSS, PSD2, GDPR).
@@ -112,8 +127,11 @@ Web3, Solidity, Crypto assets, Flutter/Dart, Android, SOA, RESTful/SOAP APIs, ET
   internal teams
 
 *Technologies:* GoLang, Node.js, React, Docker, Terraform, RDS, Keycloak
+
 ***
+
 ### RS Components – Senior Developer
+
 *Sep 2021 – Apr 2022 · Remote · Retail/Engineering*
 
 - Delivered a new **internal payment service** to replace legacy SAP components, ensuring **PCI** and **PSD2**  compliance.
@@ -123,8 +141,11 @@ Web3, Solidity, Crypto assets, Flutter/Dart, Android, SOA, RESTful/SOAP APIs, ET
 - Contributed to continuous delivery workflows, leveraging **GitLab CI**, **Datadog** for observability, and **Kong** for API management.
 
 *Technologies:* Java 11, Spring Boot, Docker, AWS, Kubernetes, Nomad, GitLab, Terraform, DynamoDB, RDS, Datadog, NewRelic, Swagger, Kong, Auth0.
+
 ***
+
 ### Rayvn.digital / Monavate Ltd – Senior Developer
+
 *May 2021 – Sep 2021 · Remote · Fintech / Blockchain*
 
 - Helped design and build a **multi-vendor marketplace and eCommerce platform** using **GoLang**, **Kafka**, and **Kubernetes**.
@@ -134,8 +155,11 @@ Web3, Solidity, Crypto assets, Flutter/Dart, Android, SOA, RESTful/SOAP APIs, ET
 - Supported product evolution across **Ethereum**, **Solidity**, and decentralised technologies
 
 *Technologies:* GoLang, Kafka, Java, Kubernetes, Docker, Azure, Linux, GitLab, Ethereum, Solidity, Jekyll
+
 ***
+
 ### Primis Mortgage Network – Java Developer
+
 *Feb 2021 – May 2021 - Remote · Financial Services*
 
 - Maintained and extended the **Toolbox platform**, a key compliance and workflow tool used across the mortgage network.
@@ -144,8 +168,11 @@ Web3, Solidity, Crypto assets, Flutter/Dart, Android, SOA, RESTful/SOAP APIs, ET
 - Contributed to stabilising and incrementally modernising the codebase while supporting live service delivery.
 
 *Technologies:* Java, Spring Boot, Angular, Struts, EJB3, JSP, IntelliJ, Linux, GitLab
+
 ***
+
 ### Samsung – Java Developer
+
 *Oct 2018 – Feb 2021 - Cambridge (Onsite & Remote) · Mobile / Embedded Systems*
 
 - Contributed to **automated testing tooling** for Android devices, used globally to benchmark RF connectivity and performance.
@@ -155,8 +182,11 @@ Web3, Solidity, Crypto assets, Flutter/Dart, Android, SOA, RESTful/SOAP APIs, ET
 - Ensured seamless interaction between test scripts, Android devices, and a central results processing system
 
 *Technologies:* Java, Python, Android SDK, Bash, IntelliJ, Linux, Git, Gerrit, JUnit, TestNG, Mockito, Jira, Agile/Scrum
+
 ***
+
 ### Nokia – Java Developer
+
 *May 2018 – Sept 2018 · Cambridge - Video Ad Delivery / Media Streaming*
 
 - Built **RESTful Spring Boot microservices** to serve re-encoded, personalised video ads on-the-fly based on user streaming profiles.
@@ -165,8 +195,11 @@ Web3, Solidity, Crypto assets, Flutter/Dart, Android, SOA, RESTful/SOAP APIs, ET
 - Delivered unit and integration test coverage using **JUnit**, **Mockito**, and **TestNG**
 
 *Technologies:* Java 8, Spring Boot, Docker, Spring MVC, Eureka, Zuul, MySQL Cluster, Python, IntelliJ, Git, GitLab, Jira, Linux, Agile/Scrum
+
 ***
+
 ### RS Components – Java Developer
+
 *October 2016 – April 2018 · Corby · Infrastructure Modernisation & eCommerce*
 
 - Led upgrade of legacy tech stack to enable a high-pressure **data centre migration**
@@ -176,9 +209,12 @@ Web3, Solidity, Crypto assets, Flutter/Dart, Android, SOA, RESTful/SOAP APIs, ET
   - Rewriting the B2B eCommerce solution using **Spring Boot microservices** in preparation for cloud migration.
 - Refactored and containerised **legacy servlet-based Java code** into modern **Docker-based microservices**, deployed to physical servers with a view to future cloud migration.
 
-*Technologies:* Docker, Spring Boot, mongo, Seam, Struts, Oracle, Java, Spring MVC, JBoss, Linux, Apache, JPA/hibernate,  Agile/Scrum, RESTful Web Services, SOA continuous build, JUnit, TestNG, Mockito, Jira.
+*Technologies:* Docker, Spring Boot, mongo, Seam, Struts, Oracle, Java, Spring MVC, JBoss, Linux, Apache, JPA/hibernate, Agile/Scrum, RESTful Web Services, SOA continuous build, JUnit, TestNG, Mockito, Jira.
+
 ***
+
 ### BGL Group – Java Developer
+
 *Nov 2015 – Feb 2016 · Peterborough · Insurance & Telematics Integration*
 
 - Contributed to the **O2 Telematics** project as part of a large Agile team.
@@ -187,8 +223,11 @@ Web3, Solidity, Crypto assets, Flutter/Dart, Android, SOA, RESTful/SOAP APIs, ET
 - Delivered work in a **high-compliance insurance context**, with careful attention to data security and integration reliability.
 
 *Technologies:* Java, Mule ESB, Tomcat, REST, SOAP, SSO, Git, Jira, Bamboo, Confluence
+
 ***
+
 ### MoMo Group Ltd – Java/Scala Developer
+
 *Jan 2015 – Nov 2015 · Cambridge · Fintech Startup*
 
 - Delivered backend services for **MoMo Top** (global mobile top-up via PayPal) and a new **mobile banking application**.
@@ -197,8 +236,11 @@ Web3, Solidity, Crypto assets, Flutter/Dart, Android, SOA, RESTful/SOAP APIs, ET
 - Built RESTful APIs and service-oriented components to support mobile-first user experiences in global financial contexts.
 
 *Technologies:* Scala, Java, Akka, Scalatra, MySQL, MyBatis, T24, Tomcat, Jetty, Nginx, Linux, Jira, Bitbucket, Bamboo, Confluence.
+
 ***
+
 ### Jagex Ltd – Java Developer / Web Systems Developer
+
 *2013 – 2014 · Cambridge · Games / Online Services*
 
 - Maintained and extended the **Microtransaction (MTX) platform** powering in-game and app-based purchases for Jagex titles.
@@ -208,8 +250,11 @@ Web3, Solidity, Crypto assets, Flutter/Dart, Android, SOA, RESTful/SOAP APIs, ET
 - Built service-oriented backend components and participated in cross-team software-as-a-service (SaaS) integrations.
 
 *Technologies:* Java, Groovy, Spring MVC, JPA/Hibernate, Postgres, Informix, Neo4j, Infinispan, RabbitMQ, JBoss, Linux, Nginx, Git, Eclipse, Jira, JUnit, TestNG, Mockito.
+
 ***
+
 ### PCMS – Java Developer
+
 *2011 – 2013 · Huntingdon · Retail Software (ePOS)*
 
 - Delivered a custom **Electronic Point of Sale (ePOS)** platform for a Tier 1 Australian retailer, completing the project **three months ahead of schedule** and **under budget** - a first for the company.
@@ -219,8 +264,11 @@ Web3, Solidity, Crypto assets, Flutter/Dart, Android, SOA, RESTful/SOAP APIs, ET
 - Supported internal testing teams by providing fixes, guidance, and context on implementation and expected behaviour
 
 *Technologies:* Java, Spring MVC, Struts, JPA/Hibernate, DB2, Oracle, JBoss, WebSphere, Linux, Mercurial, Eclipse, JUnit, TestNG, Mockito, iText, Maven, Crystal Reports, Jira.
+
 ***
+
 ### TravelTainment Ltd – Developer
+
 *2010 – 2011 · Peterborough · Travel Tech / eCommerce*
 
 - Developed and maintained **enterprise web applications** used by travel agents and tour operators worldwide, built using **Java, PHP, and Seam**.
@@ -230,8 +278,11 @@ Web3, Solidity, Crypto assets, Flutter/Dart, Android, SOA, RESTful/SOAP APIs, ET
 - Involved in **technical interviewing**, assessing candidates and advising management on hiring decisions.
 
 *Technologies:* Java, PHP, Seam, Spring Web Flow, jQuery, JBoss, JBoss ESB, XSLT, JPA/Hibernate, DB2, Oracle, MySQL, LDAP, Linux, SVN, Maven, JUnit, TestNG, Eclipse, Jira.
+
 ***
+
 ### Whistlebrook Ltd – Analyst Developer
+
 *2004 – 2010 · St Ives, Cambridgeshire · Fintech / Bespoke Software*
 
 - Delivered full lifecycle software solutions for high-profile clients including **Suzuki GB**, **TNT**, and major **UK building societies**.
@@ -245,8 +296,11 @@ Web3, Solidity, Crypto assets, Flutter/Dart, Android, SOA, RESTful/SOAP APIs, ET
 
 *Technologies:* VB.NET, C#, Java, SQL Server, Oracle, legacy MS Access systems, IIS, Windows Server, VMWare, bespoke ETL
 tools, internal DevOps workflows
+
 ***
+
 ## Open Source & Personal Projects
+
 ### [Sphinx.chat](http://sphinx.chat/) – Contributor *(2023, Paid Bounty Work)*
 
 - Contribute GoLang, Node.js, and Docker-based features to a Lightning Network-powered chat, social, and payments platform.
