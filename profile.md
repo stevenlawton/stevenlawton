@@ -1,4 +1,4 @@
-## Steven Lawton — Technical Profile
+## Steven Lawton - Technical Profile
 
 Senior Software Developer with over 20 years’ experience delivering robust, scalable backend systems across fintech, 
 retail, Web3, and publishing. Known for pragmatic problem-solving, deep technical breadth, and consistent delivery in 

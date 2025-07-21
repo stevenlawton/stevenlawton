@@ -32,19 +32,34 @@ jobs:
       - name: Create output directory
         run: mkdir -p output
 
-      - name: Convert Markdown to HTML
+      - name: Convert Markdown to HTML - CV
         run: |
           pandoc CV.md \
             --template=templates/template.html \
             --metadata title="Steven Lawton – CV" \
             -f markdown -t html -s -o output/index.html
 
-      - name: Convert Markdown to PDF
+      - name: Convert Markdown to HTML - profile
+        run: |
+          pandoc profile.md \
+            --template=templates/template.profile.html \
+            --metadata title="Steven Lawton – Profile" \
+            -f markdown -t html -s -o output/profile.html
+
+      - name: Convert Markdown to PDF - CV
         run: |
           pandoc CV.md \
             --metadata title="Steven Lawton – CV" \
             -t html5 \
             -s -o output/Steven-Lawton-CV.pdf \
+            --pdf-engine=wkhtmltopdf
+
+      - name: Convert Markdown to PDF - Profile
+        run: |
+          pandoc profile.md \
+            --metadata title="Steven Lawton – profile" \
+            -t html5 \
+            -s -o output/Steven-Lawton-Profile.pdf \
             --pdf-engine=wkhtmltopdf
 
       - name: Upload output files for deployment
@@ -53,7 +68,7 @@ jobs:
           name: site
           path: output/
 
-  commit-pdf:
+  commit-pdfs:
     needs: build
     runs-on: ubuntu-latest
     steps:
@@ -72,6 +87,7 @@ jobs:
         run: |
           mkdir -p assets
           cp output/Steven-Lawton-CV.pdf assets/Steven-Lawton-CV.pdf          
+          cp output/Steven-Lawton-Profile.pdf assets/Steven-Lawton-Profile.pdf          
 
       - name: Commit PDF
         run: |
@@ -79,15 +95,16 @@ jobs:
           git config user.email "github-actions[bot]@users.noreply.github.com"
           
           git add -f assets/Steven-Lawton-CV.pdf
+          git add -f assets/Steven-Lawton-Profile.pdf
           if ! git diff --cached --quiet; then
-            git commit -m "Update PDF version of CV"
+            git commit -m "Update PDF version of CV/Profile"
             git push
           else
             echo "No changes to commit."
           fi
 
   publish:
-    needs: [build, commit-pdf]
+    needs: [build, commit-pdfs]
     runs-on: ubuntu-latest
     steps:
       - name: Checkout repository (for context)
@@ -106,7 +123,8 @@ jobs:
           echo "=== Listing output/pdf ==="
           ls -la output/*.pdf || true
           echo "=== Listing output/html ==="
-          cat output/index.html || echo "No HTML found"
+          cat output/index.html || echo "No CV HTML found"
+          cat output/profile.html || echo "No Profile HTML found"
 
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3

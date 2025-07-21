@@ -10,8 +10,8 @@ debugging a Minecraft plugin.
 ---
 
 ## 📄 Docs & Extras
-- [CV (Markdown)](./CV.md) | [CV (HTML)](https://stevenlawton.github.io/stevenlawton/) | [CV (PDF)](https://stevenlawton.github.io/stevenlawton/Steven-Lawton-CV.pdf)
-- [Profile Summary (Markdown)](./profile.md)
+- CV: [(Markdown)](./CV.md) | [(HTML)](https://stevenlawton.github.io/stevenlawton/) | [(PDF)](https://stevenlawton.github.io/stevenlawton/Steven-Lawton-CV.pdf)
+- Profile Summary: [(Markdown)](./profile.md)  | [(HTML)](https://stevenlawton.github.io/stevenlawton/profile.html) | [(PDF)](https://stevenlawton.github.io/stevenlawton/Steven-Lawton-Profile.pdf)
 
 ---
 

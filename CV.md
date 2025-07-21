@@ -11,9 +11,6 @@ I'm a hands-on Software Engineer with a track record of simplifying and improvin
 
 I'm a developer, happiest when solving real problems for real users. I've learned to balance speed with rigour, and pragmatism with long-term thinking. I write code that works and self-documents. Sound engineering is as much about people as it is about the code.
 
-## Experience Overview
-Over 20 years of professional software development, across roles ranging from hands-on contributor to team lead, and industries including fintech, retail, Web3, and publishing. I've worked on backend systems, cloud-native infrastructure, and cross-platform tools in both startup and global companies.
-
 - **Communication & Collaboration** I have worked with engineers, product teams, business stakeholders, and leadership. I'm equally comfortable pair programming, mentoring junior developers, or leading cross-functional delivery efforts. I have worked in fully remote, hybrid, and co-located teams.
 
 - **Problem-Solving & Adaptability** I'm experienced in debugging legacy systems, designing clean architectures, and migrating codebases under time or regulatory pressure. Able to operate under uncertainty, pick up unfamiliar tech quickly, and make pragmatic trade-offs to get things delivered.
@@ -71,7 +68,6 @@ Over 20 years of professional software development, across roles ranging from ha
   teamwork.
 
 ---
-
 ## Experience
 ### Sainsbury's – Senior Full Stack Developer
 *Mar 2025 – Jul 2025 · Remote*
