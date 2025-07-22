@@ -10,8 +10,10 @@ debugging a Minecraft plugin.
 ---
 
 ## 📄 Docs & Extras
+[![Build and Deploy CV & Profile](https://github.com/stevenlawton/stevenlawton/actions/workflows/build-pages.yml/badge.svg)](https://github.com/stevenlawton/stevenlawton/actions/workflows/build-pages.yml)
+
 - CV: [(Markdown)](./CV.md) | [(HTML)](https://stevenlawton.github.io/stevenlawton/) | [(PDF)](https://stevenlawton.github.io/stevenlawton/Steven-Lawton-CV.pdf)
-- Profile Summary: [(Markdown)](./profile.md)  | [(HTML)](https://stevenlawton.github.io/stevenlawton/profile.html) | [(PDF)](https://stevenlawton.github.io/stevenlawton/Steven-Lawton-Profile.pdf)
+- Profile Summary: [(Markdown)](./profile.md)  | [(HTML)](https://stevenlawton.github.io/stevenlawton/profile.html) | [(PDF)](https://stevenlawton.github.io/stevenlawton/Steven-Lawton-Profile.pdf) 
 
 ---
 
