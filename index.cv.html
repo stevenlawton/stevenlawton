@@ -5,101 +5,84 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Steven Lawton – CV</title>
     <style>
-        h3 + p {
-            margin-bottom: 1rem;
+        @page {
+            margin: 20mm 15mm;
         }
-
-        p {
-            word-break: break-word;
+        body h1:first-of-type {
+            display: none;
         }
-        section.experience {
-            page-break-inside: avoid;
-            break-inside: avoid;
-        }
-
         body {
             font-family: system-ui, sans-serif;
-            font-size: 14.25px;
             margin: 2rem auto;
-            max-width: 720px;
+            max-width: 800px;
             padding: 0 1rem;
-            line-height: 1.75;
+            line-height: 1.6;
+            font-size: 11pt;
         }
-
-        body > h1:first-of-type {
-            display: none;
+        h2#experience {
+            page-break-before: always;
+            margin-top: 0;
         }
-
-        hr {
-            display: none;
+        h1, h2, h3 {
+            page-break-after: avoid;
+            page-break-inside: avoid;
         }
-
-        h1 {
-            font-size: 1.4rem;
-            margin-top: 2.5rem;
-            margin-bottom: 1rem;
-            color: #222;
-        }
-
-        h2 {
-            font-size: 1.2rem;
-            margin-top: 2rem;
-            margin-bottom: 0.5rem;
-            color: #222;
-        }
-
         h3 {
-            font-size: 1.05rem;
+            font-size: 1.25rem;
+            font-weight: 700;
             margin-bottom: 0.25rem;
-            margin-top: 1rem;
-            color: #222;
         }
-
         a {
             color: #007acc;
             text-decoration: none;
         }
-
         a:hover {
             text-decoration: underline;
         }
-
-        code {
-            background: #f5f5f5;
-            padding: 0.2rem 0.4rem;
-            border-radius: 3px;
+        hr {
+            display: none;
         }
-
-        pre {
-            background: #f5f5f5;
-            padding: 1rem;
-            overflow-x: auto;
-        }
-
         .cv-header {
             text-align: center;
             margin-bottom: 2rem;
         }
-
         .cv-header h1 {
             margin: 0;
-            font-size: 1.6rem;
+            font-size: 1.8rem;
             color: #004488;
         }
-
         .cv-header .company {
             font-weight: bold;
             color: #004488;
         }
-
-        .cv-header .address {
-            color: #444;
-        }
-
         .cv-header .contact {
             font-weight: bold;
             margin-top: 0.2rem;
         }
+
+        /* Experience sections */
+        section.experience {
+            page-break-inside: avoid;
+            break-inside: avoid;
+            padding-bottom: 3mm;
+            border-bottom: 0.4pt solid #ccc;
+            margin-top: 1rem;
+            margin-bottom: 0.5rem;
+        }
+
+        section.experience + section.experience {
+            margin-top: 0.5rem;
+        }
+
+        ul {
+            margin: 0 0 0.75em 1.5em;
+            padding: 0;
+        }
+
+        li {
+            margin-bottom: 0.25em;
+        }
+
     </style>
 
 </head>
@@ -128,17 +111,17 @@ includes:</p>
 migration, and observability-first design.</li>
 <li><strong>Infrastructure</strong> - migrating legacy systems to
 scalable, containerised microservices.</li>
-<li><strong>Cloud-native engineering</strong> – developing microservices
+<li><strong>Cloud-native engineering</strong> - developing microservices
 deployed to AWS/GCP, Kubernetes, and PaaS platforms.</li>
-<li><strong>Regulatory and compliance</strong> – systems aligned with
+<li><strong>Regulatory and compliance</strong> - systems aligned with
 PCII DSS, GDPR, PSD2, and internal audit frameworks.</li>
-<li><strong>Event-driven</strong> – RabbitMQ, Kafka, and event-driven
+<li><strong>Event-driven</strong> - RabbitMQ, Kafka, and event-driven
 systems built for scale and resilience.</li>
-<li><strong>Payments</strong> – internal and customer-facing flows
+<li><strong>Payments</strong> - internal and customer-facing flows
 across fintech, retail, and embedded environments.</li>
-<li><strong>API design</strong> – OpenAPI/AsyncAPI publishing pipelines,
+<li><strong>API design</strong> - OpenAPI/AsyncAPI publishing pipelines,
 mocking, validation, and spec-first development.</li>
-<li><strong>Internal tools and automation</strong> – building tools that
+<li><strong>Internal tools and automation</strong> - building tools that
 unblock teams and reduce manual effort.</li>
 </ul>
 <p>I enjoy solving problems. I’ve learned to balance speed with rigour
@@ -179,9 +162,10 @@ APIs, ETL, data warehousing, complex SQL, enterprise architecture,
 legacy modernisation, DevEx tooling</p>
 <hr />
 <h2 id="experience">Experience</h2>
-<section id="sainsburys-senior-full-stack-developer" class="experience">
-<h3>Sainsbury’s – Senior Full Stack Developer</h3>
-<p><em>Mar 2025 – Jul 2025 - Remote</em></p>
+<section id="sainsburys---senior-full-stack-developer"
+class="experience">
+<h3>Sainsbury’s - Senior Full Stack Developer</h3>
+<p><em>Mar 2025 - Jul 2025 - Remote</em></p>
 <ul>
 <li>Improved developer experience by building robust <strong>GitHub
 Actions</strong> and reusable workflows in <strong>TypeScript</strong>
@@ -198,10 +182,10 @@ specifications into <strong>SwaggerHub Design Hub</strong> and
 Kubernetes, Helm, SwaggerHub, OpenAPI, AsyncAPI</p>
 <hr />
 </section>
-<section id="sainsburys-smartshop-senior-full-stack-developer"
+<section id="sainsburys-smartshop---senior-full-stack-developer"
 class="experience">
-<h3>Sainsbury’s SmartShop – Senior Full Stack Developer</h3>
-<p><em>Nov 2023 – Mar 2025 - Remote</em></p>
+<h3>Sainsbury’s SmartShop - Senior Full Stack Developer</h3>
+<p><em>Nov 2023 - Mar 2025 - Remote</em></p>
 <ul>
 <li>Migrated legacy PHP services to <strong>GoLang
 microservices</strong>, significantly improving app scalability and
@@ -231,10 +215,11 @@ primary interface for SmartShop</li>
 AWS (ECS), TDD, Pair Programming, REST, gRPC, GraphQL</p>
 <hr />
 </section>
-<section id="ace-web-services-ltd-development-lead-for-barbourne-brook"
+<section
+id="ace-web-services-ltd---development-lead-for-barbourne-brook"
 class="experience">
-<h3>Ace Web Services Ltd – Development Lead (for Barbourne Brook)</h3>
-<p><em>Dec 2023 – Mar 2024 - Remote - Fixed Price Project</em></p>
+<h3>Ace Web Services Ltd - Development Lead (for Barbourne Brook)</h3>
+<p><em>Dec 2023 - Mar 2024 - Remote - Fixed Price Project</em></p>
 <ul>
 <li>Replaced a fragile, underperforming <strong>PHP application</strong>
 with a scalable, event-driven data pipeline built in
@@ -251,10 +236,10 @@ using cloud-native best practices.</li>
 Terraform, RabbitMQ, PHP, PaaS, DevOps</p>
 <hr />
 </section>
-<section id="sainsburys-groceries-online-senior-full-stack-developer"
+<section id="sainsburys-groceries-online---senior-full-stack-developer"
 class="experience">
-<h3>Sainsbury’s Groceries Online – Senior Full Stack Developer</h3>
-<p><em>Nov 2022 – Nov 2023 - Remote - Contract (3 + 3 + 3 + 3
+<h3>Sainsbury’s Groceries Online - Senior Full Stack Developer</h3>
+<p><em>Nov 2022 - Nov 2023 - Remote - Contract (3 + 3 + 3 + 3
 months)</em></p>
 <ul>
 <li>Delivered <strong>Server-Side Rendering (SSR)</strong> features
@@ -281,9 +266,10 @@ large-scale, multi-tenant environment, with an emphasis on
 Kubernetes (EKS), Terraform, DevOps, Istio, Helm, Kibana</p>
 <hr />
 </section>
-<section id="ace-web-services-ltd-development-lead" class="experience">
-<h3>Ace Web Services Ltd – Development Lead</h3>
-<p><em>Oct 2022 – Dec 2022 - Remote - Fixed Price Project for
+<section id="ace-web-services-ltd---development-lead"
+class="experience">
+<h3>Ace Web Services Ltd - Development Lead</h3>
+<p><em>Oct 2022 - Dec 2022 - Remote - Fixed Price Project for
 whartonbc.co.uk</em></p>
 <ul>
 <li>Designed and delivered a bespoke self-assessment tool for Wharton
@@ -299,9 +285,9 @@ expected role competencies and suggests training pathways.</li>
 <p><em>Technologies:</em> GoLang, Docker, AWS, Postgres, React</p>
 <hr />
 </section>
-<section id="baanx-group-development-lead" class="experience">
-<h3>Baanx Group – Development Lead</h3>
-<p><em>Apr 2022 – Aug 2022 - Remote - Fintech</em></p>
+<section id="baanx-group---development-lead" class="experience">
+<h3>Baanx Group - Development Lead</h3>
+<p><em>Apr 2022 - Aug 2022 - Remote - Fintech</em></p>
 <ul>
 <li>Led the redesign of Baanx’s core platform to meet
 <strong>scalability</strong>, <strong>compliance</strong>, and
@@ -327,9 +313,9 @@ process redesign, and technical upskilling of internal teams</li>
 RDS, Keycloak</p>
 <hr />
 </section>
-<section id="rs-components-senior-developer" class="experience">
-<h3>RS Components – Senior Developer</h3>
-<p><em>Sep 2021 – Apr 2022 - Remote - Retail/Engineering</em></p>
+<section id="rs-components---senior-developer" class="experience">
+<h3>RS Components - Senior Developer</h3>
+<p><em>Sep 2021 - Apr 2022 - Remote - Retail/Engineering</em></p>
 <ul>
 <li>Delivered a new <strong>internal payment service</strong> to replace
 legacy SAP components, ensuring <strong>PCI</strong> and
@@ -351,10 +337,10 @@ Nomad, GitLab, Terraform, DynamoDB, RDS, Datadog, NewRelic, Swagger,
 Kong, Auth0.</p>
 <hr />
 </section>
-<section id="rayvn.digital-monavate-ltd-senior-developer"
+<section id="rayvn.digital-monavate-ltd---senior-developer"
 class="experience">
-<h3>Rayvn.digital / Monavate Ltd – Senior Developer</h3>
-<p><em>May 2021 – Sep 2021 - Remote - Fintech / Blockchain</em></p>
+<h3>Rayvn.digital / Monavate Ltd - Senior Developer</h3>
+<p><em>May 2021 - Sep 2021 - Remote - Fintech / Blockchain</em></p>
 <ul>
 <li>Helped design and build a <strong>multi-vendor marketplace and
 eCommerce platform</strong> using <strong>GoLang</strong>,
@@ -375,9 +361,10 @@ MS365 migration</strong> for 30+ employees</li>
 Azure, Linux, GitLab, Ethereum, Solidity, Jekyll</p>
 <hr />
 </section>
-<section id="primis-mortgage-network-java-developer" class="experience">
-<h3>Primis Mortgage Network – Java Developer</h3>
-<p><em>Feb 2021 – May 2021 - Remote - Financial Services</em></p>
+<section id="primis-mortgage-network---java-developer"
+class="experience">
+<h3>Primis Mortgage Network - Java Developer</h3>
+<p><em>Feb 2021 - May 2021 - Remote - Financial Services</em></p>
 <ul>
 <li>Maintained and extended the <strong>Toolbox platform</strong>, a key
 compliance and workflow tool used across the mortgage network.</li>
@@ -394,9 +381,9 @@ codebase while supporting live service delivery.</li>
 IntelliJ, Linux, GitLab</p>
 <hr />
 </section>
-<section id="samsung-java-developer" class="experience">
-<h3>Samsung – Java Developer</h3>
-<p><em>Oct 2018 – Feb 2021 - Cambridge (Onsite &amp; Remote) - Mobile /
+<section id="samsung---java-developer" class="experience">
+<h3>Samsung - Java Developer</h3>
+<p><em>Oct 2018 - Feb 2021 - Cambridge (Onsite &amp; Remote) - Mobile /
 Embedded Systems</em></p>
 <ul>
 <li>Contributed to <strong>automated testing tooling</strong> for
@@ -415,9 +402,9 @@ and a central results processing system</li>
 Linux, Git, Gerrit, JUnit, TestNG, Mockito, Jira, Agile/Scrum</p>
 <hr />
 </section>
-<section id="nokia-java-developer" class="experience">
-<h3>Nokia – Java Developer</h3>
-<p><em>May 2018 – Sept 2018 - Cambridge - Video Ad Delivery / Media
+<section id="nokia---java-developer" class="experience">
+<h3>Nokia - Java Developer</h3>
+<p><em>May 2018 - Sept 2018 - Cambridge - Video Ad Delivery / Media
 Streaming</em></p>
 <ul>
 <li>Built <strong>RESTful Spring Boot microservices</strong> to serve
@@ -437,9 +424,9 @@ Eureka, Zuul, MySQL Cluster, Python, IntelliJ, Git, GitLab, Jira, Linux,
 Agile/Scrum</p>
 <hr />
 </section>
-<section id="rs-components-java-developer" class="experience">
-<h3>RS Components – Java Developer</h3>
-<p><em>October 2016 – April 2018 - Corby - Infrastructure Modernisation
+<section id="rs-components---java-developer" class="experience">
+<h3>RS Components - Java Developer</h3>
+<p><em>October 2016 - April 2018 - Corby - Infrastructure Modernisation
 &amp; eCommerce</em></p>
 <ul>
 <li>Led upgrade of legacy tech stack to enable a high-pressure
@@ -463,9 +450,9 @@ Agile/Scrum, RESTful Web Services, SOA continuous build, JUnit, TestNG,
 Mockito, Jira.</p>
 <hr />
 </section>
-<section id="bgl-group-java-developer" class="experience">
-<h3>BGL Group – Java Developer</h3>
-<p><em>Nov 2015 – Feb 2016 - Peterborough - Insurance &amp; Telematics
+<section id="bgl-group---java-developer" class="experience">
+<h3>BGL Group - Java Developer</h3>
+<p><em>Nov 2015 - Feb 2016 - Peterborough - Insurance &amp; Telematics
 Integration</em></p>
 <ul>
 <li>Contributed to the <strong>O2 Telematics</strong> project as part of
@@ -483,9 +470,9 @@ integration reliability.</li>
 Jira, Bamboo, Confluence</p>
 <hr />
 </section>
-<section id="momo-group-ltd-javascala-developer" class="experience">
-<h3>MoMo Group Ltd – Java/Scala Developer</h3>
-<p><em>Jan 2015 – Nov 2015 - Cambridge - Fintech Startup</em></p>
+<section id="momo-group-ltd---javascala-developer" class="experience">
+<h3>MoMo Group Ltd - Java/Scala Developer</h3>
+<p><em>Jan 2015 - Nov 2015 - Cambridge - Fintech Startup</em></p>
 <ul>
 <li>Delivered backend services for <strong>MoMo Top</strong> (global
 mobile top-up via PayPal) and a new <strong>mobile banking
@@ -504,10 +491,10 @@ T24, Tomcat, Jetty, Nginx, Linux, Jira, Bitbucket, Bamboo,
 Confluence.</p>
 <hr />
 </section>
-<section id="jagex-ltd-java-developer-web-systems-developer"
+<section id="jagex-ltd---java-developer-web-systems-developer"
 class="experience">
-<h3>Jagex Ltd – Java Developer / Web Systems Developer</h3>
-<p><em>2013 – 2014 - Cambridge - Games / Online Services</em></p>
+<h3>Jagex Ltd - Java Developer / Web Systems Developer</h3>
+<p><em>2013 - 2014 - Cambridge - Games / Online Services</em></p>
 <ul>
 <li>Maintained and extended the <strong>Microtransaction (MTX)
 platform</strong> powering in-game and app-based purchases for Jagex
@@ -528,9 +515,9 @@ Postgres, Informix, Neo4j, Infinispan, RabbitMQ, JBoss, Linux, Nginx,
 Git, Eclipse, Jira, JUnit, TestNG, Mockito.</p>
 <hr />
 </section>
-<section id="pcms-java-developer" class="experience">
-<h3>PCMS – Java Developer</h3>
-<p><em>2011 – 2013 - Huntingdon - Retail Software (ePOS)</em></p>
+<section id="pcms---java-developer" class="experience">
+<h3>PCMS - Java Developer</h3>
+<p><em>2011 - 2013 - Huntingdon - Retail Software (ePOS)</em></p>
 <ul>
 <li>Delivered a custom <strong>Electronic Point of Sale (ePOS)</strong>
 platform for a Tier 1 Australian retailer, completing the project
@@ -552,9 +539,9 @@ Oracle, JBoss, WebSphere, Linux, Mercurial, Eclipse, JUnit, TestNG,
 Mockito, iText, Maven, Crystal Reports, Jira.</p>
 <hr />
 </section>
-<section id="traveltainment-ltd-developer" class="experience">
-<h3>TravelTainment Ltd – Developer</h3>
-<p><em>2010 – 2011 - Peterborough - Travel Tech / eCommerce</em></p>
+<section id="traveltainment-ltd---developer" class="experience">
+<h3>TravelTainment Ltd - Developer</h3>
+<p><em>2010 - 2011 - Peterborough - Travel Tech / eCommerce</em></p>
 <ul>
 <li>Developed and maintained <strong>enterprise web
 applications</strong> used by travel agents and tour operators
@@ -575,9 +562,9 @@ JBoss, JBoss ESB, XSLT, JPA/Hibernate, DB2, Oracle, MySQL, LDAP, Linux,
 SVN, Maven, JUnit, TestNG, Eclipse, Jira.</p>
 <hr />
 </section>
-<section id="whistlebrook-ltd-analyst-developer" class="experience">
-<h3>Whistlebrook Ltd – Analyst Developer</h3>
-<p><em>2004 – 2010 - St Ives, Cambridgeshire - Fintech / Bespoke
+<section id="whistlebrook-ltd---analyst-developer" class="experience">
+<h3>Whistlebrook Ltd - Analyst Developer</h3>
+<p><em>2004 - 2010 - St Ives, Cambridgeshire - Fintech / Bespoke
 Software</em></p>
 <ul>
 <li>Delivered full lifecycle software solutions for high-profile clients
@@ -606,8 +593,8 @@ internal DevOps workflows</p>
 </section>
 <h2 id="open-source-personal-projects">Open Source &amp; Personal
 Projects</h2>
-<h3 id="sphinx.chat-contributor-2023-paid-bounty-work"><a
-href="http://sphinx.chat/">Sphinx.chat</a> – Contributor <em>(2023, Paid
+<h3 id="sphinx.chat---contributor-2023-paid-bounty-work"><a
+href="http://sphinx.chat/">Sphinx.chat</a> - Contributor <em>(2023, Paid
 Bounty Work)</em></h3>
 <ul>
 <li>Contribute GoLang, Node.js, and Docker-based features to a Lightning
@@ -620,23 +607,23 @@ Projects</h3>
 <ul>
 <li><p><strong><a
 href="https://github.com/stevenlawton/ip-monitor">ip-monitor</a></strong>
-– Public<br />
+- Public<br />
 Discord bot written in <strong>Go</strong> to monitor IP changes and
 broadcast updates; includes pinned message sync and basic
 alerting.</p></li>
 <li><p><strong><a
 href="https://github.com/stevenlawton/go-telegram-alert">go-telegram-alert</a></strong>
-– Public<br />
+- Public<br />
 Lightweight <strong>Go</strong> logger extension that forwards logs to
 <strong>Telegram</strong>, ideal for low-footprint services</p></li>
 <li><p><strong><a
 href="https://github.com/stevenlawton/GPT-Whisper-captions">GPT-Whisper-captions</a></strong>
-– Public<br />
+- Public<br />
 Subtitle generator using OpenAI’s Whisper API and <strong>Go</strong>,
 producing embedded captions from transcribed video audio</p></li>
 <li><p><strong><a
 href="https://github.com/stevenlawton/xlsReader">xlsReader</a></strong>
-– Public<br />
+- Public<br />
 <strong>Go</strong> library for reading legacy <code>.xls</code> Excel
 files; maintained fork with improvements and usage
 documentation</p></li>
