@@ -2,7 +2,6 @@
 ## Summary
 
 I'm a senior software engineer with over 20 years' experience building reliable, scalable systems across fintech, retail, publishing, and Web3. I specialise in backend and platform work, GoLang microservices, modernising legacy systems, and delivering cloud-native infrastructure that works in production.
-
 I've worked across regulated environments. I've delivered in high-trust teams and contributed open-source and internal tooling. My technical background spans hardware and software, and my project work includes:
 
  - **Developer experience** - CI/CD automation, platform migration, and observability-first design.
@@ -15,7 +14,6 @@ I've worked across regulated environments. I've delivered in high-trust teams an
  - **Internal tools and automation** - building tools that unblock teams and reduce manual effort.
 
 I enjoy solving problems. I've learned to balance speed with rigour and pragmatism with long-term thinking. I write code that works, is easy to maintain, and self-documents. Sound engineering is as much about people as it is about the code.
-
 I have worked on critical projects where autonomy, clarity, and delivery are crucial. I'm equally comfortable building new systems, refactoring old ones, or mentoring developers. Outside of work, I volunteer as a  Scout Leader, which mainly involves mud, camping, and helping kids figure things out the hard way. I'm also heavily involved in jousting in the UK and practice classical dressage.
 
 ***
