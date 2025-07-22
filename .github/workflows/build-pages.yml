@@ -26,13 +26,8 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v4
 
-      - name: Install wkhtmltopdf (patched static build)
-        run: |
-          set -euo pipefail
-          curl -fsSL -o wkhtmltox.tar.xz https://github.com/wkhtmltopdf/packaging/releases/download/0.12.6-1/wkhtmltox-0.12.6-1_linux-generic-amd64.tar.xz
-          tar -xf wkhtmltox.tar.xz
-          sudo install -m 755 wkhtmltox/bin/wkhtmltopdf /usr/local/bin/wkhtmltopdf
-          wkhtmltopdf --version
+      - name: Set up Pandoc
+        run: sudo apt-get update && sudo apt-get install -y pandoc wkhtmltopdf
 
 
       - name: Convert Markdown to HTML - CV
