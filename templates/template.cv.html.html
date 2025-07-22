@@ -5,15 +5,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <title>Steven Lawton – CV</title>
     <style>
-
         @media print {
             @page {
-                margin: 20mm 10mm 15mm;
+                margin-top: 30mm;
+                margin-right: 10mm;
+                margin-bottom: 15mm;
+                margin-left: 10mm;
             }
 
-            hr {
-                display: none;
+            body {
+                font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
             }
+
 
             body h1:first-of-type {
                 display: none;
@@ -28,14 +31,19 @@
                 font-size: 11pt;
             }
 
-            h2#experience {
-                page-break-before: always;
-                margin-top: 0;
-            }
-
             h1, h2, h3 {
                 page-break-after: avoid;
                 page-break-inside: avoid;
+            }
+
+            h2#experience {
+                page-break-before: always;
+                margin-top: 20mm;
+            }
+
+            h2 {
+                margin-top: 1rem;
+                margin-bottom: 0.5rem;
             }
 
             h3 {
@@ -59,7 +67,7 @@
 
             .cv-header {
                 text-align: center;
-                margin-bottom: 2rem;
+                margin-bottom: 1.25rem;
             }
 
             .cv-header h1 {
@@ -86,6 +94,7 @@
                 padding-bottom: 0;
                 margin-top: 0;
                 margin-bottom: 0;
+                overflow: hidden;
             }
 
             section.experience + section.experience {
@@ -93,11 +102,14 @@
             }
 
             ul {
+
                 margin: 0 0 0.75em 1.5em;
                 padding: 0;
             }
 
             li {
+                page-break-after: avoid;
+                page-break-inside: avoid;
                 margin-bottom: 0.25em;
             }
         }
@@ -108,9 +120,8 @@
 
 <div class="cv-header">
     <h1>Steven Lawton</h1>
-    <div class="company">Ace Web Services Ltd</div>
     <div class="address">43 Valiant Square, Bury, Cambridgeshire, PE26 2PQ</div>
-    <div class="contact">Phone: 07944 722392 &nbsp;&nbsp; E-Mail: <a href="mailto:cv@acewebservices.co.uk">cv@acewebservices.co.uk</a>
+    <div class="contact">Phone: 07944 722392 &nbsp;&nbsp; E-Mail: <a href="mailto:stevenlawton@gmail.com">stevenlawton@gmail.com</a>
     </div>
 </div>
 

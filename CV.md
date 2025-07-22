@@ -35,11 +35,12 @@ Spring (Boot), Akka, Scalatra, JSF, Thymeleaf, JPA/Hibernate, Keycloak, Auth0, J
 PostgreSQL, MS SQL Server, Aurora, MySQL, Oracle, MongoDB, DynamoDB, Neo4j, Infinispan, H2, SQLite
 
 **Testing & DevOps:**
- - **Go:** testing, testify, httptest, gomock, coverage tools, custom assertions
- - **Node.js:** Jest, ts-node for testing flows
- - **Java:** JUnit, TestNG, Mockito, integration test harnesses
- - **Other:** CI/CD pipelines (GitHub Actions, GitLab CI), containerisation with Docker, observability stacks (Datadog, NewRelic, Prometheus, Grafana, Kibana)
 
+  - **Go:** testing, testify, httptest, gomock, coverage tools, custom assertions
+  - **Node.js:** Jest, ts-node for testing flows
+  - **Java:** JUnit, TestNG, Mockito, integration test harnesses
+  - **Other:** CI/CD pipelines (GitHub Actions, GitLab CI), containerisation with Docker, observability stacks (Datadog, NewRelic, Prometheus, Grafana, Kibana)
+ 
 **Other Domains:**  
 Web3, Solidity, Crypto assets, Flutter/Dart, Android, SOA, RESTful/SOAP APIs, ETL, data warehousing, complex SQL, enterprise architecture, legacy modernisation, DevEx tooling
 
@@ -53,7 +54,7 @@ Web3, Solidity, Crypto assets, Flutter/Dart, Android, SOA, RESTful/SOAP APIs, ET
 
 - Improved developer experience by building robust **GitHub Actions** and reusable workflows in **TypeScript** Sainsbury's API onboarding across internal teams.
 - Integrated **OpenAPI** and **AsyncAPI** specifications into **SwaggerHub Design Hub** and **Portal**, streamlining delivery.
-- Initiated and led the design of a new backend service for managing ** SwaggerHub state**, **authentication**, and **authorisation** within Sainsbury's internal **PaaS** (Kubernetes, Helm, GitHub Actions).
+- Initiated and led the design of a new backend service for managing **SwaggerHub state**, **authentication**, and **authorisation** within Sainsbury's internal **PaaS** (Kubernetes, Helm, GitHub Actions).
 
 *Technologies:* TypeScript, GitHub Actions, Docker, Kubernetes, Helm, SwaggerHub, OpenAPI, AsyncAPI
 
@@ -346,7 +347,8 @@ I'm the person teams turn to when something's complex, messy, or stuck. Whether 
 
 ## Contact
 
-- **Email:** stevenlawton@gmail.com
+- **Email:** [stevenlawton@gmail.com](mailto:stevenlawton@gmail.com)
+- **Phone:** [+44 (0)7944 722392](tel:+44(0)7944722392)
 - **GitHub:** [github.com/stevenlawton](https://github.com/stevenlawton)
 - **LinkedIn:** [linkedin.com/in/steven-lawton](https://www.linkedin.com/in/steven-lawton/)
 - **Website:** [stevenlawton.com](https://stevenlawton.com)
