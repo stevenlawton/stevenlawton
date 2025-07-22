@@ -26,12 +26,15 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v4
 
-      - name: Install wkhtmltopdf
+      - name: Install wkhtmltopdf from nightly PPA (Ubuntu 24.04 fix)
         run: |
-          curl -LO https://github.com/wkhtmltopdf/packaging/releases/download/0.12.6-1/wkhtmltox_0.12.6-1.focal_amd64.deb
           sudo apt-get update
-          sudo apt-get install -y ./wkhtmltox_0.12.6-1.focal_amd64.deb
+          sudo apt-get install -y software-properties-common
+          sudo add-apt-repository -y ppa:savoury1/wkhtmltopdf
+          sudo apt-get update
+          sudo apt-get install -y wkhtmltopdf
           wkhtmltopdf --version
+
 
       - name: Create output directory
         run: mkdir -p output
