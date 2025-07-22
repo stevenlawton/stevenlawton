@@ -26,13 +26,12 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v4
 
-      - name: Install patched wkhtmltopdf
+      - name: Install wkhtmltopdf
         run: |
-          curl -LO https://github.com/wkhtmltopdf/packaging/releases/download/0.12.6-1/wkhtmltox-0.12.6-1_linux-generic-amd64.tar.xz
-          tar -xf wkhtmltox-0.12.6-1_linux-generic-amd64.tar.xz
-          sudo cp wkhtmltox/bin/wkhtmltopdf /usr/local/bin/
-          sudo cp wkhtmltox/bin/wkhtmltoimage /usr/local/bin/
-
+          curl -LO https://github.com/wkhtmltopdf/packaging/releases/download/0.12.6-1/wkhtmltox_0.12.6-1.focal_amd64.deb
+          sudo apt-get update
+          sudo apt-get install -y ./wkhtmltox_0.12.6-1.focal_amd64.deb
+          wkhtmltopdf --version
 
       - name: Create output directory
         run: mkdir -p output
