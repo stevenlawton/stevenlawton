@@ -5,15 +5,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <title>Steven Lawton – CV</title>
     <style>
-
         @media print {
             @page {
-                margin: 20mm 10mm 15mm;
+                margin-top: 30mm;
+                margin-right: 10mm;
+                margin-bottom: 15mm;
+                margin-left: 10mm;
             }
 
-            hr {
-                display: none;
+            body {
+                font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
             }
+
 
             body h1:first-of-type {
                 display: none;
@@ -28,14 +31,19 @@
                 font-size: 11pt;
             }
 
-            h2#experience {
-                page-break-before: always;
-                margin-top: 0;
-            }
-
             h1, h2, h3 {
                 page-break-after: avoid;
                 page-break-inside: avoid;
+            }
+
+            h2#experience {
+                page-break-before: always;
+                margin-top: 20mm;
+            }
+
+            h2 {
+                margin-top: 1rem;
+                margin-bottom: 0.5rem;
             }
 
             h3 {
@@ -59,7 +67,7 @@
 
             .cv-header {
                 text-align: center;
-                margin-bottom: 2rem;
+                margin-bottom: 1.25rem;
             }
 
             .cv-header h1 {
@@ -86,6 +94,7 @@
                 padding-bottom: 0;
                 margin-top: 0;
                 margin-bottom: 0;
+                overflow: hidden;
             }
 
             section.experience + section.experience {
@@ -93,11 +102,14 @@
             }
 
             ul {
+
                 margin: 0 0 0.75em 1.5em;
                 padding: 0;
             }
 
             li {
+                page-break-after: avoid;
+                page-break-inside: avoid;
                 margin-bottom: 0.25em;
             }
         }
@@ -108,9 +120,8 @@
 
 <div class="cv-header">
     <h1>Steven Lawton</h1>
-    <div class="company">Ace Web Services Ltd</div>
     <div class="address">43 Valiant Square, Bury, Cambridgeshire, PE26 2PQ</div>
-    <div class="contact">Phone: 07944 722392 &nbsp;&nbsp; E-Mail: <a href="mailto:cv@acewebservices.co.uk">cv@acewebservices.co.uk</a>
+    <div class="contact">Phone: 07944 722392 &nbsp;&nbsp; E-Mail: <a href="mailto:stevenlawton@gmail.com">stevenlawton@gmail.com</a>
     </div>
 </div>
 
@@ -168,13 +179,17 @@ TeamCity, GitHub Actions, GitLab CI, Swagger/OpenAPI, RabbitMQ, AMQP</p>
 <p><strong>Databases:</strong><br />
 PostgreSQL, MS SQL Server, Aurora, MySQL, Oracle, MongoDB, DynamoDB,
 Neo4j, Infinispan, H2, SQLite</p>
-<p><strong>Testing &amp; DevOps:</strong> - <strong>Go:</strong>
-testing, testify, httptest, gomock, coverage tools, custom assertions -
-<strong>Node.js:</strong> Jest, ts-node for testing flows -
-<strong>Java:</strong> JUnit, TestNG, Mockito, integration test
-harnesses - <strong>Other:</strong> CI/CD pipelines (GitHub Actions,
-GitLab CI), containerisation with Docker, observability stacks (Datadog,
-NewRelic, Prometheus, Grafana, Kibana)</p>
+<p><strong>Testing &amp; DevOps:</strong></p>
+<ul>
+<li><strong>Go:</strong> testing, testify, httptest, gomock, coverage
+tools, custom assertions</li>
+<li><strong>Node.js:</strong> Jest, ts-node for testing flows</li>
+<li><strong>Java:</strong> JUnit, TestNG, Mockito, integration test
+harnesses</li>
+<li><strong>Other:</strong> CI/CD pipelines (GitHub Actions, GitLab CI),
+containerisation with Docker, observability stacks (Datadog, NewRelic,
+Prometheus, Grafana, Kibana)</li>
+</ul>
 <p><strong>Other Domains:</strong><br />
 Web3, Solidity, Crypto assets, Flutter/Dart, Android, SOA, RESTful/SOAP
 APIs, ETL, data warehousing, complex SQL, enterprise architecture,
@@ -193,8 +208,8 @@ Sainsbury’s API onboarding across internal teams.</li>
 specifications into <strong>SwaggerHub Design Hub</strong> and
 <strong>Portal</strong>, streamlining delivery.</li>
 <li>Initiated and led the design of a new backend service for managing
-** SwaggerHub state<strong>, </strong>authentication<strong>, and
-</strong>authorisation** within Sainsbury’s internal
+<strong>SwaggerHub state</strong>, <strong>authentication</strong>, and
+<strong>authorisation</strong> within Sainsbury’s internal
 <strong>PaaS</strong> (Kubernetes, Helm, GitHub Actions).</li>
 </ul>
 <p><em>Technologies:</em> TypeScript, GitHub Actions, Docker,
@@ -678,7 +693,10 @@ delivery when it matters, I’ve built a career on pragmatism, depth, and
 delivering results.</p>
 <h2 id="contact">Contact</h2>
 <ul>
-<li><strong>Email:</strong> stevenlawton@gmail.com</li>
+<li><strong>Email:</strong> <a
+href="mailto:stevenlawton@gmail.com">stevenlawton@gmail.com</a></li>
+<li><strong>Phone:</strong> <a href="tel:+44(0)7944722392">+44 (0)7944
+722392</a></li>
 <li><strong>GitHub:</strong> <a
 href="https://github.com/stevenlawton">github.com/stevenlawton</a></li>
 <li><strong>LinkedIn:</strong> <a
