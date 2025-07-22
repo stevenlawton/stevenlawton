@@ -26,8 +26,12 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v4
 
-      - name: Set up Pandoc and wkhtmltopdf
-        run: sudo apt-get update && sudo apt-get install -y pandoc wkhtmltopdf
+      - name: Install patched wkhtmltopdf
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y wget xfonts-base xfonts-75dpi
+          wget https://github.com/wkhtmltopdf/packaging/releases/download/0.12.6-1/wkhtmltox_0.12.6-1.bionic_amd64.deb
+          sudo apt install -y ./wkhtmltox_0.12.6-1.bionic_amd64.deb
 
       - name: Create output directory
         run: mkdir -p output
@@ -56,7 +60,7 @@ jobs:
 
       - name: Convert HTML to PDF - CV
         run: |
-          wkhtmltopdf output/index.cv.html output/Steven-Lawton-CV.pdf
+          /usr/local/bin/wkhtmltopdf output/index.cv.html output/Steven-Lawton-CV.pdf
 
       - name: Insert download link at marker
         run: |
