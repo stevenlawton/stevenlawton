@@ -28,10 +28,11 @@ jobs:
 
       - name: Install patched wkhtmltopdf
         run: |
-          curl -L -o wkhtmltox.tar.xz https://github.com/wkhtmltopdf/packaging/releases/download/0.12.6-1/wkhtmltox-0.12.6-1_linux-generic-amd64.tar.xz
-          tar -xf wkhtmltox.tar.xz
-          sudo cp wkhtmltox/bin/wkhtmltopdf /usr/local/bin/
+          curl -L -o wkhtmltox.deb https://github.com/wkhtmltopdf/packaging/releases/download/0.12.6-1/wkhtmltox_0.12.6-1.bionic_amd64.deb
+          sudo apt-get update
+          sudo apt-get install -y ./wkhtmltox.deb
           wkhtmltopdf --version
+
 
       - name: Create output directory
         run: mkdir -p output
