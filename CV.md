@@ -46,6 +46,23 @@ Web3, Solidity, Crypto assets, Flutter/Dart, Android, SOA, RESTful/SOAP APIs, ET
 
 ## Experience
 
+### SAFE / FRMSc V3 — Senior Platform & Backend Engineer  
+*Aug–Sep 2025 — Remote*
+
+- Split a .NET 4/6 + Node 14 monolith( With massive tech debt) into service-aligned workloads on AKS with per-service Ingress.
+- Upgraded runtimes to **.NET 9** and **Node 24**. Standardised Dockerfiles and images.
+- Built reusable **GitHub Actions** for build/push/deploy with parameterised envs and namespaces.
+- Hardened K8s: initContainers for deps, tuned probes, PVC for ASP.NET DataProtection keys.
+- Centralised config and security: strict CORS, validated JWT issuers, Redis via secrets and K8s Service.
+- Improved observability with structured logging across services & deployed a EKS stack for alerting and monitoring.
+- Stabilised CI: Unit and System integration tests.
+- Delivered a clean **frmscdev** workflow for AKS deploys.
+- Delivered a clean **frmsc** instaance in a new standalone AKS enviroment.
+
+**Technologies:** .NET 9 (ASP.NET Core), C#, Node 24, TypeScript, Docker, AKS (Kubernetes), NGINX Ingress, cert-manager, GitHub Actions, GHCR, Terraform (AzureRM), Azure SQL, Azure Blob Storage, Redis, Keycloak (OIDC/JWT), structured logging, ISO 27001-aligned controls.
+
+***
+
 ### Sainsbury's - Senior Full Stack Developer
 
 *Mar 2025 - Jul 2025 - Remote*
