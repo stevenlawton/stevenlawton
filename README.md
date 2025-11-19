@@ -53,9 +53,7 @@ debugging a Minecraft plugin.
 
 ---
 ## 🧾 Other GitHub Work
-Some of my professional work lives on alternate accounts for client or contract reasons:
-- [steven-lawton1-sainsburys](https://github.com/steven-lawton1-sainsburys)
-- [steven-lawton-sainsburys](https://github.com/steven-lawton-sainsburys)
+Some of my professional work lives on alternate accounts for client or contract reasons. Happy to share details on request.
 
 ---
 ## 📫 Ping Me
