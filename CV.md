@@ -52,16 +52,17 @@ Web3, Solidity, Crypto assets, React Native, Flutter/Dart, Android, computer vis
 
 ### Civica — Senior Developer
 
-*Nov 2025 – Present — Remote — Public Sector*
+*Nov 2025 – Present — Remote — GovTech*
 
 - Sole engineer on a greenfield migration of a legacy .NET application to GoLang microservices with a React frontend. Architected the end-to-end migration plan and delivered the full platform foundation against it.
-- Designed and implemented the integration layer with the incumbent platform, handling bi-directional data flow in and out. This is the piece that makes incremental migration possible without a big-bang cutover.
-- Built the stack cloud-agnostic by design — containerised workloads, portable infrastructure, no provider-locked primitives.
-- Onboarded the project onto Civica's internal Kubernetes PaaS, taking it from empty repo to running in every environment.
-- Scaffolded and stood up both the GoLang microservices backend (with PostgreSQL) and the React frontend, wiring them end-to-end across dev, staging, and production.
+- Designed and implemented the integration layer with the incumbent platform, handling bi-directional data flow in and out. 
+- Built the stack cloud-agnostic by design, containerised workloads, portable infrastructure, no provider-locked primitives.
+- Onboarded the project onto Civica's internal Kubernetes PaaS, taking it from an empty repo to running in every environment.
+- Scaffolded and stood up both the GoLang microservices backend (with PostgreSQL) and the React frontend.
 - Built a lightweight identity-mock service that unblocked local development and cross-environment testing while the internal IdP remained in build, letting integrations land against a realistic token flow months ahead of the real one.
 - Delivered the full CI/CD and governance toolchain to Civica's standards: dependency scanning, SAST, linting, OpenAPI spec publishing, IaC, SQL migration pipelines, and build/release/deploy/environment-management workflows.
 - Active contributor to Civica's AI-assisted engineering rollout, with hands-on agentic coding in day-to-day delivery and contributions to internal AI quality and review processes.
+- Making surgical modifications to the legacy .NET to expose data and emit events to the Microservices tech stack
 
 *Technologies:* GoLang, PostgreSQL, React, TypeScript, Docker, Kubernetes, Argo CD, GitHub Actions, Terraform, OIDC, OpenAPI.
 
