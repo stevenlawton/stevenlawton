@@ -386,14 +386,6 @@ tools, internal DevOps workflows
 
 *Technologies:* ESP32, C++, Go, React, MQTT, Modbus TCP, PID, DS18B20/OneWire, Sonoff (custom firmware), IR remote control, Tapo, Home Assistant.
 
-### AceLine — Variable Frequency Drive (VFD) Controller
-
-- Industrial motor-control daemon written in Go, running as a systemd service on a Raspberry Pi, driving multiple Variable Frequency Drives via direct GPIO selector lines.
-- Recipe-based speed profiles with a product/area/line hierarchy persisted to SQLite, plus a full audit trail of operator actions and drive state changes.
-- Web UI (Gin-served) for configuring recipes, areas, and drives — built to be operated from the floor, not from a developer's laptop.
-
-*Technologies:* Go, Gin, SQLite, Raspberry Pi GPIO, systemd, Linux, VFD control, Docker.
-
 ### DF-1 Gateway — Bringing Legacy Allen-Bradley PLCs onto Ethernet
 
 - Raspberry Pi gateway built around a from-scratch Go implementation of Allen-Bradley's DF-1 half-duplex serial protocol, turning SLC/PLC-5 controllers that predate Ethernet into network-addressable devices.
@@ -403,27 +395,6 @@ tools, internal DevOps workflows
 
 *Technologies:* Go, Raspberry Pi, Linux, RS-232 serial, Allen-Bradley DF-1, binary framing, CRC, industrial protocols, legacy modernisation.
 
-### Modbus → HTTP Event Gateway
-
-- Raspberry Pi gateway, written in Go, that polls Modbus TCP devices on a fixed cadence and emits structured JSON events (`modbus.value.changed`) to an HTTP endpoint, with retry/back-off and per-device sourcing.
-- YAML-driven device discovery, multi-slave concurrent polling on goroutines, and a small surface area by design — meant to be deployed and forgotten.
-- Practical outcome: any Modbus-speaking sensor, meter, or PLC becomes a first-class event source for a modern event-driven backend, with no changes to the legacy device and no Modbus knowledge needed downstream.
-
-*Technologies:* Go, Raspberry Pi, Linux, Modbus TCP, HTTP, JSON, YAML config, concurrent goroutines, event-driven integration, legacy modernisation.
-
-### ESP32 Industrial Stack Light — Firmware & Web UI
-
-- 5-channel 24V industrial stack light driven by an ESP32, with a web-based control UI (React/Vite over WebSocket) and MQTT integration for Home Assistant.
-- Designed the logic-level interface around a ULN2803A darlington array for reliable 3.3V → 24V switching.
-- Pattern engine to use per-channel independent state structs, enabling composable multi-channel animations.
-
-*Technologies:* ESP32, C++, React, Vite, WebSocket, MQTT, Home Assistant, electronics/PCB design.
-
-### [Sphinx.chat](http://sphinx.chat/) — Contributor *(2023, Paid Bounty Work)*
-
-- Contributed GoLang, Node.js, and Docker-based features to a Lightning Network-powered chat, social, and payments platform.
-- Completed paid bounties in areas such as protocol integration, service containerisation, and testing infrastructure.
-
 ### Selected Smaller GitHub Projects
 
 - **[ip-monitor](https://github.com/stevenlawton/ip-monitor) — Discord bot in Go** for monitoring IP changes with pinned-message sync.
@@ -431,8 +402,7 @@ tools, internal DevOps workflows
 - **[GPT-Whisper-captions](https://github.com/stevenlawton/GPT-Whisper-captions) — Subtitle generator using Whisper and Go**, producing embedded captions from transcribed video audio.
 - **[xlsReader](https://github.com/stevenlawton/xlsReader) — Go** library for reading legacy `.xls` Excel files. Maintained fork with improvements and usage documentation.
 - SliceWize *(Private)* — Self-hosted task/project management system with an MCP server, used daily for planning my own work.
-- ace-loto-backend / ace-loto-pwa *(Private)* — GoLang + TypeScript stack for a Lock-Out Tag-Out (LOTO) management PWA with QR-based check-in, audit logs, and API validation.
-- my-payment-gateway *(Private)* — Go microservice simulating and validating card payment flows with test harnessing and telemetry.
+- ace-loto-backend / ace-loto-pwa *(Private)*  GoLang + TypeScript stack for a Lock-Out Tag-Out (LOTO) management PWA with QR-based check-in, audit logs, and API validation.
 
 > Additional private projects span DevOps, eCommerce, API design, computer vision, and developer tooling — frequently built using Go, Docker, Kubernetes, and TypeScript.
 
