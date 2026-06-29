@@ -71,12 +71,12 @@
 <h2 id="summary">Summary</h2>
 <p>I’m a senior software engineer with over 20 years’ experience
 building reliable, scalable systems across fintech, retail, publishing,
-and Web3. I specialise in backend and platform work, GoLang
-microservices, modernising legacy systems, and delivering cloud-native
-infrastructure that works in production. I’ve worked across regulated
-environments. I’ve delivered in high-trust teams and contributed
-open-source and internal tooling. My technical background spans hardware
-and software, and my project work includes:</p>
+public sector, and Web3. I specialise in backend and platform work,
+GoLang microservices, modernising legacy systems, and delivering
+cloud-native infrastructure that works in production. I’ve worked across
+regulated environments. I’ve delivered in high-trust teams and
+contributed open-source and internal tooling. My technical background
+spans hardware and software, and my project work includes:</p>
 <ul>
 <li><strong>Developer experience</strong> - CI/CD automation, platform
 migration, and observability-first design.</li>
@@ -85,7 +85,7 @@ scalable, containerised microservices.</li>
 <li><strong>Cloud-native engineering</strong> - developing microservices
 deployed to AWS/GCP, Kubernetes, and PaaS platforms.</li>
 <li><strong>Regulatory and compliance</strong> - systems aligned with
-PCII DSS, GDPR, PSD2, and internal audit frameworks.</li>
+PCI DSS, GDPR, PSD2, and internal audit frameworks.</li>
 <li><strong>Event-driven</strong> - RabbitMQ, Kafka, and event-driven
 systems built for scale and resilience.</li>
 <li><strong>Payments</strong> - internal and customer-facing flows
@@ -94,6 +94,9 @@ across fintech, retail, and embedded environments.</li>
 mocking, validation, and spec-first development.</li>
 <li><strong>Internal tools and automation</strong> - building tools that
 unblock teams and reduce manual effort.</li>
+<li><strong>AI-assisted engineering</strong> - hands-on delivery with
+Claude Code, plus experience applying LLM-as-judge and human-review
+approaches for evaluating AI-generated output.</li>
 </ul>
 <p>I enjoy solving problems. I’ve learned to balance speed with rigour
 and pragmatism with long-term thinking. I write code that works, is easy
@@ -103,7 +106,8 @@ autonomy, clarity, and delivery are crucial. I’m equally comfortable
 building new systems, refactoring old ones, or mentoring developers.
 Outside of work, I volunteer as a Scout Leader, which mainly involves
 mud, camping, and helping kids figure things out the hard way. I’m also
-heavily involved in jousting in the UK and practice classical
+heavily involved in jousting in the UK, compete in HEMA (Historical
+European Martial Arts) with longsword, and practice classical
 dressage.</p>
 <hr />
 <h2 id="skills">Skills</h2>
@@ -111,8 +115,9 @@ dressage.</p>
 GoLang, Java, Node.js/TypeScript, PHP, Bash, SQL, HTML/CSS/JS, Scala,
 Python, Groovy, .NET</p>
 <p><strong>Cloud &amp; Infrastructure:</strong><br />
-AWS (ECS, Lambda, S3, RDS, IAM, etc), Terraform, Docker, Kubernetes
-(EKS), Azure, VPC design, security groups</p>
+AWS (ECS, Lambda, S3, RDS, IAM, etc), Azure, GCP, Terraform, Docker,
+Kubernetes (EKS, AKS), Argo CD, VPC design, security groups,
+cloud-agnostic platform design</p>
 <p><strong>Frameworks &amp; Tools:</strong><br />
 Spring (Boot), Akka, Scalatra, JSF, Thymeleaf, JPA/Hibernate, Keycloak,
 Auth0, JWT, Android SDK, Mule ESB, JBoss, WebSphere, Tomcat, Jenkins,
@@ -129,35 +134,72 @@ tools, custom assertions</li>
 harnesses</li>
 <li><strong>Other:</strong> CI/CD pipelines (GitHub Actions, GitLab CI),
 containerisation with Docker, observability stacks (Datadog, NewRelic,
-Prometheus, Grafana, Kibana)</li>
+Prometheus, Grafana, Kibana), supply-chain tooling (Sonatype, Veracode,
+golangci-lint)</li>
 </ul>
+<p><strong>AI-Assisted Engineering:</strong><br />
+Claude Code, LLM-as-judge evaluation frameworks, human-in-the-loop
+review, prompt design, agentic coding workflows</p>
 <p><strong>Other Domains:</strong><br />
-Web3, Solidity, Crypto assets, Flutter/Dart, Android, SOA, RESTful/SOAP
-APIs, ETL, data warehousing, complex SQL, enterprise architecture,
-legacy modernisation, DevEx tooling</p>
+Web3, Solidity, Crypto assets, React Native, Flutter/Dart, Android,
+computer vision (YOLO, MediaPipe, DINOv2), embedded/IoT (ESP32, MQTT),
+SOA, RESTful/SOAP APIs, ETL, data warehousing, complex SQL, enterprise
+architecture, legacy modernisation, DevEx tooling</p>
 <hr />
 <h2 id="experience">Experience</h2>
+<h3 id="civica-senior-developer">Civica — Senior Developer</h3>
+<p><em>Nov 2025 – Present — Remote — GovTech</em></p>
+<ul>
+<li>Sole engineer on a greenfield migration of a legacy .NET application
+to GoLang microservices with a React frontend. Architected the
+end-to-end migration plan and delivered the full platform foundation
+against it.</li>
+<li>Designed and implemented the integration layer with the incumbent
+platform, handling bi-directional data flow in and out.</li>
+<li>Built the stack cloud-agnostic by design, containerised workloads,
+portable infrastructure, no provider-locked primitives.</li>
+<li>Onboarded the project onto Civica’s internal Kubernetes PaaS, taking
+it from an empty repo to running in every environment.</li>
+<li>Scaffolded and stood up both the GoLang microservices backend (with
+PostgreSQL) and the React frontend.</li>
+<li>Built a lightweight identity-mock service that unblocked local
+development and cross-environment testing while the internal IdP
+remained in build, letting integrations land against a realistic token
+flow months ahead of the real one.</li>
+<li>Delivered the full CI/CD and governance toolchain to Civica’s
+standards: dependency scanning, SAST, linting, OpenAPI spec publishing,
+IaC, SQL migration pipelines, and
+build/release/deploy/environment-management workflows.</li>
+<li>Active contributor to Civica’s AI-assisted engineering rollout, with
+hands-on agentic coding in day-to-day delivery and contributions to
+internal AI quality and review processes.</li>
+<li>Making surgical modifications to the legacy .NET to expose data and
+emit events to the Microservices tech stack</li>
+</ul>
+<p><em>Technologies:</em> GoLang, PostgreSQL, React, TypeScript, Docker,
+Kubernetes, Argo CD, GitHub Actions, Terraform, OIDC, OpenAPI.</p>
+<hr />
 <h3 id="safe-frmsc-v3-senior-platform-backend-engineer">SAFE / FRMSc V3
 — Senior Platform &amp; Backend Engineer</h3>
 <p><em>Aug–Sep 2025 — Remote</em></p>
 <ul>
-<li>Split a .NET 4/6 + Node 14 monolith( With massive tech debt) into
-service-aligned workloads on AKS with per-service Ingress.</li>
-<li>Upgraded runtimes to <strong>.NET 9</strong> and <strong>Node
-24</strong>. Standardised Dockerfiles and images.</li>
-<li>Built reusable <strong>GitHub Actions</strong> for build/push/deploy
-with parameterised envs and namespaces.</li>
+<li>Split a .NET 4/6 + Node 14 monolith (carrying significant technical
+debt) into service-aligned workloads on AKS with per-service
+Ingress.</li>
+<li>Upgraded runtimes to .NET 9 and Node 24. Standardised Dockerfiles
+and images.</li>
+<li>Built reusable GitHub Actions for build/push/deploy with
+parameterised envs and namespaces.</li>
 <li>Hardened K8s: initContainers for deps, tuned probes, PVC for ASP.NET
 DataProtection keys.</li>
 <li>Centralised config and security: strict CORS, validated JWT issuers,
 Redis via secrets and K8s Service.</li>
 <li>Improved observability with structured logging across services &amp;
-deployed a EKS stack for alerting and monitoring.</li>
+deployed an EKS stack for alerting and monitoring.</li>
 <li>Stabilised CI: Unit and System integration tests.</li>
-<li>Delivered a clean <strong>frmscdev</strong> workflow for AKS
-deploys.</li>
-<li>Delivered a clean <strong>frmsc</strong> instaance in a new
-standalone AKS enviroment.</li>
+<li>Delivered a clean frmscdev workflow for AKS deploys.</li>
+<li>Delivered a clean frmsc instance in a new standalone AKS
+environment.</li>
 </ul>
 <p><strong>Technologies:</strong> .NET 9 (ASP.NET Core), C#, Node 24,
 TypeScript, Docker, AKS (Kubernetes), NGINX Ingress, cert-manager,
@@ -169,16 +211,14 @@ Storage, Redis, Keycloak (OIDC/JWT), structured logging, ISO
 Full Stack Developer</h3>
 <p><em>Mar 2025 - Jul 2025 - Remote</em></p>
 <ul>
-<li>Improved developer experience by building robust <strong>GitHub
-Actions</strong> and reusable workflows in <strong>TypeScript</strong>
-Sainsbury’s API onboarding across internal teams.</li>
-<li>Integrated <strong>OpenAPI</strong> and <strong>AsyncAPI</strong>
-specifications into <strong>SwaggerHub Design Hub</strong> and
-<strong>Portal</strong>, streamlining delivery.</li>
+<li>Improved developer experience by building robust GitHub Actions and
+reusable workflows in TypeScript, streamlining Sainsbury’s API
+onboarding across internal teams.</li>
+<li>Integrated OpenAPI and AsyncAPI specifications into SwaggerHub
+Design Hub and Portal, streamlining delivery.</li>
 <li>Initiated and led the design of a new backend service for managing
-<strong>SwaggerHub state</strong>, <strong>authentication</strong>, and
-<strong>authorisation</strong> within Sainsbury’s internal
-<strong>PaaS</strong> (Kubernetes, Helm, GitHub Actions).</li>
+SwaggerHub state, authentication, and authorisation within Sainsbury’s
+internal PaaS (Kubernetes, Helm, GitHub Actions).</li>
 </ul>
 <p><em>Technologies:</em> TypeScript, GitHub Actions, Docker,
 Kubernetes, Helm, SwaggerHub, OpenAPI, AsyncAPI</p>
@@ -187,29 +227,23 @@ Kubernetes, Helm, SwaggerHub, OpenAPI, AsyncAPI</p>
 SmartShop - Senior Full Stack Developer</h3>
 <p><em>Nov 2023 - Mar 2025 - Remote</em></p>
 <ul>
-<li>Migrated legacy PHP services to <strong>GoLang
-microservices</strong>, significantly improving app scalability and
-maintainability.</li>
-<li>Contributed to development and optimisation of <strong>Android
-(Kotlin)</strong> and <strong>iOS</strong> apps using
-<strong>TDD</strong> and <strong>pair programming</strong>
-practices.</li>
-<li>Reduced memory allocation by <strong>40%</strong> on a key endpoint
-through profiling and optimisation, cutting cloud operational
-costs.</li>
+<li>Migrated legacy PHP services to GoLang microservices, significantly
+improving app scalability and maintainability.</li>
+<li>Contributed to development and optimisation of Android (Kotlin) and
+iOS apps using TDD and pair programming practices.</li>
+<li>Reduced memory allocation by 40% on a key endpoint through profiling
+and optimisation, cutting cloud operational costs.</li>
 <li>Strengthened performance, reliability, and resilience across the
-<strong>SmartShop</strong> ecosystem through hands-on backend
-development.</li>
+SmartShop ecosystem through hands-on backend development.</li>
 <li>Designed backend services and mobile endpoints to resist probing,
 spoofing, and abuse. Operating under constant exposure to production
 load testing, malicious actors, and synthetic traffic.</li>
 <li>Implemented defensive coding practices, observability hooks, and
 secure client/server flows within a heavily scrutinised consumer-facing
 environment.</li>
-<li>Integrated with <strong>GraphQL</strong>, <strong>REST</strong> and
-<strong>gRPC</strong> services from other teams, ensuring compatibility
-and robustness across multiple protocols, while maintaining REST as the
-primary interface for SmartShop</li>
+<li>Integrated with GraphQL, REST and gRPC services from other teams,
+ensuring compatibility and robustness across multiple protocols, while
+maintaining REST as the primary interface for SmartShop</li>
 </ul>
 <p><strong>Technologies:</strong> GoLang, Android (Kotlin), iOS, Docker,
 AWS (ECS), TDD, Pair Programming, REST, gRPC, GraphQL</p>
@@ -218,12 +252,11 @@ AWS (ECS), TDD, Pair Programming, REST, gRPC, GraphQL</p>
 Web Services Ltd - Development Lead (for Barbourne Brook)</h3>
 <p><em>Dec 2023 - Mar 2024 - Remote - Fixed Price Project</em></p>
 <ul>
-<li>Replaced a fragile, underperforming <strong>PHP application</strong>
-with a scalable, event-driven data pipeline built in
-<strong>GoLang</strong>.</li>
+<li>Replaced a fragile, underperforming PHP application with a scalable,
+event-driven data pipeline built in GoLang.</li>
 <li>Conducted full system/code review, defined a modern architecture,
-and led delivery of microservices deployed to <strong>Kubernetes
-(EKS)</strong> via <strong>Terraform</strong>.</li>
+and led delivery of microservices deployed to Kubernetes (EKS) via
+Terraform.</li>
 <li>Dramatically improved throughput, enabling the client to target
 larger customers previously blocked by performance limitations.</li>
 <li>Designed for scalability, observability, and future extensibility
@@ -238,25 +271,20 @@ Groceries Online - Senior Full Stack Developer</h3>
 <p><em>Nov 2022 - Nov 2023 - Remote - Contract (3 + 3 + 3 + 3
 months)</em></p>
 <ul>
-<li>Delivered <strong>Server-Side Rendering (SSR)</strong> features
-across core grocery applications to boost performance and user
-experience.</li>
-<li>Built and maintained <strong>GoLang microservices</strong> for
-backend features and API integration.</li>
-<li>Streamlined DevOps workflows, integrating <strong>Node.js</strong>
-into the backend pipeline and improving delivery across
-environments.</li>
-<li>Led migration to a new internal <strong>Platform-as-a-Service
-(PaaS)</strong>, leveraging <strong>Kubernetes (EKS)</strong>,
-<strong>Istio</strong>, <strong>Helm</strong>, and observability tools
-to modernise infrastructure and enhance scalability.</li>
-<li>Applied robust <strong>secrets management</strong>, environment
-isolation, and secure deployment practices across
-<strong>Kubernetes</strong> and <strong>Terraform</strong> stacks.</li>
+<li>Delivered Server-Side Rendering (SSR) features across core grocery
+applications to boost performance and user experience.</li>
+<li>Built and maintained GoLang microservices for backend features and
+API integration.</li>
+<li>Streamlined DevOps workflows, integrating Node.js into the backend
+pipeline and improving delivery across environments.</li>
+<li>Led migration to a new internal Platform-as-a-Service (PaaS),
+leveraging Kubernetes (EKS), Istio, Helm, and observability tools to
+modernise infrastructure and enhance scalability.</li>
+<li>Applied robust secrets management, environment isolation, and secure
+deployment practices across Kubernetes and Terraform stacks.</li>
 <li>Hardened microservices and API gateways for multi-team use in a
-large-scale, multi-tenant environment, with an emphasis on
-<strong>governance</strong>, <strong>auditability</strong>, and
-<strong>resilience</strong>.</li>
+large-scale, multi-tenant environment, with an emphasis on governance,
+auditability, and resilience.</li>
 </ul>
 <p><em>Technologies:</em> GoLang, Node.js, React, Docker, AWS,
 Kubernetes (EKS), Terraform, DevOps, Istio, Helm, Kibana</p>
@@ -272,9 +300,8 @@ Business Consultancy.</li>
 dynamically generated questions.</li>
 <li>Implemented a scoring system that compares user responses to
 expected role competencies and suggests training pathways.</li>
-<li>Delivered a full-stack solution using <strong>GoLang</strong>,
-<strong>React</strong>, and <strong>PostgreSQL</strong>, deployed on
-<strong>AWS</strong> with containerisation via <strong>K8s</strong></li>
+<li>Delivered a full-stack solution using GoLang, React, and PostgreSQL,
+deployed on AWS with containerisation via K8s</li>
 </ul>
 <p><em>Technologies:</em> GoLang, Docker, AWS, Postgres, React</p>
 <hr />
@@ -282,23 +309,20 @@ expected role competencies and suggests training pathways.</li>
 Lead</h3>
 <p><em>Apr 2022 - Aug 2022 - Remote - Fintech</em></p>
 <ul>
-<li>Led the redesign of Baanx’s core platform to meet
-<strong>scalability</strong>, <strong>compliance</strong>, and
-<strong>regulatory</strong> demands (PCI DSS, PSD2, GDPR).</li>
-<li>Rewrote critical product components from
-<strong>Node.js/React</strong> into <strong>GoLang</strong>, improving
-performance, modularity, and maintainability.</li>
-<li>Introduced <strong>containerisation with Docker</strong>, and
-provisioned a scalable <strong>AWS ECS</strong> environment using
-<strong>Terraform</strong>, enabling smooth rollout for new and existing
-clients.</li>
+<li>Led the redesign of Baanx’s core platform to meet scalability,
+compliance, and regulatory demands (PCI DSS, PSD2, GDPR).</li>
+<li>Rewrote critical product components from Node.js/React into GoLang,
+improving performance, modularity, and maintainability.</li>
+<li>Introduced containerisation with Docker, and provisioned a scalable
+AWS ECS environment using Terraform, enabling smooth rollout for new and
+existing clients.</li>
 <li>Migrated all B2B and B2C customers to the new infrastructure,
 unlocking onboarding for high-profile fintech partners.</li>
-<li>Architected and initiated phase two: <strong>multi-tenant
-capabilities</strong>, <strong>security hardening</strong>, and
-<strong>Keycloak</strong>-based identity and access management.</li>
-<li>Embedded secure <strong>secrets management</strong>, isolated
-environments, and <strong>zero-downtime</strong> migration.</li>
+<li>Architected and initiated phase two: multi-tenant capabilities,
+security hardening, and Keycloak-based identity and access
+management.</li>
+<li>Embedded secure secrets management, isolated environments, and
+zero-downtime migration.</li>
 <li>Supported regulatory alignment through infrastructure modernisation,
 process redesign, and technical upskilling of internal teams</li>
 </ul>
@@ -309,20 +333,16 @@ RDS, Keycloak</p>
 Developer</h3>
 <p><em>Sep 2021 - Apr 2022 - Remote - Retail/Engineering</em></p>
 <ul>
-<li>Delivered a new <strong>internal payment service</strong> to replace
-legacy SAP components, ensuring <strong>PCI</strong> and
-<strong>PSD2</strong> compliance.</li>
-<li>Developed and deployed <strong>Java 11 / Spring Boot
-microservices</strong> within RS’s DevOps environment.</li>
-<li>Integrated services with platforms such as <strong>Auth0</strong>,
-<strong>TokenX</strong>, <strong>CyberSource</strong>,
-<strong>Adflex</strong>, and <strong>VoxPay</strong>.</li>
-<li>Worked across a high-scale cloud environment using
-<strong>AWS</strong>, <strong>Kubernetes</strong>,
-<strong>Nomad</strong>, and <strong>Terraform</strong>.</li>
-<li>Contributed to continuous delivery workflows, leveraging
-<strong>GitLab CI</strong>, <strong>Datadog</strong> for observability,
-and <strong>Kong</strong> for API management.</li>
+<li>Delivered a new internal payment service to replace legacy SAP
+components, ensuring PCI and PSD2 compliance.</li>
+<li>Developed and deployed Java 11 / Spring Boot microservices within
+RS’s DevOps environment.</li>
+<li>Integrated services with platforms such as Auth0, TokenX,
+CyberSource, Adflex, and VoxPay.</li>
+<li>Worked across a high-scale cloud environment using AWS, Kubernetes,
+Nomad, and Terraform.</li>
+<li>Contributed to continuous delivery workflows, leveraging GitLab CI,
+Datadog for observability, and Kong for API management.</li>
 </ul>
 <p><em>Technologies:</em> Java 11, Spring Boot, Docker, AWS, Kubernetes,
 Nomad, GitLab, Terraform, DynamoDB, RDS, Datadog, NewRelic, Swagger,
@@ -332,20 +352,17 @@ Kong, Auth0.</p>
 Monavate Ltd - Senior Developer</h3>
 <p><em>May 2021 - Sep 2021 - Remote - Fintech / Blockchain</em></p>
 <ul>
-<li>Helped design and build a <strong>multi-vendor marketplace and
-eCommerce platform</strong> using <strong>GoLang</strong>,
-<strong>Kafka</strong>, and <strong>Kubernetes</strong>.</li>
-<li>Contributed to a <strong>closed-loop digital sales and data
-platform</strong>, aligned with <strong>ISO 20022 messaging</strong> and
-<strong>blockchain integrations</strong></li>
-<li>Took ownership of the company website and <strong>core product
-architecture</strong>, collaborating with a distributed team (including
-Ukraine-based developers)</li>
-<li>Delivered internal tooling and infrastructure, including
-<strong>SharePoint rollout</strong> and a <strong>Google Workspace to
-MS365 migration</strong> for 30+ employees</li>
-<li>Supported product evolution across <strong>Ethereum</strong>,
-<strong>Solidity</strong>, and decentralised technologies</li>
+<li>Helped design and build a multi-vendor marketplace and eCommerce
+platform using GoLang, Kafka, and Kubernetes.</li>
+<li>Contributed to a closed-loop digital sales and data platform,
+aligned with ISO 20022 messaging and blockchain integrations</li>
+<li>Took ownership of the company website and core product architecture,
+collaborating with a distributed team (including Ukraine-based
+developers)</li>
+<li>Delivered internal tooling and infrastructure, including SharePoint
+rollout and a Google Workspace to MS365 migration for 30+ employees</li>
+<li>Supported product evolution across Ethereum, Solidity, and
+decentralised technologies</li>
 </ul>
 <p><em>Technologies:</em> GoLang, Kafka, Java, Kubernetes, Docker,
 Azure, Linux, GitLab, Ethereum, Solidity, Jekyll</p>
@@ -354,14 +371,12 @@ Azure, Linux, GitLab, Ethereum, Solidity, Jekyll</p>
 Network - Java Developer</h3>
 <p><em>Feb 2021 - May 2021 - Remote - Financial Services</em></p>
 <ul>
-<li>Maintained and extended the <strong>Toolbox platform</strong>, a key
-compliance and workflow tool used across the mortgage network.</li>
-<li>Delivered <strong>bug fixes and new feature development</strong> on
-a legacy stack, ensuring FCA-compliant behaviour and broker
-usability.</li>
-<li>Operated within a small, focused dev team, working across
-<strong>Spring Boot</strong>, <strong>Struts</strong>,
-<strong>EJB3</strong>, and <strong>JSP</strong>.</li>
+<li>Maintained and extended the Toolbox platform, a key compliance and
+workflow tool used across the mortgage network.</li>
+<li>Delivered bug fixes and new feature development on a legacy stack,
+ensuring FCA-compliant behaviour and broker usability.</li>
+<li>Operated within a small, focused dev team, working across Spring
+Boot, Struts, EJB3, and JSP.</li>
 <li>Contributed to stabilising and incrementally modernising the
 codebase while supporting live service delivery.</li>
 </ul>
@@ -372,15 +387,12 @@ IntelliJ, Linux, GitLab</p>
 <p><em>Oct 2018 - Feb 2021 - Cambridge (Onsite &amp; Remote) - Mobile /
 Embedded Systems</em></p>
 <ul>
-<li>Contributed to <strong>automated testing tooling</strong> for
-Android devices, used globally to benchmark RF connectivity and
-performance.</li>
-<li>Maintained and extended a <strong>Java-based orchestration
-application</strong> coordinating test execution across hardware
-setups.</li>
-<li>Implemented <strong>JUnit and integration tests</strong>,
-user-driven enhancements, and critical bug fixes across Java, Bash, and
-Python layers.</li>
+<li>Contributed to automated testing tooling for Android devices, used
+globally to benchmark RF connectivity and performance.</li>
+<li>Maintained and extended a Java-based orchestration application
+coordinating test execution across hardware setups.</li>
+<li>Implemented JUnit and integration tests, user-driven enhancements,
+and critical bug fixes across Java, Bash, and Python layers.</li>
 <li>Ensured seamless interaction between test scripts, Android devices,
 and a central results processing system</li>
 </ul>
@@ -391,17 +403,14 @@ Linux, Git, Gerrit, JUnit, TestNG, Mockito, Jira, Agile/Scrum</p>
 <p><em>May 2018 - Sept 2018 - Cambridge - Video Ad Delivery / Media
 Streaming</em></p>
 <ul>
-<li>Built <strong>RESTful Spring Boot microservices</strong> to serve
-re-encoded, personalised video ads on-the-fly based on user streaming
-profiles.</li>
-<li>Developed new functionality in <strong>Dockerised backend
-services</strong>, contributing to a scalable content delivery
-pipeline</li>
-<li>Supported QA by maintaining and extending <strong>Python-based
-simulators</strong> used for automated testing</li>
-<li>Delivered unit and integration test coverage using
-<strong>JUnit</strong>, <strong>Mockito</strong>, and
-<strong>TestNG</strong></li>
+<li>Built RESTful Spring Boot microservices to serve re-encoded,
+personalised video ads on-the-fly based on user streaming profiles.</li>
+<li>Developed new functionality in Dockerised backend services,
+contributing to a scalable content delivery pipeline</li>
+<li>Supported QA by maintaining and extending Python-based simulators
+used for automated testing</li>
+<li>Delivered unit and integration test coverage using JUnit, Mockito,
+and TestNG</li>
 </ul>
 <p><em>Technologies:</em> Java 8, Spring Boot, Docker, Spring MVC,
 Eureka, Zuul, MySQL Cluster, Python, IntelliJ, Git, GitLab, Jira, Linux,
@@ -412,20 +421,19 @@ Developer</h3>
 <p><em>October 2016 - April 2018 - Corby - Infrastructure Modernisation
 &amp; eCommerce</em></p>
 <ul>
-<li>Led upgrade of legacy tech stack to enable a high-pressure
-<strong>data centre migration</strong></li>
+<li>Led upgrade of legacy tech stack to enable a high-pressure data
+centre migration</li>
 <li>Contributed to multiple follow-on projects, including:
 <ul>
-<li>Migrating the entire eCommerce site to
-<strong>HTTPS-only</strong>.</li>
-<li>Implementing <strong>China-specific regulatory changes</strong> for
-regional compliance.</li>
-<li>Rewriting the B2B eCommerce solution using <strong>Spring Boot
-microservices</strong> in preparation for cloud migration.</li>
+<li>Migrating the entire eCommerce site to HTTPS-only.</li>
+<li>Implementing China-specific regulatory changes for regional
+compliance.</li>
+<li>Rewriting the B2B eCommerce solution using Spring Boot microservices
+in preparation for cloud migration.</li>
 </ul></li>
-<li>Refactored and containerised <strong>legacy servlet-based Java
-code</strong> into modern <strong>Docker-based microservices</strong>,
-deployed to physical servers with a view to future cloud migration.</li>
+<li>Refactored and containerised legacy servlet-based Java code into
+modern Docker-based microservices, deployed to physical servers with a
+view to future cloud migration.</li>
 </ul>
 <p><em>Technologies:</em> Docker, Spring Boot, mongo, Seam, Struts,
 Oracle, Java, Spring MVC, JBoss, Linux, Apache, JPA/hibernate,
@@ -436,16 +444,15 @@ Mockito, Jira.</p>
 <p><em>Nov 2015 - Feb 2016 - Peterborough - Insurance &amp; Telematics
 Integration</em></p>
 <ul>
-<li>Contributed to the <strong>O2 Telematics</strong> project as part of
-a large Agile team.</li>
-<li>Designed and implemented the integration of <strong>O2’s SSO
-system</strong> into BGL’s internal services, enabling secure exchange
-of telematics data with providers and customers.</li>
-<li>Worked across <strong>RESTful APIs (O2)</strong> and <strong>SOAP
-services (BGL)</strong> to bridge legacy and modern systems.</li>
-<li>Delivered work in a <strong>high-compliance insurance
-context</strong>, with careful attention to data security and
-integration reliability.</li>
+<li>Contributed to the O2 Telematics project as part of a large Agile
+team.</li>
+<li>Designed and implemented the integration of O2’s SSO system into
+BGL’s internal services, enabling secure exchange of telematics data
+with providers and customers.</li>
+<li>Worked across RESTful APIs (O2) and SOAP services (BGL) to bridge
+legacy and modern systems.</li>
+<li>Delivered work in a high-compliance insurance context, with careful
+attention to data security and integration reliability.</li>
 </ul>
 <p><em>Technologies:</em> Java, Mule ESB, Tomcat, REST, SOAP, SSO, Git,
 Jira, Bamboo, Confluence</p>
@@ -454,15 +461,13 @@ Jira, Bamboo, Confluence</p>
 Java/Scala Developer</h3>
 <p><em>Jan 2015 - Nov 2015 - Cambridge - Fintech Startup</em></p>
 <ul>
-<li>Delivered backend services for <strong>MoMo Top</strong> (global
-mobile top-up via PayPal) and a new <strong>mobile banking
-application</strong>.</li>
-<li>Quickly upskilled in <strong>Scala</strong>, moving from initial
-Java work to core feature development using <strong>Akka</strong> and
-<strong>Scalatra</strong>.</li>
+<li>Delivered backend services for MoMo Top (global mobile top-up via
+PayPal) and a new mobile banking application.</li>
+<li>Quickly upskilled in Scala, moving from initial Java work to core
+feature development using Akka and Scalatra.</li>
 <li>Designed and implemented key product functionality as part of a
-<strong>small Agile team</strong>, collaborating closely with senior
-management on high-priority initiatives.</li>
+small Agile team, collaborating closely with senior management on
+high-priority initiatives.</li>
 <li>Built RESTful APIs and service-oriented components to support
 mobile-first user experiences in global financial contexts.</li>
 </ul>
@@ -474,17 +479,14 @@ Confluence.</p>
 Java Developer / Web Systems Developer</h3>
 <p><em>2013 - 2014 - Cambridge - Games / Online Services</em></p>
 <ul>
-<li>Maintained and extended the <strong>Microtransaction (MTX)
-platform</strong> powering in-game and app-based purchases for Jagex
-titles.</li>
-<li>Delivered both <strong>customer-facing applications</strong> and
-critical <strong>internal RESTful services</strong>, supporting online
-game infrastructure.</li>
+<li>Maintained and extended the Microtransaction (MTX) platform powering
+in-game and app-based purchases for Jagex titles.</li>
+<li>Delivered both customer-facing applications and critical internal
+RESTful services, supporting online game infrastructure.</li>
 <li>Contributed to story estimation, task breakdown, and delivery
-planning within an <strong>Agile Scrum team</strong>.</li>
-<li>Maintained rigorous <strong>automated test suites</strong> (unit,
-integration, regression), ensuring platform reliability across
-services.</li>
+planning within an Agile Scrum team.</li>
+<li>Maintained rigorous automated test suites (unit, integration,
+regression), ensuring platform reliability across services.</li>
 <li>Built service-oriented backend components and participated in
 cross-team software-as-a-service (SaaS) integrations.</li>
 </ul>
@@ -495,18 +497,16 @@ Git, Eclipse, Jira, JUnit, TestNG, Mockito.</p>
 <h3 id="pcms---java-developer">PCMS - Java Developer</h3>
 <p><em>2011 - 2013 - Huntingdon - Retail Software (ePOS)</em></p>
 <ul>
-<li>Delivered a custom <strong>Electronic Point of Sale (ePOS)</strong>
-platform for a Tier 1 Australian retailer, completing the project
-<strong>three months ahead of schedule</strong> and <strong>under
-budget</strong> - a first for the company.</li>
-<li>Extended the core <strong>BeanStore</strong> product to meet
-client-specific requirements across a large retail estate.</li>
-<li>Worked in a newly formed <strong>Agile Scrum team</strong>,
-contributing to sprint planning, story breakdown, estimation, and
-technical delivery.</li>
-<li>Developed features and fixes against <strong>customer-defined
-acceptance criteria</strong>, and collaborated with QA and business
-analysts to ensure quality.</li>
+<li>Delivered a custom Electronic Point of Sale (ePOS) platform for a
+Tier 1 Australian retailer, completing the project three months ahead of
+schedule and under budget - a first for the company.</li>
+<li>Extended the core BeanStore product to meet client-specific
+requirements across a large retail estate.</li>
+<li>Worked in a newly formed Agile Scrum team, contributing to sprint
+planning, story breakdown, estimation, and technical delivery.</li>
+<li>Developed features and fixes against customer-defined acceptance
+criteria, and collaborated with QA and business analysts to ensure
+quality.</li>
 <li>Supported internal testing teams by providing fixes, guidance, and
 context on implementation and expected behaviour</li>
 </ul>
@@ -518,19 +518,18 @@ Mockito, iText, Maven, Crystal Reports, Jira.</p>
 Developer</h3>
 <p><em>2010 - 2011 - Peterborough - Travel Tech / eCommerce</em></p>
 <ul>
-<li>Developed and maintained <strong>enterprise web
-applications</strong> used by travel agents and tour operators
-worldwide, built using <strong>Java, PHP, and Seam</strong>.</li>
-<li>Created and maintained <strong>data adaptor services</strong> to
-transform and standardise inbound formats (e.g. flat files, SOAP, REST,
-custom XML) into internal representations for processing and
-caching.</li>
-<li>Sole developer for a <strong>Spring Web Flow-based product</strong>
-targeting international markets, from initial design to delivery.</li>
-<li>Actively contributed to <strong>international Agile teams</strong>,
-collaborating across time zones and disciplines.</li>
-<li>Involved in <strong>technical interviewing</strong>, assessing
-candidates and advising management on hiring decisions.</li>
+<li>Developed and maintained enterprise web applications used by travel
+agents and tour operators worldwide, built using Java, PHP, and
+Seam.</li>
+<li>Created and maintained data adaptor services to transform and
+standardise inbound formats (e.g. flat files, SOAP, REST, custom XML)
+into internal representations for processing and caching.</li>
+<li>Sole developer for a Spring Web Flow-based product targeting
+international markets, from initial design to delivery.</li>
+<li>Actively contributed to international Agile teams, collaborating
+across time zones and disciplines.</li>
+<li>Involved in technical interviewing, assessing candidates and
+advising management on hiring decisions.</li>
 </ul>
 <p><em>Technologies:</em> Java, PHP, Seam, Spring Web Flow, jQuery,
 JBoss, JBoss ESB, XSLT, JPA/Hibernate, DB2, Oracle, MySQL, LDAP, Linux,
@@ -542,23 +541,18 @@ Developer</h3>
 Software</em></p>
 <ul>
 <li>Delivered full lifecycle software solutions for high-profile clients
-including <strong>Suzuki GB</strong>, <strong>TNT</strong>, and major
-<strong>UK building societies</strong>.</li>
-<li>Hands-on across <strong>analysis, estimation, development, testing,
-documentation, deployment</strong>, and <strong>3rd-line
-support</strong>.</li>
+including Suzuki GB, TNT, and major UK building societies.</li>
+<li>Hands-on across analysis, estimation, development, testing,
+documentation, deployment, and 3rd-line support.</li>
 <li>Led technical handovers, authored support documentation, and
-provided ongoing assistance for <strong>legacy systems</strong> across
-financial products</li>
-<li>Acted as on-call escalation contact for <strong>business-critical
-deployments</strong>, including on-site visits and direct client
-liaison.</li>
-<li>Co-founded and maintained internal <strong>IT
-infrastructure</strong>, later supporting a dedicated infra team in
-3rd-line capacity.</li>
-<li>Provisioned new development environments: <strong>virtual machines,
-OS installs, hardware setup</strong>, and complete application
-stacks.</li>
+provided ongoing assistance for legacy systems across financial
+products</li>
+<li>Acted as on-call escalation contact for business-critical
+deployments, including on-site visits and direct client liaison.</li>
+<li>Co-founded and maintained internal IT infrastructure, later
+supporting a dedicated infra team in 3rd-line capacity.</li>
+<li>Provisioned new development environments: virtual machines, OS
+installs, hardware setup, and complete application stacks.</li>
 </ul>
 <p><em>Technologies:</em> VB.NET, C#, Java, SQL Server, Oracle, legacy
 MS Access systems, IIS, Windows Server, VMWare, bespoke ETL tools,
@@ -566,63 +560,150 @@ internal DevOps workflows</p>
 <hr />
 <h2 id="open-source-personal-projects">Open Source &amp; Personal
 Projects</h2>
-<h3 id="sphinx.chat---contributor-2023-paid-bounty-work"><a
-href="http://sphinx.chat/">Sphinx.chat</a> - Contributor <em>(2023, Paid
-Bounty Work)</em></h3>
+<h3 id="stevenlawton.com-personal-platform-shop"><a
+href="https://stevenlawton.com">stevenlawton.com</a> — Personal Platform
+&amp; Shop</h3>
 <ul>
-<li>Contribute GoLang, Node.js, and Docker-based features to a Lightning
-Network-powered chat, social, and payments platform.</li>
-<li>Completed paid bounties in areas such as protocol integration,
-service containerisation, and testing infrastructure.</li>
+<li>Full relaunch of my personal site as a Laravel 12 monolith with
+Blade, HTMX, Alpine.js, Tailwind, and MySQL, hosted on IONOS shared
+hosting. A constrained stack to prove that a rich, interactive product
+experience doesn’t require a heavyweight SPA.</li>
+<li>Built a credits-based monetisation model with Stripe integration,
+powering a paywalled tools area and a pre-order shop (launched with a
+HEMA practice card deck).</li>
+<li>Architected the whole thing end-to-end before writing code:
+sub-projects span Legal &amp; Compliance, Checkout &amp; Payments, User
+Accounts, Shop, Credit System, and Tools &amp; Generators, with
+dependency-chained delivery.</li>
 </ul>
-<h3 id="selected-personal-github-projects">Selected Personal GitHub
+<p><em>Technologies:</em> Laravel 12, PHP, Blade, HTMX, Alpine.js,
+Tailwind, SQLite, Stripe.</p>
+<h3 id="hema-scout-tournament-intelligence-tool">HEMA Scout — Tournament
+Intelligence Tool</h3>
+<ul>
+<li>PHP web tool that scrapes <a
+href="https://hemascorecard.com">hemascorecard.com</a> and <a
+href="https://hemaratings.com">hemaratings.com</a> to build competitive
+intelligence profiles on HEMA tournament opponents.</li>
+<li>Rules-based analysis engine surfacing fight patterns, strengths, and
+weaknesses from historical pool data.</li>
+<li>Designed with an isolated API endpoint so a future AI-powered
+analysis layer can plug in without touching the scraping or scoring
+cores.</li>
+<li>Used in anger: applied the tool to my own pools before a longsword
+tournaments to prepare match-by-match.</li>
+</ul>
+<p><em>Technologies:</em> PHP, web scraping, REST API design, rules
+engine.</p>
+<h3 id="strike-recorder-hema-pendulum-impact-measurement">Strike
+Recorder — HEMA Pendulum Impact Measurement</h3>
+<ul>
+<li>ESP32-S3 firmware capturing high-frequency impact data: an ADXL375
+±200g accelerometer at 3200 Hz over SPI for the strike spike, and a
+BNO055 9DOF IMU at 100 Hz over I2C for swing arc and angular
+velocity.</li>
+<li>Custom-built pendulum target designed to derive peak force, impact
+duration, energy transfer, and swing dynamics from raw sensor data.</li>
+<li>Dual-core capture loop on the ESP32 writes raw binary to SD card per
+strike event and broadcasts it over BLE.</li>
+<li>Cross-platform Flutter companion app (<code>strike_recorder</code>)
+connects to the device over BLE, pulls captured data, and renders
+force-time curves and swing dynamics live with
+<code>fl_chart</code>.</li>
+<li>Full firmware → BLE → mobile UI loop end-to-end.</li>
+</ul>
+<p><em>Technologies:</em> ESP32-S3, C++, PlatformIO, ADXL375, BNO055,
+SPI, I2C, SD card, BLE, Flutter, Dart, fl_chart, sensor fusion.</p>
+<h3
+id="msinspector-medieval-manuscript-computer-vision-pipeline">MS:Inspector
+— Medieval Manuscript Computer Vision Pipeline</h3>
+<ul>
+<li>Computer vision system for searching and classifying objects (arms,
+armour, clothing, heraldry) in medieval manuscript images.</li>
+<li>Pipeline: YOLOv8 detection → DINOv2 embeddings → UMAP dimensionality
+reduction → HDBSCAN clustering.</li>
+<li>Go API and PostgreSQL backend, React frontend. Scraper pulls around
+20,000 manuscript images from public digitised collections.</li>
+<li>Domain methodology validated, yielding the key insight that object
+categories are evolutionary spectrums and that geometry is more stable
+than terminology.</li>
+</ul>
+<p><em>Technologies:</em> GoLang, PostgreSQL, React, YOLOv8, DINOv2,
+UMAP, HDBSCAN, Python, computer vision.</p>
+<h3 id="heating-multi-zone-smart-heating-cooling-stack">Heating —
+Multi-Zone Smart Heating &amp; Cooling Stack</h3>
+<ul>
+<li>End-to-end heating/cooling control system for my office: bespoke
+ESP32 firmware, a Go backend, and a React frontend, glued together with
+MQTT and Modbus TCP.</li>
+<li>Multiple firmwares working together — a primary ESP32 controller, a
+temperature-sensor node fleet (DS18B20 over OneWire), a flashed Sonoff
+smart-switch firmware for relay loads, an IR transmitter for split-AC
+units, and a Tapo integration for plug-loads.</li>
+<li>Go service handles setpoint logic, state persistence, and audit
+logging; PID loops drive zone-level control. Designed so individual
+nodes can be added, replaced, or re-flashed without disturbing the rest
+of the system.</li>
+</ul>
+<p><em>Technologies:</em> ESP32, C++, Go, React, MQTT, Modbus TCP, PID,
+DS18B20/OneWire, Sonoff (custom firmware), IR remote control, Tapo, Home
+Assistant.</p>
+<h3
+id="df-1-gateway-bringing-legacy-allen-bradley-plcs-onto-ethernet">DF-1
+Gateway — Bringing Legacy Allen-Bradley PLCs onto Ethernet</h3>
+<ul>
+<li>Raspberry Pi gateway built around a from-scratch Go implementation
+of Allen-Bradley’s DF-1 half-duplex serial protocol, turning SLC/PLC-5
+controllers that predate Ethernet into network-addressable devices.</li>
+<li>Frame-level handling on the serial side: DLE/STX/ETX framing, CRC-16
+validation, transaction sequence tracking, and async request/response
+correlation over a shared serial port.</li>
+<li>Decodes the full file-type set (N/B/T/C/R/F/S — integers, bits,
+timers, counters, control, float, status), so reads and writes line up
+with how the PLC programmer thinks about the controller.</li>
+<li>Practical outcome: legacy industrial hardware that would otherwise
+need replacing (or expensive vendor gateways) becomes accessible to
+modern services over Ethernet, without any change to the PLC programs
+themselves.</li>
+</ul>
+<p><em>Technologies:</em> Go, Raspberry Pi, Linux, RS-232 serial,
+Allen-Bradley DF-1, binary framing, CRC, industrial protocols, legacy
+modernisation.</p>
+<h3 id="selected-smaller-github-projects">Selected Smaller GitHub
 Projects</h3>
 <ul>
-<li><p><strong><a
-href="https://github.com/stevenlawton/ip-monitor">ip-monitor</a></strong>
-- Public<br />
-Discord bot written in <strong>Go</strong> to monitor IP changes and
-broadcast updates; includes pinned message sync and basic
-alerting.</p></li>
-<li><p><strong><a
-href="https://github.com/stevenlawton/go-telegram-alert">go-telegram-alert</a></strong>
-- Public<br />
-Lightweight <strong>Go</strong> logger extension that forwards logs to
-<strong>Telegram</strong>, ideal for low-footprint services</p></li>
-<li><p><strong><a
-href="https://github.com/stevenlawton/GPT-Whisper-captions">GPT-Whisper-captions</a></strong>
-- Public<br />
-Subtitle generator using OpenAI’s Whisper API and <strong>Go</strong>,
-producing embedded captions from transcribed video audio</p></li>
-<li><p><strong><a
-href="https://github.com/stevenlawton/xlsReader">xlsReader</a></strong>
-- Public<br />
-<strong>Go</strong> library for reading legacy <code>.xls</code> Excel
-files; maintained fork with improvements and usage
-documentation</p></li>
-<li><p><strong>ace-loto-backend / ace-loto-pwa</strong>
-<em>(Private)</em><br />
-Complete <strong>GoLang</strong> + <strong>TypeScript</strong> stack for
-a Lock-Out Tag-Out (LOTO) management PWA; includes QR code-based
-check-in flows, audit logs, and API validation tools</p></li>
-<li><p><strong>my-payment-gateway</strong> <em>(Private)</em><br />
-Custom <strong>Go</strong> microservice to simulate and validate card
-payment flows with support for test harnessing and telemetry.</p></li>
-<li><p><strong>SliceWise / rconDash / seo-stuff</strong> <em>(Mixed
-visibility)</em><br />
-Tools ranging from Minecraft server dashboards to content automation and
-SEO auditing, built for internal use and learning</p></li>
+<li><strong><a
+href="https://github.com/stevenlawton/ip-monitor">ip-monitor</a> —
+Discord bot in Go</strong> for monitoring IP changes with pinned-message
+sync.</li>
+<li><strong><a
+href="https://github.com/stevenlawton/go-telegram-alert">go-telegram-alert</a>
+— Lightweight Go logger extension that forwards logs to
+Telegram</strong>.</li>
+<li><strong><a
+href="https://github.com/stevenlawton/GPT-Whisper-captions">GPT-Whisper-captions</a>
+— Subtitle generator using Whisper and Go</strong>, producing embedded
+captions from transcribed video audio.</li>
+<li><strong><a
+href="https://github.com/stevenlawton/xlsReader">xlsReader</a> —
+Go</strong> library for reading legacy <code>.xls</code> Excel files.
+Maintained fork with improvements and usage documentation.</li>
+<li>SliceWize <em>(Private)</em> — Self-hosted task/project management
+system with an MCP server, used daily for planning my own work.</li>
+<li>ace-loto-backend / ace-loto-pwa <em>(Private)</em> GoLang +
+TypeScript stack for a Lock-Out Tag-Out (LOTO) management PWA with
+QR-based check-in, audit logs, and API validation.</li>
 </ul>
 <blockquote>
-<p>Additional private projects span domains including DevOps, eCommerce,
-API design, and developer tooling - frequently built using Go, Docker,
-Kubernetes, and JavaScript/Typescript</p>
+<p>Additional private projects span DevOps, eCommerce, API design,
+computer vision, and developer tooling — frequently built using Go,
+Docker, Kubernetes, and TypeScript.</p>
 </blockquote>
-<p><strong>Transferability</strong>:<br />
-Experience gained in fintech, retail, and e-commerce is highly
-transferable to SaaS, infrastructure, Web3, public sector, and regulated
+<p><strong>Transferability:</strong><br />
+Experience gained in fintech, retail, public sector, and e-commerce is
+highly transferable to SaaS, infrastructure, Web3, and regulated
 industries. Comfortable working across domains where performance,
-security, and team agility are key</p>
+security, and team agility are key.</p>
 <h2 id="why-me">Why Me?</h2>
 <p>I’m the person teams turn to when something’s complex, messy, or
 stuck. Whether refactoring a legacy system, launching a new service, or
