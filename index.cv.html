@@ -81,8 +81,10 @@
                 margin-top: 0.2rem;
             }
 
-            /* Experience sections */
-            section.experience {
+            /* Experience roles + personal-project sub-sections: keep each
+               one from splitting across a page boundary. */
+            section.experience,
+            section.project {
                 page-break-inside: avoid;
                 break-inside: avoid;
                 border-bottom: none;
@@ -92,7 +94,8 @@
                 overflow: hidden;
             }
 
-            section.experience + section.experience {
+            section.experience + section.experience,
+            section.project + section.project {
                 margin-top: 0.5rem;
             }
 
@@ -650,9 +653,9 @@ internal DevOps workflows</p>
 </section>
 <h2 id="open-source-personal-projects">Open Source &amp; Personal
 Projects</h2>
-<h3 id="stevenlawton.com-personal-platform-shop"><a
-href="https://stevenlawton.com">stevenlawton.com</a> — Personal Platform
-&amp; Shop</h3>
+<section id="stevenlawton.com-personal-platform-shop" class="project">
+<h3><a href="https://stevenlawton.com">stevenlawton.com</a> — Personal
+Platform &amp; Shop</h3>
 <ul>
 <li>Full relaunch of my personal site as a Laravel 12 monolith with
 Blade, HTMX, Alpine.js, Tailwind, and MySQL, hosted on IONOS shared
@@ -668,8 +671,9 @@ dependency-chained delivery.</li>
 </ul>
 <p><em>Technologies:</em> Laravel 12, PHP, Blade, HTMX, Alpine.js,
 Tailwind, SQLite, Stripe.</p>
-<h3 id="hema-scout-tournament-intelligence-tool">HEMA Scout — Tournament
-Intelligence Tool</h3>
+</section>
+<section id="hema-scout-tournament-intelligence-tool" class="project">
+<h3>HEMA Scout — Tournament Intelligence Tool</h3>
 <ul>
 <li>PHP web tool that scrapes <a
 href="https://hemascorecard.com">hemascorecard.com</a> and <a
@@ -685,8 +689,10 @@ tournaments to prepare match-by-match.</li>
 </ul>
 <p><em>Technologies:</em> PHP, web scraping, REST API design, rules
 engine.</p>
-<h3 id="strike-recorder-hema-pendulum-impact-measurement">Strike
-Recorder — HEMA Pendulum Impact Measurement</h3>
+</section>
+<section id="strike-recorder-hema-pendulum-impact-measurement"
+class="project">
+<h3>Strike Recorder — HEMA Pendulum Impact Measurement</h3>
 <ul>
 <li>ESP32-S3 firmware capturing high-frequency impact data: an ADXL375
 ±200g accelerometer at 3200 Hz over SPI for the strike spike, and a
@@ -704,9 +710,10 @@ force-time curves and swing dynamics live with
 </ul>
 <p><em>Technologies:</em> ESP32-S3, C++, PlatformIO, ADXL375, BNO055,
 SPI, I2C, SD card, BLE, Flutter, Dart, fl_chart, sensor fusion.</p>
-<h3
-id="msinspector-medieval-manuscript-computer-vision-pipeline">MS:Inspector
-— Medieval Manuscript Computer Vision Pipeline</h3>
+</section>
+<section id="msinspector-medieval-manuscript-computer-vision-pipeline"
+class="project">
+<h3>MS:Inspector — Medieval Manuscript Computer Vision Pipeline</h3>
 <ul>
 <li>Computer vision system for searching and classifying objects (arms,
 armour, clothing, heraldry) in medieval manuscript images.</li>
@@ -720,8 +727,10 @@ than terminology.</li>
 </ul>
 <p><em>Technologies:</em> GoLang, PostgreSQL, React, YOLOv8, DINOv2,
 UMAP, HDBSCAN, Python, computer vision.</p>
-<h3 id="heating-multi-zone-smart-heating-cooling-stack">Heating —
-Multi-Zone Smart Heating &amp; Cooling Stack</h3>
+</section>
+<section id="heating-multi-zone-smart-heating-cooling-stack"
+class="project">
+<h3>Heating — Multi-Zone Smart Heating &amp; Cooling Stack</h3>
 <ul>
 <li>End-to-end heating/cooling control system for my office: bespoke
 ESP32 firmware, a Go backend, and a React frontend, glued together with
@@ -738,9 +747,11 @@ of the system.</li>
 <p><em>Technologies:</em> ESP32, C++, Go, React, MQTT, Modbus TCP, PID,
 DS18B20/OneWire, Sonoff (custom firmware), IR remote control, Tapo, Home
 Assistant.</p>
-<h3
-id="df-1-gateway-bringing-legacy-allen-bradley-plcs-onto-ethernet">DF-1
-Gateway — Bringing Legacy Allen-Bradley PLCs onto Ethernet</h3>
+</section>
+<section
+id="df-1-gateway-bringing-legacy-allen-bradley-plcs-onto-ethernet"
+class="project">
+<h3>DF-1 Gateway — Bringing Legacy Allen-Bradley PLCs onto Ethernet</h3>
 <ul>
 <li>Raspberry Pi gateway built around a from-scratch Go implementation
 of Allen-Bradley’s DF-1 half-duplex serial protocol, turning SLC/PLC-5
@@ -759,8 +770,9 @@ themselves.</li>
 <p><em>Technologies:</em> Go, Raspberry Pi, Linux, RS-232 serial,
 Allen-Bradley DF-1, binary framing, CRC, industrial protocols, legacy
 modernisation.</p>
-<h3 id="selected-smaller-github-projects">Selected Smaller GitHub
-Projects</h3>
+</section>
+<section id="selected-smaller-github-projects" class="project">
+<h3>Selected Smaller GitHub Projects</h3>
 <ul>
 <li><strong><a
 href="https://github.com/stevenlawton/ip-monitor">ip-monitor</a> —
@@ -794,6 +806,7 @@ Experience gained in fintech, retail, public sector, and e-commerce is
 highly transferable to SaaS, infrastructure, Web3, and regulated
 industries. Comfortable working across domains where performance,
 security, and team agility are key.</p>
+</section>
 <h2 id="why-me">Why Me?</h2>
 <p>I’m the person teams turn to when something’s complex, messy, or
 stuck. Whether refactoring a legacy system, launching a new service, or
