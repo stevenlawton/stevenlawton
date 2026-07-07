@@ -419,6 +419,61 @@ git commit -m "CI: build, commit, and link the abridged CV PDF"
 
 ---
 
+### Task 6: Link the short CV on the README home page (and fix the broken PDF link)
+
+**Files:**
+- Modify: `README.md` (lines 15 and 63)
+
+**Interfaces:**
+- Consumes: the deployed `Steven-Lawton-CV-Short.pdf` URL on GitHub Pages.
+- Produces: README links to both the full and short CV PDFs; the previously broken
+  full-CV link is corrected.
+
+Note: `README.md` is NOT in the normalize `SRCS` and NOT in the workflow trigger
+`paths:`, so this edit has no build side-effects and the pre-commit hook will not touch it.
+
+- [ ] **Step 1: Add the short-CV link to the Docs & Extras list (line 15)**
+
+Change:
+```markdown
+- CV: [(Markdown)](./CV.md) | [(HTML)](https://stevenlawton.github.io/stevenlawton/) | [(PDF)](https://stevenlawton.github.io/stevenlawton/Steven-Lawton-CV.pdf)
+```
+to:
+```markdown
+- CV: [(Markdown)](./CV.md) | [(HTML)](https://stevenlawton.github.io/stevenlawton/) | [(PDF)](https://stevenlawton.github.io/stevenlawton/Steven-Lawton-CV.pdf) | [(Short PDF)](https://stevenlawton.github.io/stevenlawton/Steven-Lawton-CV-Short.pdf)
+```
+
+- [ ] **Step 2: Fix the broken CV link and add the short link in "Ping Me" (line 63)**
+
+Change:
+```markdown
+- 📄 **CV**: [Download PDF](https://stevenlawton.github.io/Steven-Lawton-CV.pdf)
+```
+to (adds the missing `/stevenlawton/` path and the short-CV link):
+```markdown
+- 📄 **CV**: [Full PDF](https://stevenlawton.github.io/stevenlawton/Steven-Lawton-CV.pdf) · [Short PDF](https://stevenlawton.github.io/stevenlawton/Steven-Lawton-CV-Short.pdf)
+```
+
+- [ ] **Step 3: Verify links**
+
+Run:
+```bash
+cd /home/steve/repos/stevenlawton
+grep -o 'Steven-Lawton-CV-Short\.pdf' README.md | wc -l    # expect 2
+grep -c 'github.io/Steven-Lawton-CV.pdf' README.md          # expect 0 (broken link gone)
+grep -o 'stevenlawton.github.io/stevenlawton/Steven-Lawton-CV.pdf' README.md | wc -l  # expect 2
+```
+Expected: `2`, `0`, `2`.
+
+- [ ] **Step 4: Commit**
+
+```bash
+git add README.md
+git commit -m "Link short CV on README home page; fix broken CV PDF link"
+```
+
+---
+
 ## Post-implementation
 
 - Open a PR from `cv-abridged-variant` to `main` (or fast-forward per the user's preference). On merge to `main`, the workflow builds and commits `assets/Steven-Lawton-CV-Short.pdf` and deploys both PDFs to Pages.
