@@ -1,0 +1,6 @@
+#!/usr/bin/env bash
+# Guarantee SplatLLM normalisation runs on every commit touching the CV sources.
+# Normalises staged CV.md / profile.md in place and re-stages them, so the
+# committed content is always normalised. Reuses `make normalize-staged`.
+set -euo pipefail
+exec make -s normalize-staged

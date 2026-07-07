@@ -35,7 +35,7 @@ define NORMALIZE
 	perl -pe 's/ {2,}$$/\\/ unless /^\s*#/' $(1) | $(SPLAT) $(SPLAT_KEEP) 2>/dev/null
 endef
 
-.PHONY: help ready lint lint-all slop vale normalize check build html pdf preview all clean
+.PHONY: help ready lint lint-all slop vale normalize normalize-staged hooks check build html pdf preview all clean
 
 help: ## Show this help
 	@grep -E '^[a-zA-Z_-]+:.*## ' $(MAKEFILE_LIST) | \
@@ -80,6 +80,15 @@ normalize: ## Apply char-level fixes in place (SplatLLM, hard-breaks preserved)
 	@for f in $(SRCS); do \
 	  $(call NORMALIZE,$$f) > $$f.tmp && mv $$f.tmp $$f && echo "normalized $$f"; \
 	done
+
+normalize-staged: ## Normalize + re-stage any STAGED CV/profile sources (used by the pre-commit hook)
+	@files=$$(git diff --cached --name-only --diff-filter=ACM | grep -E '^(CV|profile)\.md$$' || true); \
+	for f in $$files; do \
+	  $(call NORMALIZE,$$f) > $$f.tmp && mv $$f.tmp $$f && git add "$$f" && echo "normalized+staged $$f"; \
+	done
+
+hooks: ## Enable the repo's git hooks (run once per clone)
+	@git config core.hooksPath .githooks && echo "hooks enabled (core.hooksPath=.githooks)"
 
 build: html pdf ## Full local build (HTML + PDF into output/)
 
