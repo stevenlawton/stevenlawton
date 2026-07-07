@@ -95,7 +95,7 @@ html: | $(OUT) ## Render HTML only (fast iteration, no PDF)
 	  -M abridged_roles=3 -f markdown -t html5 -s -o $(OUT)/index.cv.short.html
 	$(PANDOC) profile.md --template=templates/template.profile.html \
 	  --metadata title="Steven Lawton – Profile" -f markdown -t html5 -s -o $(OUT)/profile.html
-	@sed -i 's|<!-- PDF-LINK-HERE -->|<p><a href="/stevenlawton/Steven-Lawton-CV.pdf" download>📄 Download PDF version</a></p>|' $(OUT)/index.html
+	@sed -i 's#<!-- PDF-LINK-HERE -->#<p><a href="/stevenlawton/Steven-Lawton-CV.pdf" download>📄 Full CV (PDF)</a> · <a href="/stevenlawton/Steven-Lawton-CV-Short.pdf" download>📄 Short CV (PDF)</a></p>#' $(OUT)/index.html
 
 pdf: html ## Render PDFs (needs wkhtmltopdf)
 	$(WK) --enable-local-file-access --print-media-type \
