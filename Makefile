@@ -89,6 +89,10 @@ html: | $(OUT) ## Render HTML only (fast iteration, no PDF)
 	$(PANDOC) CV.md --template=templates/template.cv.html.html \
 	  --metadata title="Steven Lawton - CV" --lua-filter=templates/wrap-experience.lua \
 	  -f markdown -t html5 -s -o $(OUT)/index.cv.html
+	$(PANDOC) CV.md --template=templates/template.cv.html.html \
+	  --metadata title="Steven Lawton - CV (Short)" \
+	  --lua-filter=templates/abridged.lua --lua-filter=templates/wrap-experience.lua \
+	  -M abridged_roles=3 -f markdown -t html5 -s -o $(OUT)/index.cv.short.html
 	$(PANDOC) profile.md --template=templates/template.profile.html \
 	  --metadata title="Steven Lawton – Profile" -f markdown -t html5 -s -o $(OUT)/profile.html
 	@sed -i 's|<!-- PDF-LINK-HERE -->|<p><a href="/stevenlawton/Steven-Lawton-CV.pdf" download>📄 Download PDF version</a></p>|' $(OUT)/index.html
@@ -96,6 +100,8 @@ html: | $(OUT) ## Render HTML only (fast iteration, no PDF)
 pdf: html ## Render PDFs (needs wkhtmltopdf)
 	$(WK) --enable-local-file-access --print-media-type \
 	  $(OUT)/index.cv.html $(OUT)/Steven-Lawton-CV.pdf
+	$(WK) --enable-local-file-access --print-media-type \
+	  $(OUT)/index.cv.short.html $(OUT)/Steven-Lawton-CV-Short.pdf
 	$(WK) $(OUT)/profile.html $(OUT)/Steven-Lawton-Profile.pdf
 
 preview: html ## Build HTML and open the CV in a browser
