@@ -1,60 +1,62 @@
-local in_experience = false
-local experience_blocks = {}
-local current_role = {}
-local final_blocks = {}
+-- Wrap each level-3 sub-section (heading + its content) under selected
+-- level-2 sections into a Div, so the print CSS can keep each role/project
+-- from being split across a page boundary (page-break-inside: avoid).
+--
+-- Pandoc's html5 writer renders a single-class Div as <section class="...">
+-- and derives the id from the enclosed heading, so the CSS rules
+-- `section.experience` / `section.project` match automatically.
+--
+-- To add another section, map its exact level-2 heading text to a class and
+-- add a matching print rule in templates/template.cv.html.html.
+local section_class = {
+  ["Experience"] = "experience",
+  ["Open Source & Personal Projects"] = "project",
+}
 
 return {
   {
     Pandoc = function(doc)
-      for _, el in ipairs(doc.blocks) do
-        if el.t == "Header" then
-          local text = pandoc.utils.stringify(el.content)
+      local final_blocks = {}
+      local wrapped = {}         -- completed sub-sections for the active section
+      local current_role = {}    -- blocks of the sub-section being accumulated
+      local active_class = nil   -- class for the active level-2 section, or nil
 
-          -- Start of Experience section
-          if el.level == 2 and text == "Experience" then
-            in_experience = true
-            table.insert(final_blocks, el)
-          -- New top-level section: flush roles and exit
-          elseif in_experience and el.level == 2 then
-            if #current_role > 0 then
-              table.insert(experience_blocks, pandoc.Div(current_role, pandoc.Attr("", {"experience"})))
-              current_role = {}
-            end
-            for _, block in ipairs(experience_blocks) do
-              table.insert(final_blocks, block)
-            end
-            experience_blocks = {}
-            in_experience = false
-            table.insert(final_blocks, el)
-          -- New job/role inside Experience
-          elseif in_experience and el.level == 3 then
-            if #current_role > 0 then
-              table.insert(experience_blocks, pandoc.Div(current_role, pandoc.Attr("", {"experience"})))
-            end
-            current_role = {el}
-          else
-            if in_experience then
-              table.insert(current_role, el)
-            else
-              table.insert(final_blocks, el)
-            end
-          end
-        else
-          if in_experience then
-            table.insert(current_role, el)
-          else
-            table.insert(final_blocks, el)
-          end
+      local function flush_role()
+        if #current_role > 0 then
+          table.insert(wrapped, pandoc.Div(current_role, pandoc.Attr("", {active_class})))
+          current_role = {}
         end
       end
 
-      -- Flush anything still pending
-      if in_experience and #current_role > 0 then
-        table.insert(experience_blocks, pandoc.Div(current_role, pandoc.Attr("", {"experience"})))
+      local function flush_section()
+        flush_role()
+        for _, block in ipairs(wrapped) do
+          table.insert(final_blocks, block)
+        end
+        wrapped = {}
+        active_class = nil
       end
-      for _, block in ipairs(experience_blocks) do
-        table.insert(final_blocks, block)
+
+      for _, el in ipairs(doc.blocks) do
+        if el.t == "Header" and el.level == 2 then
+          -- New top-level section: flush the previous one, then decide whether
+          -- this one is a section we wrap.
+          if active_class then flush_section() end
+          table.insert(final_blocks, el)
+          active_class = section_class[pandoc.utils.stringify(el.content)]
+        elseif active_class and el.t == "Header" and el.level == 3 then
+          -- New role/project inside a wrapped section.
+          flush_role()
+          current_role = {el}
+        elseif active_class then
+          -- Content belonging to the current role/project.
+          table.insert(current_role, el)
+        else
+          table.insert(final_blocks, el)
+        end
       end
+
+      flush_section()
 
       return pandoc.Pandoc(final_blocks, doc.meta)
     end

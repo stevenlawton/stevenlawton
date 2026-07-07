@@ -81,8 +81,10 @@
                 margin-top: 0.2rem;
             }
 
-            /* Experience sections */
-            section.experience {
+            /* Experience roles + personal-project sub-sections: keep each
+               one from splitting across a page boundary. */
+            section.experience,
+            section.project {
                 page-break-inside: avoid;
                 break-inside: avoid;
                 border-bottom: none;
@@ -92,7 +94,8 @@
                 overflow: hidden;
             }
 
-            section.experience + section.experience {
+            section.experience + section.experience,
+            section.project + section.project {
                 margin-top: 0.5rem;
             }
 
