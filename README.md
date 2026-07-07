@@ -12,7 +12,7 @@ debugging a Minecraft plugin.
 ## 📄 Docs & Extras
 [![Build and Deploy CV & Profile](https://github.com/stevenlawton/stevenlawton/actions/workflows/build-pages.yml/badge.svg)](https://github.com/stevenlawton/stevenlawton/actions/workflows/build-pages.yml)
 
-- CV: [(Markdown)](./CV.md) | [(HTML)](https://stevenlawton.github.io/stevenlawton/) | [(PDF)](https://stevenlawton.github.io/stevenlawton/Steven-Lawton-CV.pdf)
+- CV: [(Markdown)](./CV.md) | [(HTML)](https://stevenlawton.github.io/stevenlawton/) | [(PDF)](https://stevenlawton.github.io/stevenlawton/Steven-Lawton-CV.pdf) | [(Short PDF)](https://stevenlawton.github.io/stevenlawton/Steven-Lawton-CV-Short.pdf)
 - Profile Summary: [(Markdown)](./profile.md)  | [(HTML)](https://stevenlawton.github.io/stevenlawton/profile.html) | [(PDF)](https://stevenlawton.github.io/stevenlawton/Steven-Lawton-Profile.pdf) 
 
 ---
@@ -60,7 +60,7 @@ Some of my professional work lives on alternate accounts for client or contract 
 - 📧 **Email**: stevenlawton@gmail.com
 - 🌍 **Website**: [stevenlawton.com](https://stevenlawton.com) - more about the history side of things.
 - 💼 **LinkedIn**: [linkedin.com/in/steven-lawton](https://linkedin.com/in/steven-lawton)
-- 📄 **CV**: [Download PDF](https://stevenlawton.github.io/Steven-Lawton-CV.pdf)
+- 📄 **CV**: [Full PDF](https://stevenlawton.github.io/stevenlawton/Steven-Lawton-CV.pdf) · [Short PDF](https://stevenlawton.github.io/stevenlawton/Steven-Lawton-CV-Short.pdf)
 
 ---
 
