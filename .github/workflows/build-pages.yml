@@ -15,6 +15,7 @@ on:
       - .github/workflows/build-pages.yml
       - templates/template.html
       - templates/template.cv.html.html
+      - templates/template.profile.html
       - templates/wrap-experience.lua
       - templates/abridged.lua
 

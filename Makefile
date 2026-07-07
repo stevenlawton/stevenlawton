@@ -5,14 +5,16 @@
 .DEFAULT_GOAL := help
 
 # --- tools (run via uvx/npx — no global installs needed) ---
-SPLAT    := uvx splatllm
-SLOPGATE := npx --yes slop-gate@latest
+SPLAT    := uvx splatllm==0.1.0
+SLOPGATE := npx --yes slop-gate@0.4.3
 PANDOC   := pandoc
 WK       := wkhtmltopdf
 
 # Vale is fetched on demand into .tools/ (gitignored). Override the version with
 #   make vale VALE_VERSION=x.y.z
 VALE_VERSION ?= 3.9.5
+# SHA256 of vale_$(VALE_VERSION)_Linux_64-bit.tar.gz — bump alongside VALE_VERSION
+VALE_SHA256  ?= 774c034771f990e25fdbb4f940213423f2563b8df99ec31a296643e0872324cb
 VALE         := .tools/vale
 
 SRCS := CV.md profile.md
@@ -67,8 +69,9 @@ vale: $(VALE) ## Vale: AI-writing ruleset + prose packs (see .vale.ini)
 $(VALE):
 	@mkdir -p .tools
 	@echo "fetching vale $(VALE_VERSION) into .tools/ ..."
-	@curl -sL "https://github.com/errata-ai/vale/releases/download/v$(VALE_VERSION)/vale_$(VALE_VERSION)_Linux_64-bit.tar.gz" \
-	  | tar xz -C .tools vale && chmod +x $(VALE)
+	@curl -fsSL -o .tools/vale.tgz "https://github.com/errata-ai/vale/releases/download/v$(VALE_VERSION)/vale_$(VALE_VERSION)_Linux_64-bit.tar.gz"
+	@echo "$(VALE_SHA256)  .tools/vale.tgz" | sha256sum -c -
+	@tar xz -C .tools -f .tools/vale.tgz vale && chmod +x $(VALE) && rm .tools/vale.tgz
 
 check: ## Dry run: show what `normalize` WOULD change + slop tells (no writes)
 	@for f in $(SRCS); do \
