@@ -11,8 +11,12 @@ on:
       - main
     paths:
       - CV.md
+      - profile.md
       - .github/workflows/build-pages.yml
       - templates/template.html
+      - templates/template.cv.html.html
+      - templates/wrap-experience.lua
+      - templates/abridged.lua
 
 permissions:
   contents: write
@@ -47,6 +51,16 @@ jobs:
             --lua-filter=templates/wrap-experience.lua \
             -f markdown -t html5 -s -o output/index.cv.html
 
+      - name: Convert Markdown to HTML - CV(short)
+        run: |
+          pandoc CV.md \
+            --template=templates/template.cv.html.html \
+            --metadata title="Steven Lawton - CV (Short)" \
+            --lua-filter=templates/abridged.lua \
+            --lua-filter=templates/wrap-experience.lua \
+            -M abridged_roles=3 \
+            -f markdown -t html5 -s -o output/index.cv.short.html
+
       - name: Convert Markdown to HTML - profile
         run: |
           pandoc profile.md \
@@ -62,9 +76,17 @@ jobs:
           output/index.cv.html \
           output/Steven-Lawton-CV.pdf
 
+      - name: Convert HTML to PDF - CV(short)
+        run: |
+          wkhtmltopdf \
+          --enable-local-file-access \
+          --print-media-type \
+          output/index.cv.short.html \
+          output/Steven-Lawton-CV-Short.pdf
+
       - name: Insert download link at marker
         run: |
-          sed -i 's|<!-- PDF-LINK-HERE -->|<p><a href="/stevenlawton/Steven-Lawton-CV.pdf" download>📄 Download PDF version</a></p>|' output/index.html
+          sed -i 's#<!-- PDF-LINK-HERE -->#<p><a href="/stevenlawton/Steven-Lawton-CV.pdf" download>📄 Full CV (PDF)</a> · <a href="/stevenlawton/Steven-Lawton-CV-Short.pdf" download>📄 Short CV (PDF)</a></p>#' output/index.html
 
       - name: Convert HTML to PDF - Profile
         run: |
@@ -94,15 +116,17 @@ jobs:
       - name: Copy PDF to assets/
         run: |
           mkdir -p assets
-          cp output/Steven-Lawton-CV.pdf assets/Steven-Lawton-CV.pdf          
-          cp output/Steven-Lawton-Profile.pdf assets/Steven-Lawton-Profile.pdf          
+          cp output/Steven-Lawton-CV.pdf assets/Steven-Lawton-CV.pdf
+          cp output/Steven-Lawton-CV-Short.pdf assets/Steven-Lawton-CV-Short.pdf
+          cp output/Steven-Lawton-Profile.pdf assets/Steven-Lawton-Profile.pdf
 
       - name: Commit PDF
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          
+
           git add -f assets/Steven-Lawton-CV.pdf
+          git add -f assets/Steven-Lawton-CV-Short.pdf
           git add -f assets/Steven-Lawton-Profile.pdf
           if ! git diff --cached --quiet; then
             git commit -m "Update PDF version of CV/Profile"
