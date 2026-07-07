@@ -1,7 +1,7 @@
 ## Steven Lawton - Technical Profile
 
-Senior Software Developer with over 20 years’ experience delivering robust, scalable backend systems across fintech, 
-retail, Web3, and publishing. Known for pragmatic problem-solving, deep technical breadth, and consistent delivery in 
+Senior Software Developer with over 20 years' experience delivering robust, scalable backend systems across fintech,
+retail, Web3, and publishing. Known for pragmatic problem-solving, deep technical breadth, and consistent delivery in
 complex environments.
 
 ### 🔧 Core Strengths
@@ -14,9 +14,9 @@ complex environments.
 - Observability:**Prometheus**, **NewRelic** **Grafana**, **Datadog**
 
 ### 💼 Project Highlights
-- **Integrations (Sainsbury’s)**: Automated API onboarding with **GitHub Actions** and **TypeScript**, integrated **OpenAPI/AsyncAPI** into **SwaggerHub**, and designed internal PaaS services for request state and authorisation
-- **SmartShop (Sainsbury’s)**: Migrated PHP to Go microservices, optimised memory usage, and integrated with external teams using **gRPC** and **GraphQL**
-- **Groceries Online (Sainsbury’s)**: Led platform migration to Kubernetes, overhauled secrets management, and improved delivery with SSR and microservices
+- **Integrations (Sainsbury's)**: Automated API onboarding with **GitHub Actions** and **TypeScript**, integrated **OpenAPI/AsyncAPI** into **SwaggerHub**, and designed internal PaaS services for request state and authorisation
+- **SmartShop (Sainsbury's)**: Migrated PHP to Go microservices, optimised memory usage, and integrated with external teams using **gRPC** and **GraphQL**
+- **Groceries Online (Sainsbury's)**: Led platform migration to Kubernetes, overhauled secrets management, and improved delivery with SSR and microservices
 - **Baanx (Fintech)**: Re-architected core web/crypto infrastructure with Go, ECS, and Keycloak for identity management under compliance constraints
 - **Barbourne Brook**: Delivered an event-driven data pipeline in Go, replacing a fragile PHP app, enabling new high-value customers
 - **RS Components**: Delivered PCI-compliant internal payment system and supported eCommerce modernisation using Spring Boot and Docker
